@@ -1,7 +1,11 @@
 .navbar-wrapper {
     width: 100%;
     height: 110px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
 }
 
 .navbar-container {
@@ -23,7 +27,6 @@
 }
 
 .navbar-logo img {
-    height: 100%;
     margin: 0;
 }
 
@@ -54,7 +57,7 @@
 }
 
 .nav-item .nav-link {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
     color: inherit;
     text-decoration: none;
