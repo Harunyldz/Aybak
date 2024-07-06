@@ -11,7 +11,7 @@ const Home = () => {
         </div>
       </div>
       <section className="header">
-        <div className="header-top">
+        {/* <div className="header-top">
           <h2>Her Tanede Kalite, Her Sofrada Lezzet</h2>
           <p>
             1984 yılından beri tarım sektöründe öncü olan Öden Gıda San. Tic.
@@ -23,7 +23,7 @@ const Home = () => {
             Tarladan sofranıza kadar uzanan bu yolculukta, her bir ürünümüzde
             aynı özen ve kaliteyi bulacaksınız.
           </p>
-        </div>
+        </div> */}
       </section>
     </div>
   );
