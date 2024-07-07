@@ -177,7 +177,7 @@ export const navList = [
                             href: "",
                         },
                         {
-                            id: 3,
+                            id: 4,
                             name: "Nohut Güveç",
                             href: "",
                         }
@@ -250,7 +250,7 @@ export const navList = [
                     href: ""
                 },
                 {
-                    id: 7,
+                    id: 10,
                     name: "Aşure",
                     href: ""
                 }

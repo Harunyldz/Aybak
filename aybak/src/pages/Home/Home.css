@@ -28,5 +28,60 @@
 
 .header {
     width: 100%;
-    margin: auto auto;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .header-top {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-top h2{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.header-top h2 span{
+    color: var(--primary-color);
+}
+
+.header-top p{
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+.header .header-bottom {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.header-bottom .header-img {
+    position: relative;
+    width: 350px;
+    min-width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-img:hover img{
+    transform: scale(1.2);
+}
+
+.header-img img {
+    width: 200px;
+    transition: all 0.3s ease;
 }
