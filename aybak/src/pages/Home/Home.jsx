@@ -1,4 +1,6 @@
 import "./Home.css";
+import { motion } from "framer-motion";
+
 import background from "../../assets/background2.jpg";
 import aybak from "../../assets/1.jpg";
 import oden1 from "../../assets/2.jpg";
@@ -14,7 +16,12 @@ const Home = () => {
         </div>
       </div>
       <section className="header">
-        <div className="header-bottom">
+        <motion.div
+          className="header-ust"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="header-img">
             <img src={aybak} alt="Aybak uzun tane pirinç" />
           </div>
@@ -24,9 +31,16 @@ const Home = () => {
           <div className="header-img">
             <img src={odenay} alt="Ödenay ayçiçek yağı" />
           </div>
-        </div>
-        <div className="header-top">
-          <h2>Her Tanede <span>Kalite</span>, Her Sofrada <span>Lezzet</span></h2>
+        </motion.div>
+        <motion.div
+          className="header-alt"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <h2>
+            Her Tanede <span>Kalite</span>, Her Sofrada <span>Lezzet</span>
+          </h2>
           <p>
             1984 yılından beri tarım sektöründe öncü olan Öden Gıda San. Tic.
             Ltd. Şti., kaliteyi her zaman en ön planda tutarak sofralarınıza
@@ -37,8 +51,7 @@ const Home = () => {
             Tarladan sofranıza kadar uzanan bu yolculukta, her bir ürünümüzde
             aynı özen ve kaliteyi bulacaksınız.
           </p>
-        </div>
-
+        </motion.div>
       </section>
     </div>
   );
