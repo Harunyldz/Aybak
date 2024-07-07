@@ -14,6 +14,17 @@ const Home = () => {
         </div>
       </div>
       <section className="header">
+        <div className="header-bottom">
+          <div className="header-img">
+            <img src={aybak} alt="Aybak uzun tane pirinç" />
+          </div>
+          <div className="header-img">
+            <img src={oden1} alt="Öden baldo pirinç" />
+          </div>
+          <div className="header-img">
+            <img src={odenay} alt="Ödenay ayçiçek yağı" />
+          </div>
+        </div>
         <div className="header-top">
           <h2>Her Tanede <span>Kalite</span>, Her Sofrada <span>Lezzet</span></h2>
           <p>
@@ -27,17 +38,7 @@ const Home = () => {
             aynı özen ve kaliteyi bulacaksınız.
           </p>
         </div>
-        <div className="header-bottom">
-          <div className="header-img">
-            <img src={aybak} alt="Aybak uzun tane pirinç" />
-          </div>
-          <div className="header-img">
-            <img src={oden1} alt="Öden baldo pirinç" />
-          </div>
-          <div className="header-img">
-            <img src={odenay} alt="Ödenay ayçiçek yağı" />
-          </div>
-        </div>
+
       </section>
     </div>
   );
