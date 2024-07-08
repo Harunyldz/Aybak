@@ -85,3 +85,10 @@
     margin-top: 50px;
     line-height: 1.5;
 }
+
+.urunslider-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative;
+}

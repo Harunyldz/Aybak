@@ -5,6 +5,7 @@ import background from "../../assets/background2.jpg";
 import aybak from "../../assets/1.jpg";
 import oden1 from "../../assets/2.jpg";
 import odenay from "../../assets/3.jpg";
+import UrunSlider from "../../components/UrunSlider/UrunSlider";
 
 const Home = () => {
   return (
@@ -52,6 +53,12 @@ const Home = () => {
             aynı özen ve kaliteyi bulacaksınız.
           </p>
         </motion.div>
+      </section>
+      <section className="urunslider-wrapper">
+        {/* <div className="urunslider-title">
+          <h2>Ürünlerimiz</h2>
+        </div> */}
+        <UrunSlider />
       </section>
     </div>
   );
