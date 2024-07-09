@@ -2,8 +2,8 @@ import "./Home.css";
 import { motion } from "framer-motion";
 
 import background from "../../assets/background2.jpg";
-// import background2 from "../../assets/rice-field2.avif";
-import background2 from "../../assets/rice-field5.jpg";
+import background2 from "../../assets/rice-field2.avif";
+// import background2 from "../../assets/rice-field5.jpg";
 
 import aybak from "../../assets/1.jpg";
 import oden1 from "../../assets/2.jpg";
@@ -58,10 +58,47 @@ const Home = () => {
         </motion.div>
       </section>
       <section className="urunslider-wrapper">
-        {/* <div className="urunslider-title">
-          <h2>Ürünlerimiz</h2>
-        </div> */}
         <UrunSlider />
+      </section>
+      <section className="misyon-wrapper">
+        <motion.div
+          className="misyon"
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, type: "spring", stiffness: 100 }}
+        >
+          <h3>Misyonumuz</h3>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.5}}
+          >
+            Tarımsal üretimde kaliteyi ve verimliliği artırarak sürdürülebilir
+            gelişime katkı sağlamaktır. <br />
+            Müşterilerimize güvenilir, doğal ve besleyici ürünler sunarak
+            sağlıklı bir gelecek için çalışıyoruz.
+          </motion.p>
+        </motion.div>
+        <motion.div
+          className="vizyon"
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, type: "spring", stiffness: 100}}
+        >
+          <h3>Vizyonumuz</h3>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.5}}
+          >
+            Teknolojiyi ve yenilikçi tarım yöntemlerini kullanarak tarım
+            sektöründe öncü olmak ve global ölçekte tanınan bir marka haline
+            gelmektir. <br />
+            İnsan sağlığına ve çevreye duyarlı bir şekilde, gelecek nesillere
+            daha iyi bir dünya bırakmak için sürekli olarak kendimizi
+            geliştiriyoruz.
+          </motion.p>
+        </motion.div>
       </section>
     </div>
   );

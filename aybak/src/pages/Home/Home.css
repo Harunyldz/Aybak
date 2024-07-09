@@ -92,3 +92,70 @@
     margin-top: 200px;
     position: relative;
 }
+
+/*****************Misyon vizton section Stilleri**************************************/
+.misyon-wrapper {
+    width: 100%;
+    background-image: url(../../assets/rice-field2.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin: 200px 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 300px;
+    position: relative;
+}
+
+.misyon-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 37, 93, 0.3);
+}
+
+.misyon-wrapper .misyon,
+.misyon-wrapper .vizyon {
+    flex: 1;
+    min-width: 400px;
+    height: 100%;
+    color: #f0f0f0;
+    padding: 20px 40px;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.misyon-wrapper .misyon {
+    background-color: rgba(226, 10, 23, 0.5);
+}
+
+.misyon-wrapper .vizyon {
+    background-color: rgba(2, 37, 93, 0.5);
+}
+
+.misyon-wrapper h3{
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.misyon-wrapper p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.misyon-wrapper .vizyon h3{
+    text-align: right;
+}
+
+.misyon-wrapper .misyon:hover,
+.misyon-wrapper .vizyon:hover{
+    background-color: transparent;
+}
+
