@@ -71,32 +71,34 @@ const Home = () => {
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.5}}
+            transition={{ duration: 1, delay: 1.5 }}
           >
-            Tarımsal üretimde kaliteyi ve verimliliği artırarak sürdürülebilir
-            gelişime katkı sağlamaktır. <br />
-            Müşterilerimize güvenilir, doğal ve besleyici ürünler sunarak
-            sağlıklı bir gelecek için çalışıyoruz.
+            Aybak Gıda San. Tic. Ltd. Şti. olarak misyonumuz, müşterilerimize en
+            yüksek kalitede, güvenilir ve besleyici ürünler sunarak sağlıklı bir
+            yaşam tarzını desteklemektir. Ürünlerimizi seçerken ve tedarik
+            ederken kalite standartlarından ödün vermeyerek, müşteri
+            memnuniyetini en üst seviyede tutmak için çalışıyoruz.
           </motion.p>
         </motion.div>
         <motion.div
           className="vizyon"
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: "spring", stiffness: 100}}
+          transition={{ duration: 1, type: "spring", stiffness: 100 }}
         >
           <h3>Vizyonumuz</h3>
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.5}}
+            transition={{ duration: 1, delay: 1.5 }}
           >
-            Teknolojiyi ve yenilikçi tarım yöntemlerini kullanarak tarım
-            sektöründe öncü olmak ve global ölçekte tanınan bir marka haline
-            gelmektir. <br />
-            İnsan sağlığına ve çevreye duyarlı bir şekilde, gelecek nesillere
-            daha iyi bir dünya bırakmak için sürekli olarak kendimizi
-            geliştiriyoruz.
+            Vizyonumuz, tarım ürünleri toptancılığı sektöründe öncü ve güvenilir
+            bir marka haline gelmektir. Teknolojiyi ve yenilikçi yöntemleri
+            kullanarak lojistik ve tedarik zincirimizi sürekli geliştirmek,
+            global pazarda rekabetçi bir konum elde etmek ve müşterilerimize
+            üstün hizmet sunmak için kendimizi sürekli olarak yeniliyoruz.
+            Çevreye duyarlı ve sürdürülebilir iş modelleri ile geleceğe katkı
+            sağlamayı hedefliyoruz.
           </motion.p>
         </motion.div>
       </section>

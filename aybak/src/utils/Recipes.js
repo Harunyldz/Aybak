@@ -8,10 +8,16 @@ import bademliPilavImage from "../assets/yemek/pilav/bademli-pilav.jpg"
 import domatesliPilavImage from "../assets/yemek/pilav/domatesli-pilav.jpg"
 import sebzeliBulgurPilaviImage from "../assets/yemek/pilav/sebzeli-bulgur-pilavi.jpg"
 import akasyaPilaviImage from "../assets/yemek/pilav/akasya-pilavi.jpg"
-
 import kuruFasulyeImage from "../assets/yemek/fasulye/kuru-fasulye.jpg"
 import etliKuruFasulyeImage from "../assets/yemek/fasulye/etli-kuru-fasulye.jpg"
 import sekerFasulyeImage from "../assets/yemek/fasulye/seker-fasulye.jpg"
+import beyazNohutImage from "../assets/yemek/nohut/beyaz-nohut.jpg"
+import tavukluBeyazNohutImage from "../assets/yemek/nohut/tavuklu-nohut.jpg"
+import kocbasiNohutImage from "../assets/yemek/nohut/kocbasi-nohut.jpg"
+import nohutGuvecImage from "../assets/yemek/nohut/guvec-nohut.jpg"
+import yesilMercimekImage from "../assets/yemek/yesilMercimek/yesil-mercimek.jpg"
+import yesilMercimekliIspanakImage from "../assets/yemek/yesilMercimek/ispanak-yesil-mercimek.jpg"
+import yesilMercimekKoftesiImage from "../assets/yemek/yesilMercimek/kofte-yesil-mercimek.jpg"
 
 
 export const recipes = [
@@ -139,7 +145,6 @@ export const recipes = [
         ],
         image: sosisliKirmiziMercimekCorbasiImage
     },
-
     {
         id: 5,
         title: "Nohutlu Pilav",
@@ -360,4 +365,225 @@ export const recipes = [
         ],
         image: sekerFasulyeImage
     },
+    {
+        id: 13,
+        title: "Beyaz Nohut Yemeği",
+        type: "Nohut Yemekleri",
+        ingredients: [
+            "2 su bardağı nohut",
+            "1 büyük soğan",
+            "2 yemek kaşığı domates salçası",
+            "2 adet domates (rendelenmiş)",
+            "2 yemek kaşığı sıvı yağ veya tereyağı",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "Su",
+            "İsteğe bağlı: 1 tatlı kaşığı pul biber, 1 tatlı kaşığı kimyon"
+        ],
+        instructions: [
+            "Nohutları bir gece önceden suya koyun ve sabaha kadar bekletin. Eğer vakit yoksa, hızlı bir şekilde haşlayarak da bu işlemi yapabilirsiniz.",
+            "Bir tencereye sıvı yağ veya tereyağını ekleyin. Yağ ısındıktan sonra ince doğranmış soğanı ekleyin ve pembeleşene kadar kavurun.",
+            "Domates salçasını ekleyin ve kokusu çıkana kadar kavurmaya devam edin.",
+            "Rendelenmiş domatesleri ekleyin ve karıştırarak pişirin.",
+            "Tuz, karabiber ve isteğe bağlı olarak pul biber ve kimyonu ekleyin.",
+            "Önceden ıslatılmış ve suyu süzülmüş nohutları tencereye ekleyin.",
+            "Nohutların üzerini geçecek kadar sıcak su ekleyin ve karıştırın.",
+            "Tencerenin kapağını kapatın ve kısık ateşte nohutlar yumuşayana kadar pişirin. Bu yaklaşık 45 dakika ile 1 saat arasında sürebilir. Ara sıra karıştırmayı unutmayın.",
+            "Nohutlar yumuşadıktan sonra ocaktan alın ve bir süre dinlendirin.",
+            "Sıcak olarak servis yapın. Afiyet olsun!"
+        ],
+        image: beyazNohutImage
+    },
+    {
+        id: 14,
+        title: "Tavuklu Beyaz Nohut Yemeği",
+        type: "Nohut Yemekleri",
+        ingredients: [
+            "2 su bardağı nohut",
+            "300 gram tavuk göğsü (kuşbaşı doğranmış)",
+            "1 büyük soğan",
+            "2 yemek kaşığı domates salçası",
+            "2 adet domates (rendelenmiş)",
+            "2 yemek kaşığı sıvı yağ veya tereyağı",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "Su",
+            "İsteğe bağlı: 1 tatlı kaşığı pul biber, 1 tatlı kaşığı kimyon"
+        ],
+        instructions: [
+            "Nohutları bir gece önceden suya koyun ve sabaha kadar bekletin. Eğer vakit yoksa, hızlı bir şekilde haşlayarak da bu işlemi yapabilirsiniz.",
+            "Bir tencereye sıvı yağ veya tereyağını ekleyin. Yağ ısındıktan sonra ince doğranmış soğanı ekleyin ve pembeleşene kadar kavurun.",
+            "Kuşbaşı doğranmış tavuk göğsünü ekleyin ve tavuklar tamamen pişene kadar kavurun.",
+            "Domates salçasını ekleyin ve kokusu çıkana kadar kavurmaya devam edin.",
+            "Rendelenmiş domatesleri ekleyin ve karıştırarak pişirin.",
+            "Tuz, karabiber ve isteğe bağlı olarak pul biber ve kimyonu ekleyin.",
+            "Önceden ıslatılmış ve suyu süzülmüş nohutları tencereye ekleyin.",
+            "Nohutların üzerini geçecek kadar sıcak su ekleyin ve karıştırın.",
+            "Tencerenin kapağını kapatın ve kısık ateşte nohutlar ve tavuklar yumuşayana kadar pişirin. Bu yaklaşık 45 dakika ile 1 saat arasında sürebilir. Ara sıra karıştırmayı unutmayın.",
+            "Nohutlar ve tavuklar yumuşadıktan sonra ocaktan alın ve bir süre dinlendirin.",
+            "Sıcak olarak servis yapın. Afiyet olsun!"
+        ],
+        image: tavukluBeyazNohutImage
+    },
+    {
+        id: 15,
+        title: "Koçbaşı Nohut Yemeği",
+        type: "Nohut Yemekleri",
+        ingredients: [
+            "2 su bardağı koçbaşı nohut",
+            "1 büyük soğan",
+            "2 yemek kaşığı domates salçası",
+            "2 adet domates (rendelenmiş)",
+            "2 yemek kaşığı sıvı yağ veya tereyağı",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "Su",
+            "İsteğe bağlı: 1 tatlı kaşığı pul biber, 1 tatlı kaşığı kimyon"
+        ],
+        instructions: [
+            "Nohutları bir gece önceden suya koyun ve sabaha kadar bekletin. Eğer vakit yoksa, hızlı bir şekilde haşlayarak da bu işlemi yapabilirsiniz.",
+            "Bir tencereye sıvı yağ veya tereyağını ekleyin. Yağ ısındıktan sonra ince doğranmış soğanı ekleyin ve pembeleşene kadar kavurun.",
+            "Domates salçasını ekleyin ve kokusu çıkana kadar kavurmaya devam edin.",
+            "Rendelenmiş domatesleri ekleyin ve karıştırarak pişirin.",
+            "Tuz, karabiber ve isteğe bağlı olarak pul biber ve kimyonu ekleyin.",
+            "Önceden ıslatılmış ve suyu süzülmüş nohutları tencereye ekleyin.",
+            "Nohutların üzerini geçecek kadar sıcak su ekleyin ve karıştırın.",
+            "Tencerenin kapağını kapatın ve kısık ateşte nohutlar yumuşayana kadar pişirin. Bu yaklaşık 45 dakika ile 1 saat arasında sürebilir. Ara sıra karıştırmayı unutmayın.",
+            "Nohutlar yumuşadıktan sonra ocaktan alın ve bir süre dinlendirin.",
+            "Sıcak olarak servis yapın. Afiyet olsun!"
+        ],
+        image: kocbasiNohutImage
+    },
+    {
+        id: 16,
+        title: "Nohut Güveç",
+        type: "Nohut Yemekleri",
+        ingredients: [
+            "2 su bardağı nohut",
+            "300 gram kuşbaşı doğranmış kuzu eti",
+            "1 büyük soğan",
+            "2 yemek kaşığı domates salçası",
+            "2 adet domates (rendelenmiş)",
+            "2 yemek kaşığı sıvı yağ veya tereyağı",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "1 tatlı kaşığı pul biber (isteğe bağlı)",
+            "1 tatlı kaşığı kimyon (isteğe bağlı)",
+            "Su"
+        ],
+        instructions: [
+            "Nohutları bir gece önceden suya koyun ve sabaha kadar bekletin. Eğer vakit yoksa, hızlı bir şekilde haşlayarak da bu işlemi yapabilirsiniz.",
+            "Bir güveç tenceresinde sıvı yağ veya tereyağını ısıtın. Yağ ısındıktan sonra ince doğranmış soğanı ekleyin ve pembeleşene kadar kavurun.",
+            "Kuşbaşı doğranmış kuzu etini ekleyin ve etler tamamen pişene kadar kavurun.",
+            "Domates salçasını ekleyin ve kokusu çıkana kadar kavurmaya devam edin.",
+            "Rendelenmiş domatesleri ekleyin ve karıştırarak pişirin.",
+            "Tuz, karabiber ve isteğe bağlı olarak pul biber ve kimyonu ekleyin.",
+            "Önceden ıslatılmış ve suyu süzülmüş nohutları güveç tenceresine ekleyin.",
+            "Nohutların üzerini geçecek kadar sıcak su ekleyin ve karıştırın.",
+            "Güveç tenceresinin kapağını kapatın ve kısık ateşte nohutlar ve etler yumuşayana kadar pişirin. Bu yaklaşık 1 saat sürebilir. Ara sıra karıştırmayı unutmayın.",
+            "Nohutlar ve etler yumuşadıktan sonra ocaktan alın ve bir süre dinlendirin.",
+            "Sıcak olarak servis yapın. Afiyet olsun!"
+        ],
+        image: nohutGuvecImage
+    },
+    {
+        id: 17,
+        title: "Yeşil Mercimek Yemeği",
+        type: "Yeşil Mercimek Yemekleri",
+        ingredients: [
+            "2 su bardağı yeşil mercimek",
+            "1 büyük soğan",
+            "2 diş sarımsak",
+            "2 yemek kaşığı domates salçası",
+            "2 adet domates (rendelenmiş)",
+            "2 yemek kaşığı sıvı yağ veya tereyağı",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "1 tatlı kaşığı pul biber (isteğe bağlı)",
+            "1 tatlı kaşığı kimyon (isteğe bağlı)",
+            "Su"
+        ],
+        instructions: [
+            "Yeşil mercimekleri yıkayın ve bir tencereye alın. Üzerini geçecek kadar su ekleyin ve kaynatın. Kaynadıktan sonra suyunu süzün ve mercimekleri bir kenara alın.",
+            "Bir tencereye sıvı yağ veya tereyağını ekleyin. Yağ ısındıktan sonra ince doğranmış soğanı ekleyin ve pembeleşene kadar kavurun.",
+            "Sarımsakları ekleyin ve birkaç dakika daha kavurun.",
+            "Domates salçasını ekleyin ve kokusu çıkana kadar kavurmaya devam edin.",
+            "Rendelenmiş domatesleri ekleyin ve karıştırarak pişirin.",
+            "Tuz, karabiber ve isteğe bağlı olarak pul biber ve kimyonu ekleyin.",
+            "Haşlanmış yeşil mercimekleri tencereye ekleyin ve karıştırın.",
+            "Mercimeklerin üzerini geçecek kadar sıcak su ekleyin ve karıştırın.",
+            "Tencerenin kapağını kapatın ve kısık ateşte mercimekler yumuşayana kadar pişirin. Bu yaklaşık 30-40 dakika sürebilir. Ara sıra karıştırmayı unutmayın.",
+            "Yeşil mercimekler yumuşadıktan sonra ocaktan alın ve bir süre dinlendirin.",
+            "Sıcak olarak servis yapın. Afiyet olsun!"
+        ],
+        image: yesilMercimekImage
+    },
+    {
+        id: 18,
+        title: "Yeşil Mercimekli Ispanak",
+        type: "Yeşil Mercimek Yemekleri",
+        ingredients: [
+            "1 su bardağı yeşil mercimek",
+            "500 gram ıspanak",
+            "1 büyük soğan",
+            "2 diş sarımsak",
+            "2 yemek kaşığı domates salçası",
+            "1 yemek kaşığı biber salçası (isteğe bağlı)",
+            "3 yemek kaşığı sıvı yağ",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "1 tatlı kaşığı kırmızı biber",
+            "Su"
+        ],
+        instructions: [
+            "Yeşil mercimekleri yıkayın ve bir tencereye alın. Üzerini geçecek kadar su ekleyin ve kaynatın. Kaynadıktan sonra suyunu süzün ve mercimekleri bir kenara alın.",
+            "Ispanakları iyice yıkayın ve doğrayın.",
+            "Bir tencereye sıvı yağı ekleyin. Yağ ısındıktan sonra ince doğranmış soğanı ekleyin ve pembeleşene kadar kavurun.",
+            "Sarımsakları ekleyin ve birkaç dakika daha kavurun.",
+            "Domates salçasını ve biber salçasını ekleyin, kokusu çıkana kadar kavurmaya devam edin.",
+            "Yeşil mercimekleri tencereye ekleyin ve karıştırın.",
+            "Doğranmış ıspanakları ekleyin ve karıştırarak pişirin.",
+            "Tuz, karabiber ve kırmızı biberi ekleyin.",
+            "Yemek suyunu çektikçe azar azar sıcak su ekleyin. Ispanaklar ve mercimekler iyice pişene kadar kısık ateşte pişirin.",
+            "Yeşil mercimekler ve ıspanaklar yumuşadıktan sonra ocaktan alın ve bir süre dinlendirin.",
+            "Sıcak olarak servis yapın. Afiyet olsun!"
+        ],
+        image: yesilMercimekliIspanakImage
+    },
+    {
+        id: 19,
+        title: "Yeşil Mercimek Köftesi",
+        type: "Yeşil Mercimek Yemekleri",
+        ingredients: [
+            "1 su bardağı yeşil mercimek",
+            "1 su bardağı ince bulgur",
+            "1 büyük soğan",
+            "2 diş sarımsak",
+            "2 yemek kaşığı domates salçası",
+            "2 yemek kaşığı biber salçası",
+            "3 yemek kaşığı sıvı yağ",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "1 çay kaşığı kimyon",
+            "1 çay kaşığı kırmızı biber",
+            "Yarım demet maydanoz",
+            "3-4 dal taze soğan",
+            "1 limonun suyu",
+            "Su"
+        ],
+        instructions: [
+            "Yeşil mercimekleri yıkayın ve bir tencereye alın. Üzerini geçecek kadar su ekleyin ve yumuşayana kadar haşlayın. Haşladıktan sonra suyunu süzün ve bir kenara alın.",
+            "Bir kaba ince bulguru alın ve üzerine 1 su bardağı sıcak su ekleyin. Bulgurun şişmesi için 10 dakika bekletin.",
+            "Bir tavada sıvı yağı ısıtın. İnce doğranmış soğanı ekleyin ve pembeleşene kadar kavurun.",
+            "Sarımsakları ekleyin ve birkaç dakika daha kavurun.",
+            "Domates salçası ve biber salçasını ekleyin, kokusu çıkana kadar kavurmaya devam edin.",
+            "Haşlanmış yeşil mercimekleri ekleyin ve karıştırın. Tuzu, karabiberi, kimyonu ve kırmızı biberi ekleyin.",
+            "Bu karışımı şişen bulgura ekleyin ve iyice karıştırın.",
+            "İnce doğranmış maydanoz ve taze soğanları ekleyin. Limon suyunu ekleyin ve tüm malzemeleri iyice karıştırın.",
+            "Ellerinizi hafifçe ıslatarak karışımdan küçük parçalar alın ve köfte şekli verin.",
+            "Hazırladığınız yeşil mercimek köftelerini servis tabağına alın.",
+            "Afiyet olsun!"
+        ],
+        image: yesilMercimekKoftesiImage
+    }
 ]
