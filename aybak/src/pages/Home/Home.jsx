@@ -2,6 +2,9 @@ import "./Home.css";
 import { motion } from "framer-motion";
 
 import background from "../../assets/background2.jpg";
+// import background2 from "../../assets/rice-field2.avif";
+import background2 from "../../assets/rice-field5.jpg";
+
 import aybak from "../../assets/1.jpg";
 import oden1 from "../../assets/2.jpg";
 import odenay from "../../assets/3.jpg";
@@ -11,7 +14,7 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <div className="home-slider">
-        <img src={background} alt="" />
+        <img src={background2} alt="" />
         <div className="slider-text">
           <span>Her Tanede Kalite, Her Sofrada Lezzet</span>
         </div>
