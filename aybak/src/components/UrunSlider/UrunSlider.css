@@ -2,12 +2,14 @@
 
 .slider-title {
     position: absolute;
+    top: 0;
     font-size: 50px;
     line-height: 60px;
+    color:  #02255D;
 }
 
 .urunSwiper {
-    width: 100%;
+    width: 90%;
     height: 700px;
     margin: 100px auto;
     padding: 50px 0;
@@ -63,12 +65,12 @@
     height: 50px;
     color: #E20A17;
     border-radius: 50%;
-    border: 1px solid gray;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
 .urunSwiper .swiper-button-next::after,
 .urunSwiper .swiper-button-prev::after {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
 }
 

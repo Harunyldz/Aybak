@@ -18,7 +18,6 @@ import { Pagination, Navigation } from "swiper/modules";
 const UrunSlider = () => {
   return (
     <>
-      <h2 className="slider-title">Ürünlerimiz</h2>
       <Swiper
         slidesPerView={5}
         spaceBetween={50}
@@ -49,6 +48,7 @@ const UrunSlider = () => {
         }}
         className="urunSwiper"
       >
+        <h2 className="slider-title">Ürünlerimiz</h2>
         <SwiperSlide>
           <img src={slider1} alt="" />
           <h3>Aybak Baldo Pirinç 25kg</h3>
