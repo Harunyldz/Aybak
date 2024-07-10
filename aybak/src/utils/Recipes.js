@@ -8,6 +8,7 @@ import bademliPilavImage from "../assets/yemek/pilav/bademli-pilav.jpg"
 import domatesliPilavImage from "../assets/yemek/pilav/domatesli-pilav.jpg"
 import sebzeliBulgurPilaviImage from "../assets/yemek/pilav/sebzeli-bulgur-pilavi.jpg"
 import akasyaPilaviImage from "../assets/yemek/pilav/akasya-pilavi.jpg"
+import etliBulgurImage from "../assets/yemek/pilav/etli-bulgur-pilavi.jpg"
 import kuruFasulyeImage from "../assets/yemek/fasulye/kuru-fasulye.jpg"
 import etliKuruFasulyeImage from "../assets/yemek/fasulye/etli-kuru-fasulye.jpg"
 import sekerFasulyeImage from "../assets/yemek/fasulye/seker-fasulye.jpg"
@@ -18,6 +19,12 @@ import nohutGuvecImage from "../assets/yemek/nohut/guvec-nohut.jpg"
 import yesilMercimekImage from "../assets/yemek/yesilMercimek/yesil-mercimek.jpg"
 import yesilMercimekliIspanakImage from "../assets/yemek/yesilMercimek/ispanak-yesil-mercimek.jpg"
 import yesilMercimekKoftesiImage from "../assets/yemek/yesilMercimek/kofte-yesil-mercimek.jpg"
+import barbunyaPilakiImage from "../assets/yemek/barbunya/barbunya-pilaki.jpg"
+import kirazBarbunyaImage from "../assets/yemek/barbunya/barbunya-kiraz.jpg"
+import bulgurluKofteImage from "../assets/yemek/bulgurKoftesi.jpg"
+import yaprakSarmaImage from "../assets/yemek/yaprak-sarma.jpg"
+import yalanciCigKofteImage from "../assets/yemek/yalanciCigkofte.jpg"
+import asureImage from "../assets/yemek/asure.jpg"
 
 
 export const recipes = [
@@ -284,6 +291,34 @@ export const recipes = [
     },
     {
         id: 10,
+        title: "Etli Bulgur Pilavı",
+        type: "Pilavlar",
+        ingredients: [
+            "2 su bardağı bulgur",
+            "300 gram kuşbaşı doğranmış dana eti",
+            "1 büyük soğan",
+            "2 diş sarımsak",
+            "2 adet domates (rendelenmiş)",
+            "2 yemek kaşığı domates salçası",
+            "4 yemek kaşığı zeytinyağı",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "4 su bardağı su veya et suyu",
+            "1 demet maydanoz"
+        ],
+        instructions: [
+            "Kuşbaşı doğranmış eti tencereye alın ve kendi suyunu salıp çekene kadar kavurun. Ardından zeytinyağını ekleyin ve etler kızarana kadar kavurun.",
+            "İnce doğranmış soğanı ve sarımsakları ekleyin, soğanlar pembeleşene kadar kavurun.",
+            "Domates salçasını ekleyin ve kokusu çıkana kadar kavurmaya devam edin. Ardından rendelenmiş domatesleri ekleyin ve karıştırarak pişirin.",
+            "Tuzu ve karabiberi ekleyin. Bulguru ekleyin ve birkaç dakika kavurun.",
+            "Suyu veya et suyunu ekleyin ve karıştırın. Tencerenin kapağını kapatın ve kısık ateşte bulgurlar yumuşayana kadar pişirin.",
+            "Pilav piştikten sonra ocaktan alın ve ince doğranmış maydanozları ekleyin.",
+            "Etli bulgur pilavını sıcak olarak servis yapın. Afiyet olsun!"
+        ],
+        image: etliBulgurImage
+    },
+    {
+        id: 11,
         title: "Kuru Fasulye",
         type: "Fasulye Yemekleri",
         ingredients: [
@@ -311,7 +346,7 @@ export const recipes = [
         image: kuruFasulyeImage
     },
     {
-        id: 11,
+        id: 12,
         title: "Etli Kuru Fasulye",
         type: "Fasulye Yemekleri",
         ingredients: [
@@ -339,7 +374,7 @@ export const recipes = [
         image: etliKuruFasulyeImage
     },
     {
-        id: 12,
+        id: 13,
         title: "Güveçte Şeker Fasulye",
         type: "Fasulye Yemekleri",
         ingredients: [
@@ -366,7 +401,7 @@ export const recipes = [
         image: sekerFasulyeImage
     },
     {
-        id: 13,
+        id: 14,
         title: "Beyaz Nohut Yemeği",
         type: "Nohut Yemekleri",
         ingredients: [
@@ -395,7 +430,7 @@ export const recipes = [
         image: beyazNohutImage
     },
     {
-        id: 14,
+        id: 15,
         title: "Tavuklu Beyaz Nohut Yemeği",
         type: "Nohut Yemekleri",
         ingredients: [
@@ -426,7 +461,7 @@ export const recipes = [
         image: tavukluBeyazNohutImage
     },
     {
-        id: 15,
+        id: 16,
         title: "Koçbaşı Nohut Yemeği",
         type: "Nohut Yemekleri",
         ingredients: [
@@ -455,7 +490,7 @@ export const recipes = [
         image: kocbasiNohutImage
     },
     {
-        id: 16,
+        id: 17,
         title: "Nohut Güveç",
         type: "Nohut Yemekleri",
         ingredients: [
@@ -487,7 +522,7 @@ export const recipes = [
         image: nohutGuvecImage
     },
     {
-        id: 17,
+        id: 18,
         title: "Yeşil Mercimek Yemeği",
         type: "Yeşil Mercimek Yemekleri",
         ingredients: [
@@ -519,7 +554,7 @@ export const recipes = [
         image: yesilMercimekImage
     },
     {
-        id: 18,
+        id: 19,
         title: "Yeşil Mercimekli Ispanak",
         type: "Yeşil Mercimek Yemekleri",
         ingredients: [
@@ -551,7 +586,7 @@ export const recipes = [
         image: yesilMercimekliIspanakImage
     },
     {
-        id: 19,
+        id: 20,
         title: "Yeşil Mercimek Köftesi",
         type: "Yeşil Mercimek Yemekleri",
         ingredients: [
@@ -585,5 +620,195 @@ export const recipes = [
             "Afiyet olsun!"
         ],
         image: yesilMercimekKoftesiImage
+    },
+    {
+        id: 21,
+        title: "Barbunya Pilaki",
+        type: "Barbunya Yemekleri",
+        ingredients: [
+            "2 su bardağı barbunya",
+            "1 büyük soğan",
+            "2 diş sarımsak",
+            "2 adet havuç",
+            "2 adet patates",
+            "2 adet domates (rendelenmiş)",
+            "2 yemek kaşığı domates salçası",
+            "4 yemek kaşığı zeytinyağı",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "1 tatlı kaşığı toz şeker",
+            "1 demet maydanoz",
+            "Su"
+        ],
+        instructions: [
+            "Barbunyaları bir gece önceden suya koyun ve sabaha kadar bekletin. Beklettikten sonra suyunu süzün ve temiz su ile haşlayın. Haşlandıktan sonra suyunu süzün ve bir kenara alın.",
+            "Bir tencereye zeytinyağını ekleyin ve ısıtın. İnce doğranmış soğanı ekleyin ve pembeleşene kadar kavurun.",
+            "Sarımsakları ekleyin ve birkaç dakika daha kavurun.",
+            "Doğranmış havuçları ekleyin ve birkaç dakika kavurun. Ardından küp doğranmış patatesleri ekleyin ve karıştırarak kavurmaya devam edin.",
+            "Domates salçasını ekleyin ve kokusu çıkana kadar kavurun. Rendelenmiş domatesleri ekleyin ve karıştırarak pişirin.",
+            "Haşlanmış barbunyaları ekleyin ve karıştırın. Tuzu, karabiberi ve toz şekeri ekleyin.",
+            "Tencereye barbunyaların üzerini geçecek kadar sıcak su ekleyin. Tencerenin kapağını kapatın ve kısık ateşte barbunyalar yumuşayana kadar pişirin.",
+            "Yemeğiniz piştikten sonra ocaktan alın ve ince doğranmış maydanozları ekleyin.",
+            "Barbunya pilakiyi ılık veya soğuk olarak servis yapın. Afiyet olsun!"
+        ],
+        image: barbunyaPilakiImage
+    },
+    {
+        id: 22,
+        title: "Kiraz Barbunya",
+        type: "Barbunya Yemekleri",
+        ingredients: [
+            "2 su bardağı kiraz barbunya",
+            "1 büyük soğan",
+            "2 diş sarımsak",
+            "2 adet havuç",
+            "2 adet patates",
+            "2 adet domates (rendelenmiş)",
+            "2 yemek kaşığı domates salçası",
+            "4 yemek kaşığı zeytinyağı",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "1 tatlı kaşığı toz şeker",
+            "1 demet maydanoz",
+            "Su"
+        ],
+        instructions: [
+            "Kiraz barbunyaları bir gece önceden suya koyun ve sabaha kadar bekletin. Beklettikten sonra suyunu süzün ve temiz su ile haşlayın. Haşlandıktan sonra suyunu süzün ve bir kenara alın.",
+            "Bir tencereye zeytinyağını ekleyin ve ısıtın. İnce doğranmış soğanı ekleyin ve pembeleşene kadar kavurun.",
+            "Sarımsakları ekleyin ve birkaç dakika daha kavurun.",
+            "Doğranmış havuçları ekleyin ve birkaç dakika kavurun. Ardından küp doğranmış patatesleri ekleyin ve karıştırarak kavurmaya devam edin.",
+            "Domates salçasını ekleyin ve kokusu çıkana kadar kavurun. Rendelenmiş domatesleri ekleyin ve karıştırarak pişirin.",
+            "Haşlanmış kiraz barbunyaları ekleyin ve karıştırın. Tuzu, karabiberi ve toz şekeri ekleyin.",
+            "Tencereye barbunyaların üzerini geçecek kadar sıcak su ekleyin. Tencerenin kapağını kapatın ve kısık ateşte barbunyalar yumuşayana kadar pişirin.",
+            "Yemeğiniz piştikten sonra ocaktan alın ve ince doğranmış maydanozları ekleyin.",
+            "Kiraz barbunyayı ılık veya soğuk olarak servis yapın. Afiyet olsun!"
+        ],
+        image: kirazBarbunyaImage
+    },
+    {
+        id: 23,
+        title: "Bulgurlu Köfte",
+        type: "Yemekler",
+        ingredients: [
+            "1 su bardağı ince bulgur",
+            "250 gram kıyma",
+            "1 büyük soğan",
+            "1 yumurta",
+            "2 yemek kaşığı domates salçası",
+            "1 yemek kaşığı biber salçası",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı karabiber",
+            "1 çay kaşığı kimyon",
+            "1 demet maydanoz",
+            "4 yemek kaşığı zeytinyağı",
+            "1 su bardağı sıcak su"
+        ],
+        instructions: [
+            "İnce bulguru geniş bir kaba alın ve üzerine sıcak suyu ekleyin. Üstünü kapatıp bulgurların şişmesi için 10-15 dakika bekletin.",
+            "Şişen bulgura kıymayı ekleyin. İnce doğranmış soğanı, yumurtayı, domates salçasını, biber salçasını, tuzu, karabiberi ve kimyonu ekleyin.",
+            "Karışımı yoğurarak köfte harcını hazırlayın. Harçtan küçük parçalar koparıp yuvarlayarak köfteleri şekillendirin.",
+            "Bir tavada zeytinyağını ısıtın ve köfteleri her iki tarafı da kızarana kadar pişirin.",
+            "Pişen köfteleri servis tabağına alın ve üzerine ince doğranmış maydanozu serpin.",
+            "Bulgurlu köfteleri sıcak olarak servis yapın. Afiyet olsun!"
+        ],
+        image: bulgurluKofteImage
+    },
+    {
+        id: 24,
+        title: "Yaprak Sarma",
+        type: "Yemekler",
+        ingredients: [
+            "500 gram asma yaprağı",
+            "2 su bardağı pirinç",
+            "2 büyük soğan",
+            "1 demet maydanoz",
+            "1 demet dereotu",
+            "1 tatlı kaşığı kuru nane",
+            "1 tatlı kaşığı karabiber",
+            "1 tatlı kaşığı tuz",
+            "1 çay kaşığı tarçın",
+            "1 çay bardağı zeytinyağı",
+            "2 yemek kaşığı domates salçası",
+            "1 limon",
+            "2 su bardağı su"
+        ],
+        instructions: [
+            "Asma yapraklarını kaynar suya batırarak 1-2 dakika haşlayın ve süzgeçte süzülmeye bırakın.",
+            "Pirinçleri yıkayıp süzün. Soğanları ince doğrayın ve zeytinyağında kavurun. Pirinçleri ekleyip 2-3 dakika kavurun.",
+            "Doğranmış maydanoz, dereotu, kuru nane, karabiber, tuz ve tarçını ekleyin. Domates salçasını ekleyin ve karıştırın.",
+            "Karışımı ocaktan alın ve biraz soğumaya bırakın.",
+            "Her bir yaprağın orta kısmına hazırladığınız iç harçtan bir miktar koyun ve yaprakları sıkıca sarın.",
+            "Sardığınız yaprakları tencereye dizin. Üzerine limon dilimleri yerleştirin ve 2 su bardağı suyu ekleyin.",
+            "Yaprakların üzerine bir tabak kapatın ve tencerenin kapağını kapatın. Kısık ateşte yaklaşık 45 dakika pişirin.",
+            "Pişen yaprak sarmaları soğumaya bırakın ve servis yapın. Afiyet olsun!"
+        ],
+        image: yaprakSarmaImage
+    },
+    {
+        id: 25,
+        title: "Yalancı Çiğ Köfte",
+        type: "Yemekler",
+        ingredients: [
+            "2 su bardağı ince bulgur",
+            "1.5 su bardağı sıcak su",
+            "1 büyük soğan",
+            "2 diş sarımsak",
+            "3 yemek kaşığı domates salçası",
+            "2 yemek kaşığı biber salçası",
+            "1 çay bardağı zeytinyağı",
+            "1 tatlı kaşığı tuz",
+            "1 tatlı kaşığı kimyon",
+            "1 tatlı kaşığı karabiber",
+            "1 tatlı kaşığı pul biber",
+            "1 tatlı kaşığı isot",
+            "1 demet maydanoz",
+            "4-5 dal taze soğan",
+            "1 limonun suyu",
+            "Marul ve limon dilimleri (servis için)"
+        ],
+        instructions: [
+            "Bulguru geniş bir kaba alın ve üzerine sıcak suyu ekleyin. Üstünü kapatıp bulgurların şişmesi için 10-15 dakika bekletin.",
+            "Soğanı ve sarımsağı rendeleyin. Şişen bulgura ekleyin.",
+            "Domates salçası, biber salçası, zeytinyağı, tuz, kimyon, karabiber, pul biber ve isotu ekleyin. İyice yoğurun.",
+            "Doğranmış maydanoz ve taze soğanı ekleyin. Limon suyunu ekleyin ve yoğurmaya devam edin.",
+            "Karışımdan küçük parçalar koparıp elinizle şekil verin.",
+            "Yalancı çiğ köfteleri marul yaprakları ve limon dilimleri ile servis edin. Afiyet olsun!"
+        ],
+        image: yalanciCigKofteImage
+    },
+    {
+        id: 26,
+        title: "Aşure",
+        type: "Tatlılar",
+        ingredients: [
+            "2 su bardağı buğday",
+            "1 su bardağı nohut",
+            "1 su bardağı kuru fasulye",
+            "1 su bardağı kuru kayısı",
+            "1 su bardağı kuru incir",
+            "1 su bardağı kuru üzüm",
+            "2 su bardağı toz şeker",
+            "1 su bardağı süt",
+            "1 portakalın rendelenmiş kabuğu",
+            "1 çay bardağı fındık",
+            "1 çay bardağı ceviz",
+            "1 çay bardağı badem",
+            "2 litre su",
+            "Nar taneleri (süsleme için)",
+            "Tarçın (süsleme için)"
+        ],
+        instructions: [
+            "Buğdayı yıkayıp büyük bir tencereye alın. Üzerini geçecek kadar su ekleyin ve bir gece bekletin.",
+            "Nohut ve kuru fasulyeyi ayrı kaplarda bir gece suda bekletin. Ertesi gün nohut ve kuru fasulyeyi ayrı ayrı haşlayın.",
+            "Buğdayı beklettiğiniz suyu süzün ve tencereye tekrar su ekleyip buğdayı haşlayın.",
+            "Kuru kayısı, kuru incir ve kuru üzümleri küçük küçük doğrayın ve sıcak suda bekletin.",
+            "Haşlanmış buğdaya haşlanmış nohut ve kuru fasulyeyi ekleyin. Suyu ekleyip karıştırın.",
+            "Karışıma doğranmış kayısı, incir ve üzümleri ekleyin. Şekeri ekleyin ve karıştırın.",
+            "Sütü ekleyin ve karışımı kısık ateşte kaynatmaya devam edin.",
+            "Portakal kabuğu rendesi, fındık, ceviz ve bademi ekleyin. Karıştırarak birkaç dakika daha kaynatın.",
+            "Aşureyi kaselere paylaştırın ve üzerini nar taneleri ve tarçın ile süsleyin.",
+            "Aşureyi soğutarak servis edin. Afiyet olsun!"
+        ],
+        image: asureImage
     }
 ]

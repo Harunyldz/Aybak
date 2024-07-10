@@ -130,6 +130,10 @@ export const navList = [
                             id: 5,
                             name: "Akasya Pilavı",
                             href: "",
+                        },
+                        {
+                            id: 6,
+                            name: "Etli Bulgur Pilavı"
                         }
                     ]
 
@@ -224,20 +228,8 @@ export const navList = [
                 },
                 {
                     id: 7,
-                    name: "Bulgur Yemekleri",
-                    href: "",
-                    subMenu: [
-                        {
-                            id: 1,
-                            name: "Etli Bulgur",
-                            href: "",
-                        },
-                        {
-                            id: 2,
-                            name: "Bulgurlu Köfte",
-                            href: "",
-                        }
-                    ]
+                    name: "Bulgurlu Köfte",
+                    href: ""
                 },
                 {
                     id: 8,
@@ -299,14 +291,14 @@ export const navList = [
         ]
     },
     {
-        id:6,
-        name:"Belgelerimiz",
-        href:""
+        id: 6,
+        name: "Belgelerimiz",
+        href: ""
     },
     {
-        id:7,
-        name:"İletişim",
-        href:""
+        id: 7,
+        name: "İletişim",
+        href: ""
     }
 ]
 
