@@ -89,9 +89,12 @@
 .urunslider-wrapper {
     width: 100%;
     height: 1000px;
-    background: linear-gradient(to right, #F7DCB9, #FFEBCE);
-    margin: 0 auto;
-    margin-top: 200px;
+    /* background: linear-gradient(to right, #F7DCB9, #FFEBCE); */
+    /* background:url(../../assets/tarla-anim.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 100px auto;
+    /* margin-top: 200px; */
     position: relative;
     display: flex;
     align-items: center;

@@ -1,11 +1,12 @@
 import "./UrunSlider.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 
 import slider1 from "../../assets/aybak_baldo.jpg";
 import slider2 from "../../assets/aybak_koftelik.jpg";
-import slider3 from "../../assets/aybak_uzun2.jpg";
+import slider3 from "../../assets/IMG-20240706-WA0015.jpg";
 import slider4 from "../../assets/aybak_pilavlik.jpg";
-import slider5 from "../../assets/aybak_baldo2.jpg";
+import slider5 from "../../assets/IMG-20240706-WA0014.jpg";
 
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
@@ -50,23 +51,39 @@ const UrunSlider = () => {
       >
         <h2 className="slider-title">Ürünlerimiz</h2>
         <SwiperSlide>
-          <img src={slider1} alt="" />
+          <motion.img
+            src={slider3}
+            alt=""
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+          />
           <h3>Aybak Baldo Pirinç 25kg</h3>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slider2} alt="" />
+          <img src={slider5} alt="" />
           <h3>Aybak Köftelik Bulgur 25kg</h3>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slider3} alt="" />
+          <motion.img
+            src={slider3}
+            alt=""
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}/>
           <h3>Aybak Uzun Tane Pirinç 25kg</h3>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slider4} alt="" />
+          <img src={slider5} alt="" />
           <h3>Aybak Pilavlık Bulgur 25kg</h3>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slider5} alt="" />
+          <motion.img
+            src={slider3}
+            alt=""
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }} />
           <h3>Aybak Baldo Pirinç 25kg</h3>
         </SwiperSlide>
         <SwiperSlide>

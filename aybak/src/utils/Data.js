@@ -23,6 +23,11 @@ export const navList = [
                 id: 3,
                 name: "Vizyonumuz",
                 href: ""
+            },
+            {
+                id: 4,
+                name: "Sertifikalarımız",
+                href: ""
             }
             ]
     },
@@ -292,11 +297,6 @@ export const navList = [
     },
     {
         id: 6,
-        name: "Belgelerimiz",
-        href: ""
-    },
-    {
-        id: 7,
         name: "İletişim",
         href: ""
     }

@@ -2,6 +2,7 @@ import "./Home.css";
 import { motion } from "framer-motion";
 
 import background from "../../assets/background2.jpg";
+import background3 from "../../assets/IMG-20240706-WA0015.jpg";
 import background2 from "../../assets/rice-field2.avif";
 // import background2 from "../../assets/rice-field5.jpg";
 
@@ -14,7 +15,7 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <div className="home-slider">
-        <img src={background2} alt="" />
+        <img src={background3} alt="" />
         <div className="slider-text">
           <span>Her Tanede Kalite, Her Sofrada Lezzet</span>
         </div>
