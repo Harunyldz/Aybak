@@ -3,10 +3,23 @@ import logo from "../../assets/logo.png";
 import { FaChevronCircleRight } from "react-icons/fa";
 import { navList } from "../../utils/Data";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(null);
   const [subDropdown, setSubDropdown] = useState(null);
+
+  // Türkçe karakterleri dönüştürerek URL oluşturma fonksiyonu
+  const transformToSlug = (text) =>
+    text
+      .toLowerCase()
+      .replace(/ğ/g, "g")
+      .replace(/ü/g, "u")
+      .replace(/ş/g, "s")
+      .replace(/ı/g, "i")
+      .replace(/ö/g, "o")
+      .replace(/ç/g, "c")
+      .replace(/\s+/g, "-");
 
   return (
     <div className="navbar-wrapper">
@@ -23,9 +36,9 @@ const Navbar = () => {
                 onMouseEnter={() => setDropdown(navListItem.id)}
                 onMouseLeave={() => setDropdown(null)}
               >
-                <a className="nav-link" href="#">
+                <Link to={navListItem.href} className="nav-link">
                   {navListItem.name}
-                </a>
+                </Link>
                 {navListItem.subMenu && (
                   <ul
                     className={
@@ -40,24 +53,39 @@ const Navbar = () => {
                         onMouseEnter={() => setSubDropdown(subMenu.id)}
                         onMouseLeave={() => setSubDropdown(null)}
                       >
-                        <a className="nav-sublink" href="#">
-                          {subMenu.name}
-                        </a>
-                        {subMenu.subMenu && (
+                        {!subMenu.subMenu && ( //alt menü yoksa link eklensin
+                          <Link
+                            to={`yemektarifleri/${transformToSlug(
+                              subMenu.name
+                            )}`}
+                            className="nav-sublink"
+                          >
+                            {subMenu.name}
+                          </Link>
+                        )}
+                        {subMenu.subMenu && ( //alt menü varsa alt menüyü göstersin
                           <>
+                            <a className="nav-sublink">{subMenu.name}</a>
                             <i>
                               <FaChevronCircleRight />
                             </i>
                             <ul
                               className={
-                                subDropdown === navListItem.id
+                                subDropdown === subMenu.id
                                   ? "nav-right-list subDropdown"
                                   : "nav-right-list"
                               }
                             >
                               {subMenu.subMenu.map((rightMenu) => (
                                 <li key={rightMenu.id}>
-                                  <a className="right-link" href="">{rightMenu.name}</a>
+                                  <Link
+                                    to={`yemektarifleri/${transformToSlug(
+                                      rightMenu.name
+                                    )}`}
+                                    className="right-link"
+                                  >
+                                    {rightMenu.name}
+                                  </Link>
                                 </li>
                               ))}
                             </ul>

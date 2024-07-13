@@ -76,7 +76,7 @@ export const navList = [
     {
         id: 4,
         name: "Yemek Tarifleri",
-        href: "",
+        href:"/yemektarifleri",
         subMenu:
             [
                 {

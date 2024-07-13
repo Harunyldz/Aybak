@@ -1,0 +1,75 @@
+@import "../../styles/variables.css";
+
+.tarif-wrapper {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.tarif-container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.tarif-container .tarif {
+    flex: 3;
+}
+
+.tarif .tarif-ust {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.tarif-ust figure {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarif-ust figure img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    min-width: 400px;
+}
+
+.tarif-ust figure figcaption h2 {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.tarif-ust div {
+    width: 100%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarif h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.tarif .tarif-alt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarif-alt ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tarif-container aside {
+    flex: 1;
+    background-color: bisque;
+}

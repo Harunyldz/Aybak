@@ -1,6 +1,6 @@
 //Yemek Resimleri
 import sariMercimekCorbasiImage from "../assets/yemek/corba/sari-mercimek-corba.jpeg"
-import ispanakliSariMercimekCorbasiImage from "../assets/yemek/corba/Ispanakli-sari-mercimek-corba.jpg"
+import ispanakliSariMercimekCorbasiImage from "../assets/yemek/corba/ispanakli-sari-mercimek-corba.jpg"
 import kirmiziMercimekCorbasiImage from "../assets/yemek/corba/kirmizi-mercimek-corba.jpg"
 import sosisliKirmiziMercimekCorbasiImage from "../assets/yemek/corba/sosisli-mercimek.jpg"
 import nohutluPilavImage from "../assets/yemek/pilav/nohutlu-pilav.jpg"
@@ -8,7 +8,7 @@ import bademliPilavImage from "../assets/yemek/pilav/bademli-pilav.jpg"
 import domatesliPilavImage from "../assets/yemek/pilav/domatesli-pilav.jpg"
 import sebzeliBulgurPilaviImage from "../assets/yemek/pilav/sebzeli-bulgur-pilavi.jpg"
 import akasyaPilaviImage from "../assets/yemek/pilav/akasya-pilavi.jpg"
-import etliBulgurImage from "../assets/yemek/pilav/etli-bulgur-pilavi.jpg"
+import etliBulgurImage from "../assets/yemek/pilav/etli-bulgur-pilavi.jpeg"
 import kuruFasulyeImage from "../assets/yemek/fasulye/kuru-fasulye.jpg"
 import etliKuruFasulyeImage from "../assets/yemek/fasulye/etli-kuru-fasulye.jpg"
 import sekerFasulyeImage from "../assets/yemek/fasulye/seker-fasulye.jpg"
@@ -402,7 +402,7 @@ export const recipes = [
     },
     {
         id: 14,
-        title: "Beyaz Nohut Yemeği",
+        title: "Beyaz Nohut",
         type: "Nohut Yemekleri",
         ingredients: [
             "2 su bardağı nohut",
@@ -431,7 +431,7 @@ export const recipes = [
     },
     {
         id: 15,
-        title: "Tavuklu Beyaz Nohut Yemeği",
+        title: "Tavuklu Beyaz Nohut",
         type: "Nohut Yemekleri",
         ingredients: [
             "2 su bardağı nohut",
@@ -462,7 +462,7 @@ export const recipes = [
     },
     {
         id: 16,
-        title: "Koçbaşı Nohut Yemeği",
+        title: "Koçbaşı Nohut",
         type: "Nohut Yemekleri",
         ingredients: [
             "2 su bardağı koçbaşı nohut",
@@ -523,7 +523,7 @@ export const recipes = [
     },
     {
         id: 18,
-        title: "Yeşil Mercimek Yemeği",
+        title: "Yeşil Mercimek",
         type: "Yeşil Mercimek Yemekleri",
         ingredients: [
             "2 su bardağı yeşil mercimek",
