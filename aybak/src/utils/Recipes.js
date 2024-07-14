@@ -23,7 +23,7 @@ import barbunyaPilakiImage from "../assets/yemek/barbunya/barbunya-pilaki.jpg"
 import kirazBarbunyaImage from "../assets/yemek/barbunya/barbunya-kiraz.jpg"
 import bulgurluKofteImage from "../assets/yemek/bulgurKoftesi.jpg"
 import yaprakSarmaImage from "../assets/yemek/yaprak-sarma.jpg"
-import yalanciCigKofteImage from "../assets/yemek/yalanciCigkofte.jpg"
+import yalanciCigKofteImage from "../assets/yemek/cigKofte.jpg"
 import asureImage from "../assets/yemek/asure.jpg"
 
 
