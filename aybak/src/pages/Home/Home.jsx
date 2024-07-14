@@ -7,7 +7,8 @@ import background2 from "../../assets/rice-field2.avif";
 // import background2 from "../../assets/rice-field5.jpg";
 
 import aybak from "../../assets/1.jpg";
-import oden1 from "../../assets/2.jpg";
+import aybak2 from "../../assets/aybak-1.png";
+import akbak from "../../assets/akbak-1.png";
 import odenay from "../../assets/3.jpg";
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
 
@@ -31,7 +32,10 @@ const Home = () => {
             <img src={aybak} alt="Aybak uzun tane pirinç" />
           </div>
           <div className="header-img">
-            <img src={oden1} alt="Öden baldo pirinç" />
+            <img src={aybak2} alt="Aybak baldo pirinç" />
+          </div>
+          <div className="header-img">
+            <img src={akbak} alt="AKbak Uzun Taneli pirinç" />
           </div>
           <div className="header-img">
             <img src={odenay} alt="Ödenay ayçiçek yağı" />

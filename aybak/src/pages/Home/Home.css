@@ -44,9 +44,9 @@
 
 .header-ust .header-img {
     position: relative;
-    width: 350px;
-    min-width: 300px;
-    height: 350px;
+    width: 250px;
+    min-width: 200px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,23 +147,22 @@
     background-color: rgba(2, 37, 93, 0.5);
 }
 
-.misyon-wrapper h3{
+.misyon-wrapper h3 {
     font-size: 48px;
     font-weight: 500;
 }
 
-.misyon-wrapper p{
+.misyon-wrapper p {
     margin-top: 20px;
     font-size: 20px;
     font-weight: 300;
 }
 
-.misyon-wrapper .vizyon h3{
+.misyon-wrapper .vizyon h3 {
     text-align: right;
 }
 
 .misyon-wrapper .misyon:hover,
-.misyon-wrapper .vizyon:hover{
+.misyon-wrapper .vizyon:hover {
     background-color: transparent;
 }
-
