@@ -688,7 +688,7 @@ export const recipes = [
     {
         id: 23,
         title: "Bulgurlu Köfte",
-        type: "Yemekler",
+        type: "Diğer Yemekler",
         ingredients: [
             "1 su bardağı ince bulgur",
             "250 gram kıyma",
@@ -716,7 +716,7 @@ export const recipes = [
     {
         id: 24,
         title: "Yaprak Sarma",
-        type: "Yemekler",
+        type: "Diğer Yemekler",
         ingredients: [
             "500 gram asma yaprağı",
             "2 su bardağı pirinç",
@@ -747,7 +747,7 @@ export const recipes = [
     {
         id: 25,
         title: "Yalancı Çiğ Köfte",
-        type: "Yemekler",
+        type: "Diğer Yemekler",
         ingredients: [
             "2 su bardağı ince bulgur",
             "1.5 su bardağı sıcak su",
@@ -779,7 +779,7 @@ export const recipes = [
     {
         id: 26,
         title: "Aşure",
-        type: "Tatlılar",
+        type: "Diğer Yemekler",
         ingredients: [
             "2 su bardağı buğday",
             "1 su bardağı nohut",
@@ -810,5 +810,43 @@ export const recipes = [
             "Aşureyi soğutarak servis edin. Afiyet olsun!"
         ],
         image: asureImage
+    }
+]
+
+export const categories=[
+    {
+        id:1,
+        name:"Çorbalar",
+        image:sariMercimekCorbasiImage
+    },
+    {
+        id:2,
+        name:"Pilavlar",
+        image:domatesliPilavImage
+    },
+    {
+        id:3,
+        name:"Fasulye Yemekleri",
+        image:kuruFasulyeImage
+    },
+    {
+        id:4,
+        name:"Nohut Yemekleri",
+        image:nohutGuvecImage
+    },
+    {
+        id:5,
+        name:"Yeşil Mercimek Yemekleri",
+        image:yesilMercimekImage
+    },
+    {
+        id:6,
+        name:"Barbunya Yemekleri",
+        image:barbunyaPilakiImage
+    },
+    {
+        id:7,
+        name:"Diğer Yemekler",
+        image:asureImage
     }
 ]

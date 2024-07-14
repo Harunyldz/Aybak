@@ -2,19 +2,12 @@ import "./Tarif.css";
 import { useParams } from "react-router-dom";
 import { recipes } from "../../utils/Recipes";
 
+import { transformString } from "../../utils/transformString";
+
 const Tarif = () => {
   const { yemekAdi } = useParams();
   const yemek = recipes.find(
-    (recipe) =>
-      recipe.title
-        .toLowerCase()
-        .replace(/ğ/g, "g")
-        .replace(/ü/g, "u")
-        .replace(/ş/g, "s")
-        .replace(/ı/g, "i")
-        .replace(/ö/g, "o")
-        .replace(/ç/g, "c")
-        .replace(/\s+/g, "-") === yemekAdi //url deki türkçe karakterleri dönüştürmek için
+    (recipe) => transformString(recipe.title) === yemekAdi //url deki türkçe karakterleri dönüştürmek için
   );
 
   if (!yemek) {

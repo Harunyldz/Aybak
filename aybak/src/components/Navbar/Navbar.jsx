@@ -5,21 +5,12 @@ import { navList } from "../../utils/Data";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import { transformString } from "../../utils/transformString";
+
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(null);
   const [subDropdown, setSubDropdown] = useState(null);
 
-  // Türkçe karakterleri dönüştürerek URL oluşturma fonksiyonu
-  const transformToSlug = (text) =>
-    text
-      .toLowerCase()
-      .replace(/ğ/g, "g")
-      .replace(/ü/g, "u")
-      .replace(/ş/g, "s")
-      .replace(/ı/g, "i")
-      .replace(/ö/g, "o")
-      .replace(/ç/g, "c")
-      .replace(/\s+/g, "-");
 
   return (
     <div className="navbar-wrapper">
@@ -55,7 +46,7 @@ const Navbar = () => {
                       >
                         {!subMenu.subMenu && ( //alt menü yoksa link eklensin
                           <Link
-                            to={`yemektarifleri/${transformToSlug(
+                            to={`${navListItem.href}/${transformString(
                               subMenu.name
                             )}`}
                             className="nav-sublink"
@@ -79,7 +70,7 @@ const Navbar = () => {
                               {subMenu.subMenu.map((rightMenu) => (
                                 <li key={rightMenu.id}>
                                   <Link
-                                    to={`yemektarifleri/${transformToSlug(
+                                    to={`yemektarifleri/${transformString(
                                       rightMenu.name
                                     )}`}
                                     className="right-link"

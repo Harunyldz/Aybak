@@ -2,12 +2,12 @@ export const navList = [
     {
         id: 1,
         name: "Ana Sayfa",
-        href: "",
+        href: "/",
     },
     {
         id: 2,
         name: "Kurumsal",
-        href: "",
+        href: "kurumsal",
         subMenu:
             [{
                 id: 1,
@@ -34,7 +34,7 @@ export const navList = [
     {
         id: 3,
         name: "Ürünlerimiz",
-        href: "",
+        href: "/urunlerimiz",
         subMenu:
             [{
                 id: 1,
@@ -256,7 +256,7 @@ export const navList = [
     {
         id: 5,
         name: "Bakliyat ve Sağlık",
-        href: "",
+        href: "bakliyat-saglik",
         subMenu: [
             {
                 id: 1,
@@ -298,7 +298,7 @@ export const navList = [
     {
         id: 6,
         name: "İletişim",
-        href: ""
+        href: "iletisim"
     }
 ]
 
