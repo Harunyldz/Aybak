@@ -1,5 +1,6 @@
 .yemekler-wrapper {
     width: 100%;
+
 }
 
 .yemekler-wrapper .yemekler-img {
@@ -7,43 +8,46 @@
     height: 200px;
     object-fit: cover;
     object-position: top;
+
 }
 
 .yemekler-container {
     width: 80%;
     margin: 0 auto;
+
 }
 
-.yemekler-container header{
+.yemekler-container header {
     width: 100%;
     margin-top: 80px;
     text-align: center;
     margin-bottom: 100px;
 }
 
-.yemekler-container header h2{
+.yemekler-container header h2 {
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 40px;
     color: #2c2c2c;
 }
 
-.yemekler-container header p{
+.yemekler-container header p {
     font-size: 20px;
     font-weight: 300;
 }
 
-.yemekler-container menu{
+.yemekler-container menu {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 25px;
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 100px;
+
 }
 
-.yemekler-container menu figure{
+.yemekler-container menu figure {
     width: 200px;
     height: 250px;
     cursor: pointer;
@@ -55,29 +59,30 @@
     overflow: hidden;
 }
 
-.yemekler-container menu figure.active{
+.yemekler-container menu figure.active {
     transform: scale(1.05);
 }
 
 
-.yemekler-container menu figure:hover{
+.yemekler-container menu figure:hover {
     transform: scale(1.05);
 }
 
-.yemekler-container menu figure img{
+.yemekler-container menu figure img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     object-position: center;
+
 }
 
-.yemekler-container menu figure figcaption{
+.yemekler-container menu figure figcaption {
     font-weight: 300;
     color: #2c2c2c;
     text-align: center;
 }
 
-.yemekler-container main{
+.yemekler-container main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +91,7 @@
     justify-content: center;
 }
 
-.yemekler-container main figure{
+.yemekler-container main figure {
     width: 350px;
     height: 400px;
     display: flex;
@@ -97,14 +102,14 @@
     margin-bottom: 20px;
 }
 
-.yemekler-container main figure .figure-img{
+.yemekler-container main figure .figure-img {
     width: 100%;
     overflow: hidden;
     height: 300px;
 }
 
 
-.yemekler-container main figure img{
+.yemekler-container main figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -112,21 +117,21 @@
     transition: all 0.3s ease;
 }
 
-.yemekler-container main figure img:hover{
+.yemekler-container main figure img:hover {
     transform: scale(1.05);
 }
 
-.yemekler-container main figcaption{
+.yemekler-container main figcaption {
     padding: 0 10px;
     position: relative;
 }
 
-.yemekler-container main figcaption h3{
+.yemekler-container main figcaption h3 {
     font-weight: 500;
     color: #E20A17;
 }
 
-.yemekler-container main figcaption .yemekler-btn{
+.yemekler-container main figcaption .yemekler-btn {
     position: absolute;
     padding: 8px 15px;
     margin-top: 10px;
@@ -140,6 +145,6 @@
     transition: all 0.3s ease;
 }
 
-.yemekler-container main figcaption .yemekler-btn:hover{
+.yemekler-container main figcaption .yemekler-btn:hover {
     background-color: #ff6f61;
 }
