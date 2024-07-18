@@ -4,9 +4,13 @@ import { motion } from "framer-motion";
 
 import slider1 from "../../assets/aybak_baldo.jpg";
 import slider2 from "../../assets/aybak_koftelik.jpg";
-import slider3 from "../../assets/IMG-20240706-WA0015.jpg";
-import slider4 from "../../assets/aybak_pilavlik.jpg";
-import slider5 from "../../assets/IMG-20240706-WA0014.jpg";
+// import slider3 from "../../assets/IMG-20240706-WA0015.jpg";
+// import slider4 from "../../assets/aybak_pilavlik.jpg";
+import slider3 from "../../assets/1kg/nohut.png";
+import slider4 from "../../assets/1kg/barbunya.png";
+import slider5 from "../../assets/1kg/popcorn.png";
+import slider6 from "../../assets/1kg/yesilMercimek.png";
+// import slider5 from "../../assets/IMG-20240706-WA0014.jpg";
 
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
@@ -52,7 +56,7 @@ const UrunSlider = () => {
         <h2 className="slider-title">Ürünlerimiz</h2>
         <SwiperSlide>
           <motion.img
-            src={slider3}
+            src={slider6}
             alt=""
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}

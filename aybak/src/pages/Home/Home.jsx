@@ -2,7 +2,7 @@ import "./Home.css";
 import { motion } from "framer-motion";
 
 import background from "../../assets/background2.jpg";
-import background3 from "../../assets/IMG-20240706-WA0015.jpg";
+import background3 from "../../assets/aybak-dis.jpg";
 import background2 from "../../assets/rice-field2.avif";
 // import background2 from "../../assets/rice-field5.jpg";
 
