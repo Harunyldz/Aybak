@@ -21,34 +21,34 @@ const Footer = () => {
     <footer>
       <div className="footer-container">
         <section className="footer-sol">
-            <div className="footer-logo">
-              <img src={logo} alt="" />
-            </div>
-            <div className="footer-icons">
-              <h3>Bizi Takip Edin</h3>
-              <ul className="icons">
-                <li>
-                  <a href="" target="_blank" rel="noopener noreferrer">
-                    <FaFacebook />
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram />
-                  </a>
-                </li>
+          <div className="footer-logo">
+            <img src={logo} alt="" />
+          </div>
+          <div className="footer-icons">
+            <h3>Bizi Takip Edin</h3>
+            <ul className="icons">
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <FaFacebook />
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram />
+                </a>
+              </li>
 
-                <li>
-                  <a href="" target="_blank" rel="noopener noreferrer">
-                    <FaTwitter />
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank" rel="noopener noreferrer">
-                    <FaYoutube />
-                  </a>
-                </li>
-              </ul>
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <FaTwitter />
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <FaYoutube />
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
         <section className="footer-orta">
@@ -104,10 +104,9 @@ const Footer = () => {
               <i>
                 <FaLocationDot />
               </i>
-              <span>
-                Aybak Gıda San. Tic. Ltd. Şti. <br /> Rami Kuru Gıda Sitesi B
-                Blok <br />
-                No:45-46-47 Rami - EYÜP / İSTANBUL
+              <span >
+                Aybak Gıda San. Tic. Ltd. Şti. <br /> Kocatepe mahallesi, Gümrük iskelesi caddesi Mega Canter A blok  <br />
+                No:235-236-237-238 <br /> Bayrampaşa/İstanbul
               </span>
             </li>
             <li>
