@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Tarif from "./pages/Tarif/Tarif";
 import YemekTarifleri from "./pages/YemekTarifleri/YemekTarifleri";
 import ScrollToTop from "./utils/ScrollToTop";
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/yemektarifleri/:yemekAdi" element={<Tarif />} />
         <Route path="/yemektarifleri" element={<YemekTarifleri />} />
+        <Route path="/kurumsal/hakkimizda" element={<About />} />
       </Routes>
       <Footer />
     </>
