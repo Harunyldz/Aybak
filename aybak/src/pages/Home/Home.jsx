@@ -78,11 +78,13 @@ const Home = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            Aybak Gıda San. Tic. Ltd. Şti. olarak misyonumuz, müşterilerimize en
-            yüksek kalitede, güvenilir ve besleyici ürünler sunarak sağlıklı bir
-            yaşam tarzını desteklemektir. Ürünlerimizi seçerken ve tedarik
-            ederken kalite standartlarından ödün vermeyerek, müşteri
-            memnuniyetini en üst seviyede tutmak için çalışıyoruz.
+            Yörelerin en seçkin bölgelerinden seçilen ürünlerimiz,
+            müşterilerimizin hizmetine sunulmakta ve bütün bir yıl boyunca aynı
+            kalitede ürün satışı yapılmakta ve hizmet verilmektedir. AYBAK,
+            sofranıza kaliteli tatlar sumak için faaliyetlerini yürütürken aynı
+            zamanda Öden Gıda San. ve Tic. Ltd. Şti. bünyesi altında ISO
+            9001:2000 belgelerini alarak ticari faaliyetlerinde kaliteyi ön
+            plana çıkarmıştır.
           </motion.p>
         </motion.div>
         <motion.div
