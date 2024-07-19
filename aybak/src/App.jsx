@@ -10,6 +10,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 import About from "./pages/About/About";
 import Belgeler from "./pages/Belgeler/Belgeler";
 
+
 function App() {
   return (
     <>
