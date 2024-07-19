@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 15px;
 }
 
 
@@ -30,28 +30,35 @@
 
 .about-header img {
     width: 500px;
-    margin: 2em;
+    margin: 1em;
 
 }
 
 .about-content p {
     line-height: 1.4;
     text-align: justify;
+    width: 100%;
 
 }
 
 @media screen and (max-width:960px) {
     .about-container {
-        width: 90%;
+        width: 100%;
     }
 
     .about-header {
         flex-direction: column;
+        width: 100%;
+
     }
 
+    .about-content {
+        width: 90%;
+    }
 
     .about-header img {
-        width: 400px;
+        width: 200px;
+        margin-bottom: 0.1em;
     }
 
     .about-content p {
@@ -66,15 +73,21 @@
         font-size: 1.6em;
     }
 
+    .about-content {
+        width: 90%;
+    }
+
     .about-header h1 span {
         font-size: 1.4em;
     }
 
     .about-header img {
-        width: 80px;
+        width: 150px;
+        margin-bottom: 1em;
     }
 
     .about-content p {
         font-size: 1em;
+        text-align: left;
     }
 }
