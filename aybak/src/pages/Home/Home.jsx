@@ -1,15 +1,13 @@
 import "./Home.css";
 import { motion } from "framer-motion";
 
-import background from "../../assets/background2.jpg";
 import background3 from "../../assets/aybak-dis.jpg";
-import background2 from "../../assets/rice-field2.avif";
-// import background2 from "../../assets/rice-field5.jpg";
 
 import aybak from "../../assets/1.jpg";
 import aybak2 from "../../assets/aybak-1.png";
 import akbak from "../../assets/akbak-1.png";
 import odenay from "../../assets/3.jpg";
+
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
 
 const Home = () => {
