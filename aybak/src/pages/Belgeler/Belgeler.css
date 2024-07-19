@@ -1,0 +1,110 @@
+.belgeler-wrapper {
+    width: 100%;
+}
+
+.belgeler-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.belgeler-container header h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.belgeler-container main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.belgeler-container main p span{
+    color:rgba(226, 10, 23, 1) ;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.belgeler-container .belgeler {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 50px 20px;
+    background-color: rgba(2, 37, 93, 1);
+    gap: 40px;
+}
+
+
+.belgeler .belge {
+    min-width: 260px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(226, 10, 23, 0.6);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.belgeler .belge img {
+    width: 240px;
+}
+
+.belgeler .belge:hover{
+    transform: scale(1.2);
+}
+
+/* Overlay stilleri */
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal içeriği stilleri */
+.ReactModal__Content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px 50px;
+  border-radius: 8px;
+  width: 600px;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ReactModal__Content img{
+    width: 100%;
+}
+
+.ReactModal__Content i{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

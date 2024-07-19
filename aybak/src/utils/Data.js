@@ -26,7 +26,7 @@ export const navList = [
             },
             {
                 id: 4,
-                name: "Sertifikalarımız",
+                name: "Belgelerimiz",
                 href: ""
             }
             ]
