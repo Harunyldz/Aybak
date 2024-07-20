@@ -107,6 +107,7 @@ const Home = () => {
           </motion.p>
         </motion.div>
       </section>
+
     </div>
   );
 };

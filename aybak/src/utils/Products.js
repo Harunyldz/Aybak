@@ -423,3 +423,23 @@ export const products = [
     },
 
 ]
+
+export const carts = [
+    {
+        id: 1,
+        title: "Pirinç",
+        image: pirinc,
+        type: "dokme-urun",
+        text: "Acil durum planı hazırlamak, işletmeler, okullar, hastaneler ve diğer organizasyonlar için hayati önem taşır.",
+        href: "acil-durum-plani"
+    },
+    {
+        id: 1,
+        title: "Bulgur",
+        image: bulgur,
+        type: "dokme-urun",
+        text: "Acil durum planı hazırlamak, işletmeler, okullar, hastaneler ve diğer organizasyonlar için hayati önem taşır.",
+        href: "acil-durum-plani"
+    },
+
+]
