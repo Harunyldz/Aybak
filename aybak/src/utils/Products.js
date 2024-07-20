@@ -35,6 +35,42 @@ import aycicek5teneke from "../assets/odenay-yaglar/5lteneke.webp"
 import aycicek5 from "../assets/odenay-yaglar/5lplastik.webp"
 import aycicek18 from "../assets/odenay-yaglar/18ltteneke.jpg"
 
+//?Dökme Ürünler
+import aybakUzunTanemRice25 from "../assets/dokme_urun/uzuntaneRice.webp"
+import aybakOsmancikRice25 from "../assets/dokme_urun/aybak-osmancıkRice.webp"
+import odenayBaldoPirinc25 from "../assets/dokme_urun/odenay_baldo_pirin25.jpg"
+import aybakKirikRice25 from "../assets/dokme_urun/aybak-kirik-pirinc-gonen-15278-1.jpg"
+import mutfakBaldoRice25 from "../assets/dokme_urun/mutfak-baldo-pirinc.jpg"
+import aybakBulgur25 from "../assets/dokme_urun/aybak-bulgur.webp"
+import ozsariBulgur25 from "../assets/dokme_urun/ozsari-bulgur.webp"
+import duruBulgur25 from "../assets/dokme_urun/duru-bulgur.jpg"
+import tatbulBulgur25 from "../assets/dokme_urun/tatbul-bulgur.webp"
+import aybakKuruFasulye25 from "../assets/dokme_urun/aybak-fasulye.webp"
+import aybakBarbunya25 from "../assets/dokme_urun/aybak-barbunya-fasulye.jpg"
+import aybakNohut25 from "../assets/dokme_urun/aybak-nohut.jpg"
+import aybakKirmiziMercimek25 from "../assets/dokme_urun/dokme-kirmizi-mercimek.jpg"
+import aybakYesilMercimek25 from "../assets/dokme_urun/aybak-yesilMercimek.jpg"
+
+//?Yöresel Ürünler
+
+import kepekliRice from "../assets/yoresel-urunler/kepekli-pirinc.jpg"
+import jasmineRice from "../assets/yoresel-urunler/jasmine-pirinc.jpg"
+import bombayFasulye from "../assets/yoresel-urunler/bombay-fasulye.jpg"
+import borulce from "../assets/yoresel-urunler/borulce.webp"
+import koyBulguru from "../assets/yoresel-urunler/koy-bulguru.jpeg"
+import koyMercimegi from "../assets/yoresel-urunler/koy-mercimegi.jpg"
+import sariMercimek from "../assets/yoresel-urunler/sari-mercimek.webp"
+import kirikMisir from "../assets/yoresel-urunler/misirKirmalari.jpg"
+import kuskus from "../assets/yoresel-urunler/kuskus-10kg.jpg"
+import eriste from "../assets/yoresel-urunler/eriste-107kg.jpg"
+import tarhana from "../assets/yoresel-urunler/tarhana-10kg.jpg"
+import manti from "../assets/yoresel-urunler/ev-mantisi.webp"
+import galeteUnu from "../assets/yoresel-urunler/galete-unu.jpg"
+import misirUnu from "../assets/yoresel-urunler/misir-Unu.jpg"
+import misirNisastasi from "../assets/yoresel-urunler/misirNisastasi.jpg"
+import bugdayNisastasi from "../assets/yoresel-urunler/bugday-nisastasi.jpg"
+
+
 
 export const products = [
     {
@@ -204,6 +240,186 @@ export const products = [
         name: "Ödenay Ayçiçek Yağı 18lt Teneke",
         type: "aycicek-yag",
         image: aycicek18
+    },
+    {
+        id: 25,
+        name: "Aybak Uzuntaneli Pirinç 25kg ",
+        type: "dokme-urun",
+        image: aybakUzunTanemRice25
+    },
+    {
+        id: 26,
+        name: "Aybak Osmancık Pirinç 25kg ",
+        type: "dokme-urun",
+        image: aybakOsmancikRice25
+    },
+    {
+        id: 27,
+        name: "Odenay Baldo Pirinç 25kg ",
+        type: "dokme-urun",
+        image: odenayBaldoPirinc25
+    },
+    {
+        id: 28,
+        name: "Odenay Baldo Pirinç 25kg ",
+        type: "dokme-urun",
+        image: odenayBaldoPirinc25
+    },
+    {
+        id: 29,
+        name: "Aybak Kırık Pirinç 25kg ",
+        type: "dokme-urun",
+        image: aybakKirikRice25
+    },
+    {
+        id: 30,
+        name: "Mutfak Baldo Pirinç 25kg ",
+        type: "dokme-urun",
+        image: mutfakBaldoRice25
+    },
+    {
+        id: 31,
+        name: "Aybak Bulgur 25kg ",
+        type: "dokme-urun",
+        image: aybakBulgur25
+    },
+    {
+        id: 32,
+        name: "Özsari Bulgur 25kg ",
+        type: "dokme-urun",
+        image: ozsariBulgur25
+    },
+    {
+        id: 33,
+        name: "Duru Bulgur 25kg ",
+        type: "dokme-urun",
+        image: duruBulgur25
+    },
+    {
+        id: 34,
+        name: "Tatbul Bulgur 25kg ",
+        type: "dokme-urun",
+        image: tatbulBulgur25
+    },
+    {
+        id: 35,
+        name: "Aybak Kuru Fasulye 25kg ",
+        type: "dokme-urun",
+        image: aybakKuruFasulye25
+    },
+    {
+        id: 36,
+        name: "Aybak Barbunya 25kg ",
+        type: "dokme-urun",
+        image: aybakBarbunya25
+    },
+    {
+        id: 37,
+        name: "Aybak Nohut 25kg ",
+        type: "dokme-urun",
+        image: aybakNohut25
+    },
+    {
+        id: 38,
+        name: "Aybak Kırmızı Mercimek 25kg ",
+        type: "dokme-urun",
+        image: aybakKirmiziMercimek25
+    },
+    {
+        id: 38,
+        name: "Aybak Yeşil Mercimek 25kg ",
+        type: "dokme-urun",
+        image: aybakYesilMercimek25
+    },
+    {
+        id: 39,
+        name: "Kepekli Pirinç ",
+        type: "yoresel-urun",
+        image: kepekliRice
+    },
+    {
+        id: 40,
+        name: "Jasmine Pirinç ",
+        type: "yoresel-urun",
+        image: jasmineRice
+    },
+    {
+        id: 41,
+        name: "Bombay Fasulye ",
+        type: "yoresel-urun",
+        image: bombayFasulye
+    },
+    {
+        id: 42,
+        name: "Börülce ",
+        type: "yoresel-urun",
+        image: borulce
+    },
+    {
+        id: 43,
+        name: "Köy Bulguru",
+        type: "yoresel-urun",
+        image: koyBulguru
+    },
+    {
+        id: 44,
+        name: "Sarı Mercimek",
+        type: "yoresel-urun",
+        image: sariMercimek
+    },
+    {
+        id: 45,
+        name: "Kırık Mısır",
+        type: "yoresel-urun",
+        image: kirikMisir
+    },
+    {
+        id: 46,
+        name: "Kusukus 10kg",
+        type: "yoresel-urun",
+        image: kuskus
+    },
+    {
+        id: 47,
+        name: "Erişte",
+        type: "yoresel-urun",
+        image: eriste
+    },
+    {
+        id: 48,
+        name: "Tarhana",
+        type: "yoresel-urun",
+        image: tarhana
+    },
+    {
+        id: 49,
+        name: "Ev Mantısı",
+        type: "yoresel-urun",
+        image: manti
+    },
+    {
+        id: 50,
+        name: "Galete Unu",
+        type: "yoresel-urun",
+        image: galeteUnu
+    },
+    {
+        id: 51,
+        name: "Mısır Unu",
+        type: "yoresel-urun",
+        image: misirUnu
+    },
+    {
+        id: 51,
+        name: "Mısır Nişastası",
+        type: "yoresel-urun",
+        image: misirNisastasi
+    },
+    {
+        id: 51,
+        name: "Buğday Nişastası",
+        type: "yoresel-urun",
+        image: bugdayNisastasi
     },
 
 ]
