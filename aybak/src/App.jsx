@@ -2,6 +2,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
+import Products from "./pages/Products/Products"
 
 import { Route, Routes } from "react-router-dom";
 import Tarif from "./pages/Tarif/Tarif";
@@ -23,8 +24,9 @@ function App() {
         <Route path="/yemektarifleri" element={<YemekTarifleri />} />
         <Route path="/kurumsal/hakkimizda" element={<About />} />
         <Route path="/kurumsal/belgelerimiz" element={<Belgeler />} />
-        <Route path="/kurumsal/Misyonumuz" element={<About />} />
+        <Route path="/kurumsal/:misyon" element={<About />} />
         <Route path="/kurumsal/Vizyonumuz" element={<About />} />
+        <Route path="/urunlerimiz" element={<Products />} />
       </Routes>
       <Footer />
     </>

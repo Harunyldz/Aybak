@@ -2,8 +2,8 @@ import "./UrunSlider.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 
-import slider1 from "../../assets/aybak_baldo.jpg";
-import slider2 from "../../assets/aybak_koftelik.jpg";
+import slider1 from "../../assets/25/aybak_baldo25.jpg";
+import slider2 from "../../assets/25/aybak_koftelik25.jpg";
 // import slider3 from "../../assets/IMG-20240706-WA0015.jpg";
 // import slider4 from "../../assets/aybak_pilavlik.jpg";
 import slider3 from "../../assets/1kg/nohut.png";
@@ -74,7 +74,7 @@ const UrunSlider = () => {
             alt=""
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}/>
+            transition={{ duration: 2 }} />
           <h3>Aybak Uzun Tane Pirinç 25kg</h3>
         </SwiperSlide>
         <SwiperSlide>

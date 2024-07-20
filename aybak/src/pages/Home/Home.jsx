@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 import background3 from "../../assets/aybak-dis.jpg";
 
-import aybak from "../../assets/1.jpg";
-import aybak2 from "../../assets/aybak-1.png";
-import akbak from "../../assets/akbak-1.png";
-import odenay from "../../assets/3.jpg";
+import aybak from "../../assets/slider/1.jpg";
+import aybak2 from "../../assets/slider/aybak-1.png";
+import akbak from "../../assets/slider/akbak-1.png";
+import odenay from "../../assets/slider/3.jpg";
 
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
 
