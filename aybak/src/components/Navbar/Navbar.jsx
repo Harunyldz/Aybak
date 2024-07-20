@@ -52,12 +52,15 @@ const Navbar = () => {
                         {!subMenu.subMenu && ( // alt menü yoksa link eklensin
                           <HashLink //Kurumsal sayfasında hakkımızda, vizyon ve misyonu birlikte gösterdiğimiz için navbardan seçilen elemanın id sine göre link verdik (Belgelerimiz hariç)
                             to={
-                              navListItem.name === "Kurumsal" &&
-                              subMenu.name === "Belgelerimiz"
-                                ? `${navListItem.href}/${transformString(
-                                    subMenu.name
-                                  )}`
-                                : `${navListItem.href}#${transformString(
+                              navListItem.name === "Kurumsal"
+                                ? subMenu.name === "Belgelerimiz"
+                                  ? `${navListItem.href}/${transformString(
+                                      subMenu.name
+                                    )}`
+                                  : `${navListItem.href}#${transformString(
+                                      subMenu.name
+                                    )}`
+                                : `${navListItem.href}/${transformString(
                                     subMenu.name
                                   )}`
                             }
