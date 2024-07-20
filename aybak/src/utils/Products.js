@@ -33,6 +33,7 @@ import aycicek4 from "../assets/odenay-yaglar/4l-plastik.webp"
 import aycicek45 from "../assets/odenay-yaglar/4.5l-plastik.webp"
 import aycicek5teneke from "../assets/odenay-yaglar/5lteneke.webp"
 import aycicek5 from "../assets/odenay-yaglar/5lplastik.webp"
+import aycicek18 from "../assets/odenay-yaglar/18ltteneke.jpg"
 
 
 export const products = [
@@ -197,6 +198,12 @@ export const products = [
         name: "Ödenay Ayçiçek Yağı 5lt Teneke",
         type: "aycicek-yag",
         image: aycicek5teneke
+    },
+    {
+        id: 24,
+        name: "Ödenay Ayçiçek Yağı 18lt Teneke",
+        type: "aycicek-yag",
+        image: aycicek18
     },
 
 ]
