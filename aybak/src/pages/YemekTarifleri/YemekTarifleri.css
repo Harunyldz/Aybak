@@ -38,11 +38,10 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 100px;
-
 }
 
 .yemekler-container menu figure {
@@ -55,6 +54,7 @@
     box-shadow: 0 0 10px rgba(2, 37, 93, 0.3);
     transition: all 0.3s ease;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .yemekler-container menu figure.active {
@@ -84,9 +84,10 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
+
 }
 
 .yemekler-container main figure {
@@ -98,12 +99,15 @@
     box-shadow: 0 0 10px rgba(2, 37, 93, 0.3);
     transition: all 0.3s ease;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .yemekler-container main figure .figure-img {
     width: 100%;
     overflow: hidden;
     height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
@@ -141,6 +145,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
 .yemekler-container main figcaption .yemekler-btn:hover {
