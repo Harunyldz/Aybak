@@ -104,7 +104,7 @@
 /*****************Misyon vizton section Stilleri**************************************/
 .misyon-wrapper {
     width: 100%;
-    background-image: url(../../assets/rice-field2.avif);
+    background-image: url(../../assets/tarim/rice-field.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(2, 37, 93, 0.3);
+    background-color: rgba(2, 37, 93, 0.4);
 }
 
 .misyon-wrapper .misyon,

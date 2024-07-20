@@ -12,7 +12,7 @@ export const navList = [
             [{
                 id: 1,
                 name: "Hakkımızda",
-                href: "/hakkimizda"
+                href: ""
             },
             {
                 id: 2,
@@ -34,7 +34,7 @@ export const navList = [
     {
         id: 3,
         name: "Ürünlerimiz",
-        href: "/urunlerimiz",
+        href: "urunlerimiz",
         subMenu:
             [{
                 id: 1,

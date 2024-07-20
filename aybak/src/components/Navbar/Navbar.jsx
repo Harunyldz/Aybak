@@ -4,13 +4,18 @@ import { FaChevronCircleRight } from "react-icons/fa";
 import { navList } from "../../utils/Data";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { HashLink } from "react-router-hash-link";
 import { transformString } from "../../utils/transformString";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(null);
   const [subDropdown, setSubDropdown] = useState(null);
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+    const yOffset = -window.innerHeight / 3;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
 
   return (
     <div className="navbar-wrapper">
@@ -44,17 +49,25 @@ const Navbar = () => {
                         onMouseEnter={() => setSubDropdown(subMenu.id)}
                         onMouseLeave={() => setSubDropdown(null)}
                       >
-                        {!subMenu.subMenu && ( //alt menü yoksa link eklensin
-                          <Link
-                            to={`${navListItem.href}/${transformString(
-                              subMenu.name
-                            )}`}
+                        {!subMenu.subMenu && ( // alt menü yoksa link eklensin
+                          <HashLink //Kurumsal sayfasında hakkımızda, vizyon ve misyonu birlikte gösterdiğimiz için navbardan seçilen elemanın id sine göre link verdik (Belgelerimiz hariç)
+                            to={
+                              navListItem.name === "Kurumsal" &&
+                              subMenu.name === "Belgelerimiz"
+                                ? `${navListItem.href}/${transformString(
+                                    subMenu.name
+                                  )}`
+                                : `${navListItem.href}#${transformString(
+                                    subMenu.name
+                                  )}`
+                            }
+                            scroll={scrollWithOffset}
                             className="nav-sublink"
                           >
                             {subMenu.name}
-                          </Link>
+                          </HashLink>
                         )}
-                        {subMenu.subMenu && ( //alt menü varsa alt menüyü göstersin
+                        {subMenu.subMenu && ( // alt menü varsa alt menüyü göstersin
                           <>
                             <a className="nav-sublink">{subMenu.name}</a>
                             <i>

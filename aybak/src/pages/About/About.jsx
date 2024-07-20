@@ -11,7 +11,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about-content" id="about">
+      <div className="about-content" id="hakkimizda">
         <p>
           Şirketimiz 1984 yılında Öden Gıda San. Tic. Ltd. Şti. adı altında
           faaliyetlerine başlamış olup pirinç ekim ve üretiminde öncü bir firma
@@ -49,7 +49,7 @@ const About = () => {
         </p>
         <h4>Aybak Gıda San. ve Tic. Ltd. Şti.</h4>
       </div>
-      <div className="about-content" id="misyon">
+      <div className="about-content" id="misyonumuz">
         <h2>Misyonumuz</h2>
         <p>
           Yörelerin en seçkin bölgelerinden seçilen ürünlerimiz,  müşterilerimizin hizmetine sunulmakta ve bütün bir yıl boyunca aynı kalitede ürün satışı yapılmakta ve hizmet verilmektedir.
@@ -57,7 +57,7 @@ const About = () => {
         <p>AYBAK, sofranıza kaliteli tatlar sumak için faaliyetlerini yürütürken aynı zamanda Öden Gıda San. ve Tic. Ltd. Şti. bünyesi altında ISO 9001:2000 belgelerini alarak ticari faaliyetlerinde kaliteyi ön plana çıkarmıştır.
         </p>
       </div>
-      <div className="about-content" id="vizyon">
+      <div className="about-content" id="vizyonumuz">
         <h2>Vizyonumuz</h2>
         <p>
           Vizyonumuz, tarım ürünleri toptancılığı sektöründe öncü ve güvenilir bir marka haline gelmektir. Teknolojiyi ve yenilikçi yöntemleri kullanarak lojistik ve tedarik zincirimizi sürekli geliştirmek, global pazarda rekabetçi bir konum elde etmek ve müşterilerimize üstün hizmet sunmak için kendimizi sürekli olarak yeniliyoruz. Çevreye duyarlı ve sürdürülebilir iş modelleri ile geleceğe katkı sağlamayı hedefliyoruz.</p>
