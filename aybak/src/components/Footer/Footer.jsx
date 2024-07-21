@@ -14,6 +14,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
+
+  const currentYear = new Date().getFullYear();
+
   const yemekler = navList
     .find((item) => item.name === "Yemek Tarifleri")
     .subMenu?.filter((item) => item.subMenu);
@@ -133,6 +136,7 @@ const Footer = () => {
           </ul>
         </section>
       </div>
+      <div className="copyright">© 1984-{currentYear} | Aybak Gıda San. Tic. Ltd. Şti. | Her Hakkı Saklıdır.</div>
     </footer>
   );
 };
