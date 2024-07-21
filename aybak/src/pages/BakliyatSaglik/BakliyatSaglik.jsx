@@ -1,31 +1,36 @@
-import "./BakliyatSaglik.css";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import React from 'react';
+import data from '../../utils/Products.js';
 
-
-
-const BakliyatSaglik = ({ cart, index }) => {
+const BakliyatSaglik = () => {
     return (
-        <motion.div
-            className="cart"
-            key={cart.id}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.5 }}
-        >
-            <img src={cart.image} alt={cart.title} />
-            <div className="content">
-                <h3>{cart.title}</h3>
-                <hr />
-                <p>{cart.text}</p>
-            </div>
-            <Link to={cart.href} className="card-button-link">
-                <button className="card-button">
-                    İNCELE <FaArrowRight className="arrow-icon" />
-                </button>
-            </Link>
-        </motion.div>
+        <div>
+            <h1>{data.title}</h1>
+            <p>{data.text}</p>
+            <h2>Yararları:</h2>
+            <ul>
+                {data.items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+            <h2>Nohutun Yararları:</h2>
+            <ul>
+                {data.nohutYararlari.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+            <h2>Kırmızı Mercimeğin Yararları:</h2>
+            <ul>
+                {data.kirmiziMercimekYararlari.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+            <h2>Sarı Mercimeğin Yararları:</h2>
+            <ul>
+                {data.sariMercimekYararlari.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+        </div>
     );
 };
 

@@ -37,7 +37,7 @@ import aycicek18 from "../assets/odenay-yaglar/18ltteneke.jpg"
 
 //?Dökme Ürünler
 import aybakUzunTanemRice25 from "../assets/dokme_urun/uzuntaneRice.webp"
-import aybakOsmancikRice25 from "../assets/dokme_urun/aybak-osmancıkRice.webp"
+import aybakOsmancikRice25 from "../assets/dokme_urun/aybak-osmancikRice.webp"
 import odenayBaldoPirinc25 from "../assets/dokme_urun/odenay_baldo_pirin25.jpg"
 import aybakKirikRice25 from "../assets/dokme_urun/aybak-kirik-pirinc-gonen-15278-1.jpg"
 import mutfakBaldoRice25 from "../assets/dokme_urun/mutfak-baldo-pirinc.jpg"
@@ -428,18 +428,155 @@ export const carts = [
     {
         id: 1,
         title: "Pirinç",
-        image: pirinc,
+        image: aybakOsmancikRice25,
         type: "dokme-urun",
-        text: "Acil durum planı hazırlamak, işletmeler, okullar, hastaneler ve diğer organizasyonlar için hayati önem taşır.",
-        href: "acil-durum-plani"
+        text: "100 gram pirinc 348 kalori içerir",
+        href: "pirinc-saglik",
+        items: [
+            "Kalsiyum, kemik sağlığını destekler.",
+            "Protein, kas gelişimine yardımcı olur.",
+            "Fosfor, enerji üretiminde rol oynar.",
+            "Demir, kan sağlığını iyileştirir.",
+            "Pirinç, hazımsızlığa iyi gelir.",
+            "Kanserle mücadelede yardımcı olabilir.",
+            "Kan basıncını düzenlemeye yardımcı olur.",
+            "Cilt sağlığını destekler.",
+            "Vücut enerjisini artırır."
+        ]
     },
     {
-        id: 1,
+        id: 2,
         title: "Bulgur",
-        image: bulgur,
+        image: aybakBulgur25,
         type: "dokme-urun",
-        text: "Acil durum planı hazırlamak, işletmeler, okullar, hastaneler ve diğer organizasyonlar için hayati önem taşır.",
-        href: "acil-durum-plani"
+        text: "100 gram kuru bulgur 371 kalori içerir.",
+        href: "bulgur-saglik",
+        items: [
+            " Bulgur kandaki yağları düşürücü yönü olduğu bilinen posa/lif bakımından oldukça zengin bir gıdadır",
+            " Karbonhidrat değeri yüksek, protein değeri düşüktür.",
+            "Bulgurda bulunan B1 vitaminleri, sinir ve sindirim sisteminde önemli rol oynamaktadır",
+            " İçerdiği folik asitten dolayı, çocuk ve hamile kadınlar için çok önemli bir gıda maddesidir",
+            "Doymamış yağa sahiptir ve toplam yağ oranı düşük olduğu için sağlıklı bir besin maddesidir.",
+            "Kolesterol içermez.",
+            "Yüksek mineral ve selülozdan dolayı besin emilimini hızlandırır, kabızlığı engeller ve bağırsak kanserini önler.",
+            "Bakliyatlarla karıştırıldığında dünyadaki en önemli besin kaynağı durumuna gelmektedir.",
+            "Radyasyonu emmez ve radyasyona karşı dayanıklıdır. Bu nedenle bazı ülkelerde nükleer savaşlara karşı, askeri ve sivil amaçlar için stokta tutulan ürünlerdendir."
+        ]
     },
+    {
+        id: 3,
+        title: "Barbunya",
+        image: aybakBarbunya25,
+        type: "dokme-urun",
+        text: "100 gram barbunya 350 kalori içerir",
+        href: "barbunya-saglik",
+        items: [
+            "  Vücuda güç ve enerji vererek, bedensel ve zihinsel yorgunluğu giderir.",
+            " Vücudun gelişimini ve onarımını destekler.",
+            "Kemikleri güçlendirir.",
+            " Romatizma ve siyatik şikâyetlerini azaltır.",
+            "Böbrek rahatsızlıklarında etkilidir. Böbrekleri kuvvetlendirir. Böbrek kumu ve taşlarını dökmeye yardımcı olur.",
+            "Sinirleri kuvvetlendirir ve kalp çarpıntısını giderir.",
+            "Kandaki şeker miktarını düşürerek şeker hastalığına karşı faydalı olur."
+        ]
+    },
+    {
+        id: 4,
+        title: "Nohut",
+        image: aybakKuruFasulye25,
+        type: "dokme-urun",
+        text: "100 gram kuru fasülye 346 kalori içerir.",
+        href: "fasulye-saglik",
+        items: [
+            "  İçerdiği yüzde 20-30 protein ile iyi bir protein deposudur.",
+            "  A,B ve D vitaminleri açısından oldukça zengindir.",
+            "Kemikleri güçlendirir",
+            "  Lifli olmasında dolayı kandaki kötü kolesterolü düşürür.",
+            "Kalp hastalıklarına karşı etkilidir.",
+            " Diyabeti kontrol altında tutar.",
+            "Barsakları çalıştırır.",
+            "Diyet yapanlar için yüksek besin değeri ve kalorisi düşük olmasından dolayı vazgeçilmez bir yiyecektir.",
+            "Karbonhidrat, demir, folik asit, selenyum ve potasyum açısından zengindir."
+        ]
+    },
+    {
+        id: 5,
+        title: "Nohut",
+        image: aybakNohut25,
+        type: "dokme-urun",
+        text: "100 gram nohut 360 kalori içerir",
+        href: "nohut-saglik",
+        items: [
+            "Yüksek protein içeriği kas gelişimine yardımcı olur.",
+            "Lif içeriği sindirim sağlığını destekler.",
+            "Düşük glisemik indeksi kan şekerini düzenler.",
+            "Demir içeriği anemi riskini azaltır.",
+            "Folat içeriği hamilelik sırasında önemlidir.",
+            "Kalsiyum içeriği kemik sağlığını destekler.",
+            "Antioksidanlar içeriği bağışıklık sistemini güçlendirir.",
+            "Magnezyum içeriği kalp sağlığını destekler.",
+            "Bitkisel bazlı protein kaynağıdır."
+        ]
+    },
+    {
+        id: 6,
+        title: "Kırmızı Mercimek",
+        image: aybakKirmiziMercimek25,
+        type: "dokme-urun",
+        text: "100 gram kırmızı mercimek 341 kalori içerir. ",
+        href: "kirmiziMercimek-saglik",
+        items: [
+            "Yüksek protein içeriği kas gelişimini destekler.",
+            "Bol miktarda lif içerir, sindirimi düzenler.",
+            "Demir açısından zengindir, kansızlığı önler.",
+            "Folik asit içeriği, hamilelik döneminde faydalıdır.",
+            "Düşük yağ içeriği ile kalp dostudur.",
+            "Antioksidanlar içerir, bağışıklık sistemini güçlendirir.",
+            "B6 vitamini içerir, enerji üretimini destekler.",
+            "Magnezyum içeriği ile kemik sağlığını korur.",
+            "Bitkisel protein kaynağıdır."
+        ]
+    },
+    {
+        id: 7,
+        title: "Sarı Mercimek",
+        image: sariMercimek,
+        type: "dokme-urun",
+        text: "Sarı Mercimek, 100 gram sarı mercimek 336 kalori içerir. ",
+        href: "sariMercimek-saglik",
+        items: [
+            "Yüksek lif içeriği sindirim sağlığını destekler.",
+            "Protein açısından zengindir, kas gelişimini destekler.",
+            "Düşük glisemik indeksi ile kan şekerini düzenler.",
+            "Folik asit içeriği hamilelik döneminde faydalıdır.",
+            "Potasyum açısından zengindir, kan basıncını düzenler.",
+            "Magnezyum içeriği kalp sağlığını destekler.",
+            "Antioksidanlar içerir, bağışıklık sistemini güçlendirir.",
+            "Düşük yağ içeriği ile kilo kontrolüne yardımcı olur.",
+            "Bitkisel protein kaynağıdır."
+        ]
+    },
+    {
+        id: 8,
+        title: "Yeşil Mercimek",
+        image: aybakYesilMercimek25,
+        type: "dokme-urun",
+        text: "100 gram yeşil mercimek 338 kalori içerir. ",
+        href: "yesilMercimek-saglik",
+        items: [
+            "Yüksek lif içeriği sindirimi düzenler.",
+            "Protein açısından zengindir, kas gelişimini destekler.",
+            "Düşük glisemik indeksi ile kan şekerini düzenler.",
+            "Folik asit içeriği hamilelik döneminde faydalıdır.",
+            "Potasyum açısından zengindir, kan basıncını düzenler.",
+            "Magnezyum içeriği kalp sağlığını destekler.",
+            "Antioksidanlar içerir, bağışıklık sistemini güçlendirir.",
+            "Düşük yağ içeriği ile kilo kontrolüne yardımcı olur.",
+            "Bitkisel protein kaynağıdır.",
+            "B6 vitamini içerir, sinir sistemi sağlığını destekler.",
+            "Demir içeriği ile kansızlığı önler."
+        ]
+    },
+
 
 ]

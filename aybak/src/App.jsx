@@ -10,6 +10,7 @@ import YemekTarifleri from "./pages/YemekTarifleri/YemekTarifleri";
 import ScrollToTop from "./utils/ScrollToTop";
 import About from "./pages/About/About";
 import Belgeler from "./pages/Belgeler/Belgeler";
+import BakliyatSaglik from "./pages/BakliyatSaglik/BakliyatSaglik";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/kurumsal" element={<About />} />
         <Route path="/kurumsal/belgelerimiz" element={<Belgeler />} />
         <Route path="/urunlerimiz" element={<Products />} />
+        <Route path="/bakliyat-saglik" element={<BakliyatSaglik />} />
       </Routes>
       <Footer />
     </>
