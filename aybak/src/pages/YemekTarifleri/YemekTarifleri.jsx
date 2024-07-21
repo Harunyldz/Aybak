@@ -1,6 +1,5 @@
 import "./YemekTarifleri.css";
-import { recipes } from "../../utils/Recipes";
-import { categories } from "../../utils/Recipes";
+import { recipes, categories } from "../../utils/Recipes";
 import { useState } from "react";
 import img1 from "../../assets/tarim5.jpg";
 

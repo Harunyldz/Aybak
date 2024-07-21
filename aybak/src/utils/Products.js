@@ -75,353 +75,382 @@ import bugdayNisastasi from "../assets/yoresel-urunler/bugday-nisastasi.jpg"
 export const products = [
     {
         id: 1,
-        name: "Pirinç",
-        type: "1kg",
-        image: pirinc
+        name: "Paket Bakliyat 1kg",
+        subProducts: [
+            {
+                id: 1,
+                name: "Pirinç",
+                type: "1kg",
+                image: pirinc
+            },
+            {
+                id: 2,
+                name: "Bulgur",
+                type: "1kg",
+                image: bulgur
+            },
+            {
+                id: 3,
+                name: "Köftelik Bulgur",
+                type: "1kg",
+                image: koftelikburgur
+            },
+            {
+                id: 4,
+                name: "Kırmızı Mercimek",
+                type: "1kg",
+                image: kirmiziMercimek
+            },
+            {
+                id: 5,
+                name: "Yeşil Mercimek",
+                type: "1kg",
+                image: yesilMercimek
+            },
+            {
+                id: 6,
+                name: "Kuru Fasulye",
+                type: "1kg",
+                image: kurufasulye
+            },
+            {
+                id: 7,
+                name: "Nohut",
+                type: "1kg",
+                image: nohut
+            },
+            {
+                id: 8,
+                name: "Koçbaşı Nohut",
+                type: "1kg",
+                image: nohut2
+            },
+            {
+                id: 9,
+                name: "Popcorn",
+                type: "1kg",
+                image: popcorn
+            },
+            {
+                id: 10,
+                name: "Barbunya",
+                type: "1kg",
+                image: barbunya
+            }
+        ]
     },
     {
         id: 2,
-        name: "Bulgur",
-        type: "1kg",
-        image: bulgur
+        name: "Paket Bakliyat 5kg",
+        subProducts: [
+            {
+                id: 1,
+                name: "Bakla 5kg",
+                type: "5kg",
+                image: bakla
+            },
+            {
+                id: 2,
+                name: "Baldo Pirinç 5kg",
+                type: "5kg",
+                image: baldoPirinc
+            },
+            {
+                id: 3,
+                name: "Barbunya 5kg",
+                type: "5kg",
+                image: barbunya5
+            },
+            {
+                id:4,
+                name: "Bulgur 5kg",
+                type: "5kg",
+                image: bulgur5
+            },
+            {
+                id: 5,
+                name: "Kırmızı Mercimek 5kg",
+                type: "5kg",
+                image: kirmiziMercimek5
+            },
+            {
+                id: 6,
+                name: "Kuru Fasulye 5kg",
+                type: "5kg",
+                image: kuruFasulye5
+            },
+            {
+                id: 7,
+                name: "Köftelik Bulgur 5kg",
+                type: "5kg",
+                image: koftelikBulgur5
+            },
+            {
+                id: 8,
+                name: "Nohut 5kg",
+                type: "5kg",
+                image: nohut5
+            },
+            {
+                id: 9,
+                name: "Koçbaşı Nohut 5kg",
+                type: "5kg",
+                image: nohut52
+            },
+            {
+                id: 10,
+                name: "Ödenay Baldo Pirinç 5kg",
+                type: "5kg",
+                image: ödenaybaldo5
+            },
+            {
+                id: 11,
+                name: "Yeşil Mercimek 5kg",
+                type: "5kg",
+                image: yesilMercimek5
+            }
+        ]
     },
     {
         id: 3,
-        name: "Köftelik Bulgur",
-        type: "1kg",
-        image: koftelikburgur
+        name: "Dökme Bakliyat 25kg",
+        subProducts: [
+            {
+                id: 1,
+                name: "Aybak Uzuntaneli Pirinç 25kg ",
+                type: "dokme-urun",
+                image: aybakUzunTanemRice25
+            },
+            {
+                id: 2,
+                name: "Aybak Osmancık Pirinç 25kg ",
+                type: "dokme-urun",
+                image: aybakOsmancikRice25
+            },
+            {
+                id: 3,
+                name: "Odenay Baldo Pirinç 25kg ",
+                type: "dokme-urun",
+                image: odenayBaldoPirinc25
+            },
+            {
+                id: 4,
+                name: "Odenay Baldo Pirinç 25kg ",
+                type: "dokme-urun",
+                image: odenayBaldoPirinc25
+            },
+            {
+                id: 5,
+                name: "Aybak Kırık Pirinç 25kg ",
+                type: "dokme-urun",
+                image: aybakKirikRice25
+            },
+            {
+                id: 6,
+                name: "Mutfak Baldo Pirinç 25kg ",
+                type: "dokme-urun",
+                image: mutfakBaldoRice25
+            },
+            {
+                id: 7,
+                name: "Aybak Bulgur 25kg ",
+                type: "dokme-urun",
+                image: aybakBulgur25
+            },
+            {
+                id: 8,
+                name: "Özsari Bulgur 25kg ",
+                type: "dokme-urun",
+                image: ozsariBulgur25
+            },
+            {
+                id: 9,
+                name: "Duru Bulgur 25kg ",
+                type: "dokme-urun",
+                image: duruBulgur25
+            },
+            {
+                id: 10,
+                name: "Tatbul Bulgur 25kg ",
+                type: "dokme-urun",
+                image: tatbulBulgur25
+            },
+            {
+                id: 11,
+                name: "Aybak Kuru Fasulye 25kg ",
+                type: "dokme-urun",
+                image: aybakKuruFasulye25
+            },
+            {
+                id: 12,
+                name: "Aybak Barbunya 25kg ",
+                type: "dokme-urun",
+                image: aybakBarbunya25
+            },
+            {
+                id: 13,
+                name: "Aybak Nohut 25kg ",
+                type: "dokme-urun",
+                image: aybakNohut25
+            },
+            {
+                id: 14,
+                name: "Aybak Kırmızı Mercimek 25kg ",
+                type: "dokme-urun",
+                image: aybakKirmiziMercimek25
+            },
+            {
+                id: 15,
+                name: "Aybak Yeşil Mercimek 25kg ",
+                type: "dokme-urun",
+                image: aybakYesilMercimek25
+            }
+        ]
     },
     {
         id: 4,
-        name: "Kırmızı Mercimek",
-        type: "1kg",
-        image: kirmiziMercimek
+        name: "Yöresel Ürünler",
+        subProducts: [
+            {
+                id: 1,
+                name: "Kepekli Pirinç ",
+                type: "yoresel-urun",
+                image: kepekliRice
+            },
+            {
+                id: 2,
+                name: "Jasmine Pirinç ",
+                type: "yoresel-urun",
+                image: jasmineRice
+            },
+            {
+                id: 3,
+                name: "Bombay Fasulye ",
+                type: "yoresel-urun",
+                image: bombayFasulye
+            },
+            {
+                id: 4,
+                name: "Börülce ",
+                type: "yoresel-urun",
+                image: borulce
+            },
+            {
+                id: 5,
+                name: "Köy Bulguru",
+                type: "yoresel-urun",
+                image: koyBulguru
+            },
+            {
+                id: 6,
+                name: "Sarı Mercimek",
+                type: "yoresel-urun",
+                image: sariMercimek
+            },
+            {
+                id: 7,
+                name: "Kırık Mısır",
+                type: "yoresel-urun",
+                image: kirikMisir
+            },
+            {
+                id: 8,
+                name: "Kusukus 10kg",
+                type: "yoresel-urun",
+                image: kuskus
+            },
+            {
+                id: 9,
+                name: "Erişte",
+                type: "yoresel-urun",
+                image: eriste
+            },
+            {
+                id: 10,
+                name: "Tarhana",
+                type: "yoresel-urun",
+                image: tarhana
+            },
+            {
+                id: 11,
+                name: "Ev Mantısı",
+                type: "yoresel-urun",
+                image: manti
+            },
+            {
+                id: 12,
+                name: "Galete Unu",
+                type: "yoresel-urun",
+                image: galeteUnu
+            },
+            {
+                id: 13,
+                name: "Mısır Unu",
+                type: "yoresel-urun",
+                image: misirUnu
+            },
+            {
+                id: 14,
+                name: "Mısır Nişastası",
+                type: "yoresel-urun",
+                image: misirNisastasi
+            },
+            {
+                id: 15,
+                name: "Buğday Nişastası",
+                type: "yoresel-urun",
+                image: bugdayNisastasi
+            },
+        ]
     },
     {
         id: 5,
-        name: "Yeşil Mercimek",
-        type: "1kg",
-        image: yesilMercimek
-    },
-    {
-        id: 6,
-        name: "Kuru Fasulye",
-        type: "1kg",
-        image: kurufasulye
-    },
-    {
-        id: 7,
-        name: "Nohut",
-        type: "1kg",
-        image: nohut
-    },
-    {
-        id: 8,
-        name: "Koçbaşı Nohut",
-        type: "1kg",
-        image: nohut2
-    },
-    {
-        id: 9,
-        name: "Popcorn",
-        type: "1kg",
-        image: popcorn
-    },
-    {
-        id: 10,
-        name: "Barbunya",
-        type: "1kg",
-        image: barbunya
-    },
-    {
-        id: 11,
-        name: "Bakla 5kg",
-        type: "5kg",
-        image: bakla
-    },
-    {
-        id: 12,
-        name: "Baldo Pirinç 5kg",
-        type: "5kg",
-        image: baldoPirinc
-    },
-    {
-        id: 13,
-        name: "Barbunya 5kg",
-        type: "5kg",
-        image: barbunya5
-    },
-    {
-        id: 14,
-        name: "Bulgur 5kg",
-        type: "5kg",
-        image: bulgur5
-    },
-    {
-        id: 15,
-        name: "Kırmızı Mercimek 5kg",
-        type: "5kg",
-        image: kirmiziMercimek5
-    },
-    {
-        id: 16,
-        name: "Kuru Fasulye 5kg",
-        type: "5kg",
-        image: kuruFasulye5
-    },
-    {
-        id: 17,
-        name: "Köftelik Bulgur 5kg",
-        type: "5kg",
-        image: koftelikBulgur5
-    },
-    {
-        id: 18,
-        name: "Nohut 5kg",
-        type: "5kg",
-        image: nohut5
-    },
-    {
-        id: 19,
-        name: "Koçbaşı Nohut 5kg",
-        type: "5kg",
-        image: nohut52
-    },
-    {
-        id: 20,
-        name: "Ödenay Baldo Pirinç 5kg",
-        type: "5kg",
-        image: ödenaybaldo5
-    },
-    {
-        id: 21,
-        name: "Yeşil Mercimek 5kg",
-        type: "5kg",
-        image: yesilMercimek5
-    },
-    {
-        id: 22,
-        name: "Ödenay Ayçiçek Yağı 1lt",
-        type: "aycicek-yag",
-        image: aycicek1
-    },
-    {
-        id: 23,
-        name: "Ödenay Ayçiçek Yağı 2lt",
-        type: "aycicek-yag",
-        image: aycicek2
-    },
-    {
-        id: 24,
-        name: "Ödenay Ayçiçek Yağı 4lt",
-        type: "aycicek-yag",
-        image: aycicek4
-    },
-    {
-        id: 24,
-        name: "Ödenay Ayçiçek Yağı 4.5lt",
-        type: "aycicek-yag",
-        image: aycicek45
-    },
-    {
-        id: 24,
-        name: "Ödenay Ayçiçek Yağı 5lt",
-        type: "aycicek-yag",
-        image: aycicek5
-    },
-    {
-        id: 24,
-        name: "Ödenay Ayçiçek Yağı 5lt Teneke",
-        type: "aycicek-yag",
-        image: aycicek5teneke
-    },
-    {
-        id: 24,
-        name: "Ödenay Ayçiçek Yağı 18lt Teneke",
-        type: "aycicek-yag",
-        image: aycicek18
-    },
-    {
-        id: 25,
-        name: "Aybak Uzuntaneli Pirinç 25kg ",
-        type: "dokme-urun",
-        image: aybakUzunTanemRice25
-    },
-    {
-        id: 26,
-        name: "Aybak Osmancık Pirinç 25kg ",
-        type: "dokme-urun",
-        image: aybakOsmancikRice25
-    },
-    {
-        id: 27,
-        name: "Odenay Baldo Pirinç 25kg ",
-        type: "dokme-urun",
-        image: odenayBaldoPirinc25
-    },
-    {
-        id: 28,
-        name: "Odenay Baldo Pirinç 25kg ",
-        type: "dokme-urun",
-        image: odenayBaldoPirinc25
-    },
-    {
-        id: 29,
-        name: "Aybak Kırık Pirinç 25kg ",
-        type: "dokme-urun",
-        image: aybakKirikRice25
-    },
-    {
-        id: 30,
-        name: "Mutfak Baldo Pirinç 25kg ",
-        type: "dokme-urun",
-        image: mutfakBaldoRice25
-    },
-    {
-        id: 31,
-        name: "Aybak Bulgur 25kg ",
-        type: "dokme-urun",
-        image: aybakBulgur25
-    },
-    {
-        id: 32,
-        name: "Özsari Bulgur 25kg ",
-        type: "dokme-urun",
-        image: ozsariBulgur25
-    },
-    {
-        id: 33,
-        name: "Duru Bulgur 25kg ",
-        type: "dokme-urun",
-        image: duruBulgur25
-    },
-    {
-        id: 34,
-        name: "Tatbul Bulgur 25kg ",
-        type: "dokme-urun",
-        image: tatbulBulgur25
-    },
-    {
-        id: 35,
-        name: "Aybak Kuru Fasulye 25kg ",
-        type: "dokme-urun",
-        image: aybakKuruFasulye25
-    },
-    {
-        id: 36,
-        name: "Aybak Barbunya 25kg ",
-        type: "dokme-urun",
-        image: aybakBarbunya25
-    },
-    {
-        id: 37,
-        name: "Aybak Nohut 25kg ",
-        type: "dokme-urun",
-        image: aybakNohut25
-    },
-    {
-        id: 38,
-        name: "Aybak Kırmızı Mercimek 25kg ",
-        type: "dokme-urun",
-        image: aybakKirmiziMercimek25
-    },
-    {
-        id: 38,
-        name: "Aybak Yeşil Mercimek 25kg ",
-        type: "dokme-urun",
-        image: aybakYesilMercimek25
-    },
-    {
-        id: 39,
-        name: "Kepekli Pirinç ",
-        type: "yoresel-urun",
-        image: kepekliRice
-    },
-    {
-        id: 40,
-        name: "Jasmine Pirinç ",
-        type: "yoresel-urun",
-        image: jasmineRice
-    },
-    {
-        id: 41,
-        name: "Bombay Fasulye ",
-        type: "yoresel-urun",
-        image: bombayFasulye
-    },
-    {
-        id: 42,
-        name: "Börülce ",
-        type: "yoresel-urun",
-        image: borulce
-    },
-    {
-        id: 43,
-        name: "Köy Bulguru",
-        type: "yoresel-urun",
-        image: koyBulguru
-    },
-    {
-        id: 44,
-        name: "Sarı Mercimek",
-        type: "yoresel-urun",
-        image: sariMercimek
-    },
-    {
-        id: 45,
-        name: "Kırık Mısır",
-        type: "yoresel-urun",
-        image: kirikMisir
-    },
-    {
-        id: 46,
-        name: "Kusukus 10kg",
-        type: "yoresel-urun",
-        image: kuskus
-    },
-    {
-        id: 47,
-        name: "Erişte",
-        type: "yoresel-urun",
-        image: eriste
-    },
-    {
-        id: 48,
-        name: "Tarhana",
-        type: "yoresel-urun",
-        image: tarhana
-    },
-    {
-        id: 49,
-        name: "Ev Mantısı",
-        type: "yoresel-urun",
-        image: manti
-    },
-    {
-        id: 50,
-        name: "Galete Unu",
-        type: "yoresel-urun",
-        image: galeteUnu
-    },
-    {
-        id: 51,
-        name: "Mısır Unu",
-        type: "yoresel-urun",
-        image: misirUnu
-    },
-    {
-        id: 51,
-        name: "Mısır Nişastası",
-        type: "yoresel-urun",
-        image: misirNisastasi
-    },
-    {
-        id: 51,
-        name: "Buğday Nişastası",
-        type: "yoresel-urun",
-        image: bugdayNisastasi
-    },
-
+        name: "Ödenay Ayçiçek Yağları",
+        subProducts: [
+            {
+                id: 1,
+                name: "Ödenay Ayçiçek Yağı 1lt",
+                type: "aycicek-yag",
+                image: aycicek1
+            },
+            {
+                id: 2,
+                name: "Ödenay Ayçiçek Yağı 2lt",
+                type: "aycicek-yag",
+                image: aycicek2
+            },
+            {
+                id: 3,
+                name: "Ödenay Ayçiçek Yağı 4lt",
+                type: "aycicek-yag",
+                image: aycicek4
+            },
+            {
+                id: 4,
+                name: "Ödenay Ayçiçek Yağı 4.5lt",
+                type: "aycicek-yag",
+                image: aycicek45
+            },
+            {
+                id: 5,
+                name: "Ödenay Ayçiçek Yağı 5lt",
+                type: "aycicek-yag",
+                image: aycicek5
+            },
+            {
+                id: 6,
+                name: "Ödenay Ayçiçek Yağı 5lt Teneke",
+                type: "aycicek-yag",
+                image: aycicek5teneke
+            },
+            {
+                id: 7,
+                name: "Ödenay Ayçiçek Yağı 18lt Teneke",
+                type: "aycicek-yag",
+                image: aycicek18
+            }
+        ]
+    }
 ]
 
 export const carts = [
