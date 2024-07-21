@@ -7,6 +7,7 @@ import aybak from "../../assets/slider/1.jpg";
 import aybak2 from "../../assets/slider/aybak-1.png";
 import akbak from "../../assets/slider/akbak-1.png";
 import odenay from "../../assets/slider/3.jpg";
+import aybakMega from "../../assets/slider/slider-mega.jpg";
 
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
 
@@ -26,18 +27,26 @@ const Home = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="header-img">
-            <img src={aybak} alt="Aybak uzun tane pirinç" />
+          <div className="slider-main-header">
+            <div className="slider-header-sol">
+              <div className="header-img">
+                <img src={aybak} alt="Aybak uzun tane pirinç" />
+              </div>
+              <div className="header-img">
+                <img src={aybak2} alt="Aybak baldo pirinç" />
+              </div>
+              <div className="header-img">
+                <img src={akbak} alt="AKbak Uzun Taneli pirinç" />
+              </div>
+              <div className="header-img">
+                <img src={odenay} alt="Ödenay ayçiçek yağı" />
+              </div>
+            </div>
+            <div className="slider-header-sag">
+              <img src={aybakMega} alt="Aybak uzun tane pirinç" />
+            </div>
           </div>
-          <div className="header-img">
-            <img src={aybak2} alt="Aybak baldo pirinç" />
-          </div>
-          <div className="header-img">
-            <img src={akbak} alt="AKbak Uzun Taneli pirinç" />
-          </div>
-          <div className="header-img">
-            <img src={odenay} alt="Ödenay ayçiçek yağı" />
-          </div>
+
         </motion.div>
         <motion.div
           className="header-alt"

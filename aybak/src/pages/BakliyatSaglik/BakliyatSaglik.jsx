@@ -1,11 +1,10 @@
 import React from 'react';
+import { carts } from "../../utils/Products";
 
 
 const BakliyatSaglik = () => {
     return (
-        <dvi>
-            sağlık
-        </dvi>
+        <div>sağlık</div>
     );
 };
 
