@@ -55,14 +55,14 @@ const Navbar = () => {
                               navListItem.name === "Kurumsal"
                                 ? subMenu.name === "Belgelerimiz"
                                   ? `${navListItem.href}/${transformString(
-                                      subMenu.name
-                                    )}`
-                                  : `${navListItem.href}#${transformString(
-                                      subMenu.name
-                                    )}`
-                                : `${navListItem.href}/${transformString(
                                     subMenu.name
                                   )}`
+                                  : `${navListItem.href}#${transformString(
+                                    subMenu.name
+                                  )}`
+                                : `${navListItem.href}/${transformString(
+                                  subMenu.name
+                                )}`
                             }
                             scroll={scrollWithOffset}
                             className="nav-sublink"
@@ -106,9 +106,6 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-        <div className="navbar-search">
-          <input type="text" placeholder="Ara" />
-        </div>
       </div>
     </div>
   );
