@@ -28,7 +28,7 @@ const Footer = () => {
             <h3>Bizi Takip Edin</h3>
             <ul className="icons">
               <li>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/aybakbakliyat/" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
                 </a>
               </li>
