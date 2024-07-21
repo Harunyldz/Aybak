@@ -196,3 +196,14 @@
 .misyon-wrapper .vizyon:hover {
     background-color: transparent;
 }
+
+.duyuru {
+
+    margin-left: 40%;
+    margin-top: 50px;
+    border: 1px solid lightgray;
+    width: 300px;
+    text-align: justify;
+
+
+}

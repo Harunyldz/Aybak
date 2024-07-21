@@ -1,0 +1,39 @@
+.marquee-container {
+    overflow: hidden;
+    height: 200px;
+    /* İstediğiniz yüksekliği ayarlayın */
+    position: relative;
+    width: 100%;
+    /* İstediğiniz genişliği ayarlayın */
+
+}
+
+.marquee {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    /* Başlangıç noktası */
+    animation: marquee 15s linear infinite;
+    width: 100%;
+
+}
+
+
+
+@keyframes marquee {
+    from {
+        top: 100%;
+    }
+
+    to {
+        top: -100%;
+        /* Bitirme noktası */
+    }
+}
+
+.list-item {
+    list-style: none;
+    padding: 10px;
+    font-size: 10px;
+    /* İstediğiniz boyutu ayarlayın */
+}

@@ -10,6 +10,7 @@ import odenay from "../../assets/slider/3.jpg";
 import aybakMega from "../../assets/slider/slider-mega.jpg";
 
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
+import Announcements from "../Duyurular/Announcements";
 
 const Home = () => {
   return (
@@ -69,6 +70,9 @@ const Home = () => {
           </p>
         </motion.div>
       </section>
+      <section className="duyuru">
+        <Announcements />
+      </section>
       <section className="urunslider-wrapper">
         <UrunSlider />
       </section>
@@ -116,6 +120,7 @@ const Home = () => {
           </motion.p>
         </motion.div>
       </section>
+
 
     </div>
   );
