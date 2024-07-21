@@ -114,13 +114,14 @@ const Footer = () => {
                 <i>
                   <FaPhone />
                 </i>
-                <span> +90 (212) 640 61 81 - 82</span>
+                <span><a href="tel:+902126406181">
+                  +90 (212) 640 61 81 - 82</a></span>
               </div>
               <div>
                 <i>
                   <FaFax />
                 </i>
-                <span> +90 (212) 564 20 98</span>
+                <span><a href="tel:+902125642098"> +90 (212) 564 20 98 </a></span>
               </div>
             </li>
             <li>
