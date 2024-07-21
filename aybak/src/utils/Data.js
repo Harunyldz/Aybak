@@ -260,38 +260,43 @@ export const navList = [
         subMenu: [
             {
                 id: 1,
-                name: "Bulgur",
-                href: ""
+                name: "Pirinç",
+                href: "pirinc-saglik"
             },
             {
                 id: 2,
-                name: "Barbunya",
-                href: ""
+                name: "Bulgur",
+                href: "bulgur-saglik"
             },
             {
                 id: 3,
-                name: "Fasulye",
-                href: ""
+                name: "Barbunya",
+                href: "barbunya-saglik"
             },
             {
                 id: 4,
-                name: "Nohut",
-                href: ""
+                name: "Kuru Fasulye",
+                href: "fasulye-saglik"
             },
             {
                 id: 5,
-                name: "Kırmızı Mercimek",
-                href: ""
+                name: "Nohut",
+                href: "nohut-saglik"
             },
             {
                 id: 6,
-                name: "Sarı Mercimek",
-                href: ""
+                name: "Kırmızı Mercimek",
+                href: "kirmiziMercimek-saglik"
             },
             {
                 id: 7,
+                name: "Sarı Mercimek",
+                href: "sariMercimek-saglik"
+            },
+            {
+                id: 8,
                 name: "Yeşil Mercimek",
-                href: ""
+                href: "yesilMercimek-saglik"
             },
         ]
     },

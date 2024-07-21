@@ -482,7 +482,7 @@ export const carts = [
     },
     {
         id: 4,
-        title: "Nohut",
+        title: "Kuru Fasulye",
         image: aybakKuruFasulye25,
         type: "dokme-urun",
         text: "100 gram kuru fasülye 346 kalori içerir.",
