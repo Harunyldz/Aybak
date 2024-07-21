@@ -11,6 +11,7 @@ import About from "./pages/About/About";
 import Belgeler from "./pages/Belgeler/Belgeler";
 import BakliyatSaglik from "./pages/BakliyatSaglik/BakliyatSaglik";
 import Urunler from "./pages/Urunler/Urunler";
+import Contact from "../src/pages/Contact/Contact";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/kurumsal/belgelerimiz" element={<Belgeler />} />
         <Route path="/urunlerimiz" element={<Urunler />} />
         <Route path="/bakliyat-saglik" element={<BakliyatSaglik />} />
+        <Route path='/iletisim' element={<Contact />} />
       </Routes>
       <Footer />
     </>
