@@ -12,6 +12,8 @@ import aybakMega from "../../assets/slider/slider-mega.jpg";
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
 import Announcements from "../Duyurular/Announcements";
 
+import { products } from "../../utils/Products";
+
 const Home = () => {
   return (
     <div className="home-wrapper">
@@ -47,7 +49,6 @@ const Home = () => {
               <img src={aybakMega} alt="Aybak uzun tane pirinç" />
             </div>
           </div>
-
         </motion.div>
         <motion.div
           className="header-alt"
@@ -120,8 +121,6 @@ const Home = () => {
           </motion.p>
         </motion.div>
       </section>
-
-
     </div>
   );
 };

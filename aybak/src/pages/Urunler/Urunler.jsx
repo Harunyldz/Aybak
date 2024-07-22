@@ -48,7 +48,9 @@ const Urunler = () => {
           <section>
             {selectedProducts.subProducts.map((selectedProduct) => (
               <figure key={selectedProduct.id}>
-                <img src={selectedProduct.image} alt="" />
+                <div className="figure-img">
+                  <img src={selectedProduct.image} alt="" />
+                </div>
                 <figcaption>{selectedProduct.name}</figcaption>
               </figure>
             ))}
