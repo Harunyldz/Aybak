@@ -26,6 +26,7 @@ function App() {
         <Route path="/kurumsal" element={<About />} />
         <Route path="/kurumsal/belgelerimiz" element={<Belgeler />} />
         <Route path="/urunlerimiz" element={<Urunler />} />
+        <Route path="/urunlerimiz/:urunAdi" element={<Urunler />} />
         <Route path="/bakliyat-saglik" element={<BakliyatSaglik />} />
         <Route path='/iletisim' element={<Contact />} />
       </Routes>

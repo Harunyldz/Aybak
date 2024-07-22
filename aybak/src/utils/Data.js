@@ -38,37 +38,27 @@ export const navList = [
         subMenu:
             [{
                 id: 1,
-                name: "Dökme Bakliyat 25kg",
-                href: ""
-            },
-            {
-                id: 2,
-                name: "Yöresel Ürünler 25kg",
-                href: ""
-            },
-            {
-                id: 3,
                 name: "Paket Bakliyat 1kg",
                 href: ""
             },
             {
-                id: 4,
-                name: "Paket Bakliyat 2,5kg",
-                href: ""
-            },
-            {
-                id: 5,
+                id: 2,
                 name: "Paket Bakliyat 5kg",
                 href: ""
             },
             {
-                id: 6,
-                name: "Ödenay Ayçiçek Yağları",
+                id: 3,
+                name: "Dökme Bakliyat 25kg",
                 href: ""
             },
             {
-                id: 7,
-                name: "Ödenay Mısır Yağları",
+                id: 4,
+                name: "Yöresel Ürünler",
+                href: ""
+            },
+            {
+                id: 5,
+                name: "Ödenay Ayçiçek Yağları",
                 href: ""
             }
             ]

@@ -7,7 +7,7 @@
     margin: 0 auto;
 }
 
-.urunler-container header {
+.urunler-wrapper header {
     width: 100%;
     padding: 50px 0;
     background: url(../../assets/tarim/rice-field.png);
@@ -17,7 +17,12 @@
     position: relative;
 }
 
-.urunler-container header h1 {
+.urunler-wrapper header .header-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.urunler-wrapper header h1 {
     text-align: center;
     margin: 50px auto;
     font-size: 48px;
@@ -25,16 +30,16 @@
     color: #f9f9f9;
 }
 
-.urunler-container header menu ul {
+.urunler-wrapper header menu ul {
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-.urunler-container header menu ul li {
+.urunler-wrapper header menu ul li {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #E20A17;
     font-size: 20px;
     font-weight: 500;
@@ -45,7 +50,24 @@
     transition: all 0.3s ease;
 }
 
-.urunler-container header menu ul li:hover{
+.urunler-wrapper menu ul li.selected {
+    background-color: #02255dd7;
+}
+
+@media screen and (max-width:1400px) {
+    
+    .urunler-wrapper header menu ul {
+        width: 100%;
+    }
+
+    .urunler-wrapper header menu ul li {
+        padding: 10px 5px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.urunler-wrapper header menu ul li:hover {
     background-color: #02255dd7;
 }
 
@@ -71,7 +93,7 @@
     align-items: center;
     overflow: hidden;
     gap: 30px;
-    padding: 20px 0;
+    padding-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -85,6 +107,11 @@
     transform: scale(1.2);
 }
 
-.urunler-container section figure img:hover figcaption {
-    visibility: hidden;
+.urunler-container section figure figcaption {
+    background-color: #E20A17;
+    padding: 15px 25px;
+    color: #f9f9f9;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
 }

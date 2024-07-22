@@ -60,7 +60,7 @@ import bombayFasulye from "../assets/yoresel-urunler/bombay-fasulye.jpg"
 import borulce from "../assets/yoresel-urunler/borulce.webp"
 import koyBulguru from "../assets/yoresel-urunler/koy-bulguru.jpeg"
 import koyMercimegi from "../assets/yoresel-urunler/koy-mercimegi.jpg"
-import sariMercimek from "../assets/yoresel-urunler/sari-mercimek.webp"
+import sariMercimek from "../assets/yoresel-urunler/sari-mercimek2.webp"
 import kirikMisir from "../assets/yoresel-urunler/misirKirmalari.jpg"
 import kuskus from "../assets/yoresel-urunler/kuskus-10kg.jpg"
 import eriste from "../assets/yoresel-urunler/eriste-107kg.jpg"
@@ -230,13 +230,13 @@ export const products = [
             },
             {
                 id: 3,
-                name: "Odenay Baldo Pirinç 25kg ",
+                name: "Ödenay Baldo Pirinç 25kg ",
                 type: "dokme-urun",
                 image: odenayBaldoPirinc25
             },
             {
                 id: 4,
-                name: "Odenay Baldo Pirinç 25kg ",
+                name: "Ödenay Baldo Pirinç 25kg ",
                 type: "dokme-urun",
                 image: odenayBaldoPirinc25
             },
@@ -440,13 +440,13 @@ export const products = [
             },
             {
                 id: 6,
-                name: "Ödenay Ayçiçek Yağı 5lt Teneke",
+                name: "Ödenay Ayçiçek Yağı 5lt",
                 type: "aycicek-yag",
                 image: aycicek5teneke
             },
             {
                 id: 7,
-                name: "Ödenay Ayçiçek Yağı 18lt Teneke",
+                name: "Ödenay Ayçiçek Yağı 18lt",
                 type: "aycicek-yag",
                 image: aycicek18
             }
