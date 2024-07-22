@@ -58,7 +58,7 @@ const Contact = () => {
         </section>
       </div>
       <div className="map-tn">
-        <iframe style={{ width: '100%', height: '400px', borderRadius: '20px' }} src="https://www.google.com/maps/d/u/6/embed?mid=1HvMPDb2MjqMppAGpD0ccpFCZcg-h6-I&ehbc=2E312F" className='map'></iframe>
+        <iframe style={{ width: '100%', height: '400px', borderRadius: '20px' }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.759172190239!2d28.887503374946416!3d41.052395316708896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab082ae9022e3%3A0x8d9b7e50d50a7435!2sAybak%20G%C4%B1da%20San.Tic.Ltd.%C5%9Eti!5e0!3m2!1str!2str!4v1721662476910!5m2!1str!2str"></iframe>
       </div>
     </div>
   )

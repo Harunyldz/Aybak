@@ -40,17 +40,6 @@ const Footer = () => {
                   <FaInstagram />
                 </a>
               </li>
-
-              <li>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter />
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                  <FaYoutube />
-                </a>
-              </li>
             </ul>
           </div>
         </section>
