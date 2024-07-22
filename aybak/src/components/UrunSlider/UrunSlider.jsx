@@ -6,14 +6,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination, Navigation } from "swiper/modules";
+import {Autoplay, Pagination, Navigation } from "swiper/modules";
 import { products } from "../../utils/Products";
 import { useState } from "react";
 
 const UrunSlider = () => {
   const [selected, setSelected] = useState(products[0].name);
   const selectedProducts = products.find((item) => item.name === selected);
-  console.log(selectedProducts);
 
   return (
     <div className="urun-slider">
@@ -36,8 +35,13 @@ const UrunSlider = () => {
           pagination={{
             clickable: true,
           }}
+          speed={2500}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+          }}
           navigation={true}
-          modules={[Pagination, Navigation]}
+          modules={[Autoplay,Pagination, Navigation]}
           breakpoints={{
             360: {
               slidesPerView: 1,
