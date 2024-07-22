@@ -2,14 +2,10 @@
     width: 100%;
 }
 
-.urunler-container {
-    width: 80%;
-    margin: 0 auto;
-}
 
 .urunler-wrapper header {
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 0 20px 0;
     background: url(../../assets/tarim/rice-field.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,6 +16,8 @@
 .urunler-wrapper header .header-container {
     width: 80%;
     margin: 0 auto;
+    background-color: #02255d6e;
+    padding: 20px 0 50px 0;
 }
 
 .urunler-wrapper header h1 {
@@ -70,6 +68,12 @@
 .urunler-wrapper header menu ul li:hover {
     background-color: #02255dd7;
 }
+
+.urunler-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 .urunler-container main {
     width: 100%;
