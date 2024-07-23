@@ -3,28 +3,26 @@ import { motion } from "framer-motion";
 
 import background3 from "../../assets/aybak-dis.jpg";
 
-import aybak from "../../assets/slider/1.jpg";
-import aybak2 from "../../assets/slider/aybak-1.png";
-import akbak from "../../assets/slider/akbak-1.png";
-import odenay from "../../assets/slider/3.jpg";
-import aybakMega from "../../assets/slider/slider-mega.jpg";
+
 
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
 import Announcements from "../Duyurular/Announcements";
 
 import { products } from "../../utils/Products";
+import FluidSlider from "../FluidSlider/FluidSlider";
 
 const Home = () => {
   return (
     <div className="home-wrapper">
       <div className="home-slider">
-        <img src={background3} alt="" />
+        {/* <img src={background3} alt="" />
         <div className="slider-text">
           <span>Her Tanede Kalite, Her Sofrada Lezzet</span>
-        </div>
+        </div> */}
+        <FluidSlider />
       </div>
       <section className="header">
-        <motion.div
+        {/* <motion.div
           className="header-ust"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +47,7 @@ const Home = () => {
               <img src={aybakMega} alt="Aybak uzun tane pirinç" />
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           className="header-alt"
           initial={{ opacity: 0, y: 100 }}
