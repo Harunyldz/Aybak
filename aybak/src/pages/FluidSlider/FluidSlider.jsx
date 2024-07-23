@@ -26,10 +26,15 @@ const FluidSlider = () => {
             <div className="slider-main">
                 <div className="orta-slider">
                     <div className="slider-sol">
-                        <img src={aybak} width={200} alt="" />
-                        <img src={aybak2} width={200} alt="" />
-                        <img src={akbak} width={200} alt="" />
-                        <img src={odenay} width={200} alt="" />
+                        <div className="slider-sol-top">
+                            <img src={aybak} width={200} alt="" />
+                            <img src={aybak2} width={200} alt="" />
+                        </div>
+                        <div className="slider-sol-bottom">
+                            <img src={akbak} width={200} alt="" />
+                            <img src={odenay} width={200} alt="" />
+                        </div>
+
                     </div>
                     <div className="slider-sag">
                         <img src={aybakMega} width={200} alt="" />
