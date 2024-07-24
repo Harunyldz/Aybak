@@ -21,8 +21,6 @@
     padding: 30px;
     /* height: 100%; */
 
-
-
 }
 
 .slider-sol img {
@@ -49,7 +47,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
     width: 100%;
 }
 
@@ -67,5 +64,10 @@
     height: 400px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+
+}
+
+.slider2 {
+    width: 100%;
 
 }
