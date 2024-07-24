@@ -35,25 +35,24 @@ const FluidSlider = () => {
               <img src={akbak} width={200} alt="akbak" />
               <img src={odenay} width={200} alt="ödenay" />
             </div>
-
-            <div className="slider-sag">
-              <img src={aybakMega} width={200} alt="aybak mega" />
-            </div>
-          </div >
-        </div >
-
-        <div className="slider2">
-          <div className="altdiv">
-            <h3>Akışkan 2</h3>
-
+          </div>
+          <div className="slider-sag">
+            <img src={aybakMega} width={200} alt="aybak mega" />
           </div>
         </div>
-        <div>
-          <h3>Akışkan 3</h3>
-          <p>Buraya Akışkan 3 ile ilgili içerik gelecek.</p>
+      </div>
+
+      <div className="slider2">
+        <div className="altdiv">
+          <h3>Akışkan 2</h3>
+          <img src={vpaket} width={700} alt="v paket 1kg" />
         </div>
       </div>
-    </Slider >
+      <div>
+        <h3>Akışkan 3</h3>
+        <p>Buraya Akışkan 3 ile ilgili içerik gelecek.</p>
+      </div>
+    </Slider>
   );
 };
 
