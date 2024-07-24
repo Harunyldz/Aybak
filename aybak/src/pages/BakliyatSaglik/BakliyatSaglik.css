@@ -1,8 +1,8 @@
-.bakliyat-wrapper{
+.bakliyat-wrapper {
     width: 100%;
 }
 
-.bakliyat-wrapper .bakliyat-header{
+.bakliyat-wrapper .bakliyat-header {
     width: 100%;
     background: url(../../assets/tarim/tarim.jpg);
     background-repeat: no-repeat;
@@ -12,10 +12,104 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
-.bakliyat-header h1{
+.bakliyat-header h1 {
     font-size: 60px;
     font-weight: 600;
     color: #f9f9f9;
+}
+
+.bakliyat-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.bakliyat-text h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(226, 10, 23, 1);
+    margin-bottom: 10px;
+}
+
+.bakliyat-text p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bakliyat-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.bakliyat-container figure {
+    width: 400px;
+    position: relative;
+    height: 240px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bakliyat-container figure .bakliyat-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bakliyat-container figure .bakliyat-img img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+
+.bakliyat-container figure figcaption {
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+    background-color: rgba(75, 145, 18, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f9f9f9;
+    height: 60px;
+    opacity: 0;
+    bottom: -60px;
+    transition: all 0.53s ease;
+}
+
+
+.bakliyat-container figure:hover img {
+    transform: scale(1.2);
+}
+
+.bakliyat-container figure:hover figcaption {
+    opacity: 1;
+    bottom: 0;
+}
+
+.bakliyat-container figcaption h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.bakliyat-container figcaption i {
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(226, 10, 23, 0.5);
+    cursor: pointer;
 }
