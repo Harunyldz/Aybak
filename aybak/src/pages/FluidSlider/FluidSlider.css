@@ -71,3 +71,8 @@
     width: 100%;
 
 }
+
+.slider3 {
+    width: 100%;
+    display: flex;
+}
