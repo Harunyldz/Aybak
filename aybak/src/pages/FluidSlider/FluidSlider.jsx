@@ -8,6 +8,7 @@ import aybak2 from "../../assets/slider/aybak-1.png";
 import akbak from "../../assets/slider/akbak-1.png";
 import odenay from "../../assets/slider/3.jpg";
 import aybakMega from "../../assets/slider/slider-mega.jpg";
+import vpaket from "../../assets/slider/v-paket.jpg";
 import "./FluidSlider.css"
 
 const FluidSlider = () => {
@@ -17,7 +18,7 @@ const FluidSlider = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000 // Otomatik kaydırma hızı (milisaniye cinsinden)
     };
 
@@ -27,24 +28,25 @@ const FluidSlider = () => {
                 <div className="orta-slider">
                     <div className="slider-sol">
                         <div className="slider-sol-top">
-                            <img src={aybak} width={200} alt="" />
-                            <img src={aybak2} width={200} alt="" />
+                            <img src={aybak} width={200} alt="aybak" />
+                            <img src={aybak2} width={200} alt="aybak2" />
                         </div>
                         <div className="slider-sol-bottom">
-                            <img src={akbak} width={200} alt="" />
-                            <img src={odenay} width={200} alt="" />
+                            <img src={akbak} width={200} alt="akbak" />
+                            <img src={odenay} width={200} alt="ödenay" />
                         </div>
 
                     </div>
                     <div className="slider-sag">
-                        <img src={aybakMega} width={200} alt="" />
+                        <img src={aybakMega} width={200} alt="aybak mega" />
                     </div>
                 </div>
             </div>
 
-            <div>
+            <div className="slider2">
                 <h3>Akışkan 2</h3>
-                <p>Buraya Akışkan 2 ile ilgili içerik gelecek.</p>
+                <img src={vpaket} width={700} alt="v paket 1kg" />
+
             </div>
             <div>
                 <h3>Akışkan 3</h3>

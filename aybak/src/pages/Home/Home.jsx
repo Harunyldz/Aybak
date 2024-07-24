@@ -1,11 +1,12 @@
 import "./Home.css";
 import { motion } from "framer-motion";
 
-import background3 from "../../assets/aybak-dis.jpg";
-
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
+<<<<<<< HEAD
 // import Announcements from "../Duyurular/Announcements";
 
+=======
+>>>>>>> 26b33c13383f1ec11f25cc103a773b2a94b23c20
 import { products } from "../../utils/Products";
 import FluidSlider from "../FluidSlider/FluidSlider";
 import News from "../../components/News/News";
