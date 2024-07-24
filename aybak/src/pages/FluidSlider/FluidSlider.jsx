@@ -46,8 +46,10 @@ const FluidSlider = () => {
 
       <div className="slider2">
         <div className="altdiv">
-          <h3>Akışkan 2</h3>
-          <img src={vpaket} width={700} alt="v paket 1kg" />
+          <div><img src={paket2} width={400} height={400} alt="v paket 1kg" /></div>
+          <div> <img src={vpaket} width={700} alt="v paket 1kg" /></div>
+          <div> <img src={paket1} width={400} height={400} alt="v paket 1kg" /></div>
+
         </div>
       </div>
       <div>
