@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import {Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { products } from "../../utils/Products";
 import { useState } from "react";
 
@@ -21,7 +21,11 @@ const UrunSlider = () => {
         <menu>
           <ul>
             {products.map((urun) => (
-              <li className={urun.name === selected ? "active" : ""} onClick={() => setSelected(urun.name)} key={urun.id}>
+              <li
+                className={urun.name === selected ? "active" : ""}
+                onClick={() => setSelected(urun.name)}
+                key={urun.id}
+              >
                 {urun.name}
               </li>
             ))}
@@ -30,8 +34,9 @@ const UrunSlider = () => {
       </header>
       <main>
         <Swiper
-          slidesPerView={5}
+          slidesPerView={1}
           spaceBetween={50}
+          centeredSlides={true}
           pagination={{
             clickable: true,
           }}
@@ -41,25 +46,23 @@ const UrunSlider = () => {
             delay: 3000,
           }}
           navigation={true}
-          modules={[Autoplay,Pagination, Navigation]}
+          modules={[Autoplay, Pagination, Navigation]}
           breakpoints={{
-            360: {
-              slidesPerView: 1,
-            },
-            480: {
-              slidesPerView: 1,
-            },
             768: {
               slidesPerView: 2,
+              spaceBetween:30
             },
             960: {
               slidesPerView: 3,
+              spaceBetween:30
             },
             1200: {
               slidesPerView: 4,
+              spaceBetween:30
             },
             1400: {
               slidesPerView: 5,
+              spaceBetween:50
             },
           }}
           className="urunSwiper"
