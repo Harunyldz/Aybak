@@ -71,7 +71,15 @@ import misirUnu from "../assets/yoresel-urunler/misir-Unu.jpg"
 import misirNisastasi from "../assets/yoresel-urunler/misirNisastasi.jpg"
 import bugdayNisastasi from "../assets/yoresel-urunler/bugday-nisastasi.jpg"
 
-
+//productInfo resimler
+import pirincImage from "../assets/yeni/rice.jpg"
+import bulgurImage from "../assets/yeni/bulgur2.jpg"
+import barbunyaImage from "../assets/yeni/barbunya2.jpg"
+import fasulyeImage from "../assets/yeni/fasulye2.jpg"
+import nohutImage from "../assets/yeni/nohut3.webp"
+import kirmiziMercimekImage from "../assets/yeni/kirmizi-mercimek.jpg"
+import sariMercimekImage from "../assets/yeni/sari-mercimek3.jpg"
+import yesilMercimekImage from "../assets/yeni/yesil-mercimek2.jpg"
 
 export const products = [
     {
@@ -454,11 +462,11 @@ export const products = [
     }
 ]
 
-export const carts = [
+export const productInfo = [
     {
         id: 1,
         title: "Pirinç",
-        image: aybakOsmancikRice25,
+        image: pirincImage,
         type: "dokme-urun",
         text: "100 gram pirinc 348 kalori içerir",
         href: "pirinc-saglik",
@@ -477,7 +485,7 @@ export const carts = [
     {
         id: 2,
         title: "Bulgur",
-        image: aybakBulgur25,
+        image: bulgurImage,
         type: "dokme-urun",
         text: "100 gram kuru bulgur 371 kalori içerir.",
         href: "bulgur-saglik",
@@ -496,7 +504,7 @@ export const carts = [
     {
         id: 3,
         title: "Barbunya",
-        image: aybakBarbunya25,
+        image: barbunyaImage,
         type: "dokme-urun",
         text: "100 gram barbunya 350 kalori içerir",
         href: "barbunya-saglik",
@@ -513,7 +521,7 @@ export const carts = [
     {
         id: 4,
         title: "Kuru Fasulye",
-        image: aybakKuruFasulye25,
+        image: fasulyeImage,
         type: "dokme-urun",
         text: "100 gram kuru fasülye 346 kalori içerir.",
         href: "fasulye-saglik",
@@ -532,7 +540,7 @@ export const carts = [
     {
         id: 5,
         title: "Nohut",
-        image: aybakNohut25,
+        image: nohutImage,
         type: "dokme-urun",
         text: "100 gram nohut 360 kalori içerir",
         href: "nohut-saglik",
@@ -551,7 +559,7 @@ export const carts = [
     {
         id: 6,
         title: "Kırmızı Mercimek",
-        image: aybakKirmiziMercimek25,
+        image: kirmiziMercimekImage,
         type: "dokme-urun",
         text: "100 gram kırmızı mercimek 341 kalori içerir. ",
         href: "kirmiziMercimek-saglik",
@@ -570,7 +578,7 @@ export const carts = [
     {
         id: 7,
         title: "Sarı Mercimek",
-        image: sariMercimek,
+        image: sariMercimekImage,
         type: "dokme-urun",
         text: "Sarı Mercimek, 100 gram sarı mercimek 336 kalori içerir. ",
         href: "sariMercimek-saglik",
@@ -589,7 +597,7 @@ export const carts = [
     {
         id: 8,
         title: "Yeşil Mercimek",
-        image: aybakYesilMercimek25,
+        image: yesilMercimekImage,
         type: "dokme-urun",
         text: "100 gram yeşil mercimek 338 kalori içerir. ",
         href: "yesilMercimek-saglik",
