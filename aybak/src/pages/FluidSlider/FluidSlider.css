@@ -75,12 +75,6 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 50px;
+    background-color: burlywood;
 
-}
-
-
-.slider2 .altdiv img {
-    box-shadow: 0 0 20px rgb(177, 136, 136);
-    /* border: 1px solid black; */
-    border-radius: 30px;
 }

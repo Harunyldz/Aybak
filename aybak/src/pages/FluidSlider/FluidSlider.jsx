@@ -8,9 +8,9 @@ import aybak2 from "../../assets/slider/aybak-1.png";
 import akbak from "../../assets/slider/akbak-1.png";
 import odenay from "../../assets/slider/3.jpg";
 import aybakMega from "../../assets/slider/slider-mega.jpg";
-import vpaket from "../../assets/slider/v-paket.jpg";
-import paket1 from "../../assets/slider/slider.3.2.jpg";
-import paket2 from "../../assets/slider/slider.3.3.jpg";
+import vpaket from "../../assets/slider/v-paket.png";
+import paket1 from "../../assets/slider/slider25.1.png";
+import paket2 from "../../assets/slider/slider25.2.png";
 import "./FluidSlider.css";
 
 const FluidSlider = () => {
