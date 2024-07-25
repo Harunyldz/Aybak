@@ -4,15 +4,30 @@
 
 .yemekler-wrapper .yemekler-img {
     width: 100%;
+    background: url(../../assets/tarim5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yemekler-wrapper .yemekler-img h1 {
+    width: 80%;
     height: 200px;
-    object-fit: cover;
-    object-position: top;
+    line-height: 200px;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #f9f9f9;
+    text-align: center;
+    background-color: rgba(2, 37, 93, 0.7);
 }
 
 .yemekler-container {
     width: 80%;
     margin: 0 auto;
-
 }
 
 .yemekler-container header {

@@ -26,7 +26,9 @@ const YemekTarifleri = () => {
 
   return (
     <div className="yemekler-wrapper">
-      <img className="yemekler-img" src={img1} alt="" />
+      <div className="yemekler-img">
+        <h1>Yemek Tarifleri</h1>
+      </div>
       <div className="yemekler-container">
         <header>
           <h2>Aybak Ürünlerimizle Yapabileceğiniz Lezzetli Yemekler</h2>
