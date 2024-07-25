@@ -470,7 +470,7 @@ export const productInfo = [
         type: "dokme-urun",
         text: "100 gram pirinc 348 kalori içerir",
         href: "pirinc-saglik",
-        items: [
+        details: [
             "Kalsiyum, kemik sağlığını destekler.",
             "Protein, kas gelişimine yardımcı olur.",
             "Fosfor, enerji üretiminde rol oynar.",
@@ -489,7 +489,7 @@ export const productInfo = [
         type: "dokme-urun",
         text: "100 gram kuru bulgur 371 kalori içerir.",
         href: "bulgur-saglik",
-        items: [
+        details: [
             " Bulgur kandaki yağları düşürücü yönü olduğu bilinen posa/lif bakımından oldukça zengin bir gıdadır",
             " Karbonhidrat değeri yüksek, protein değeri düşüktür.",
             "Bulgurda bulunan B1 vitaminleri, sinir ve sindirim sisteminde önemli rol oynamaktadır",
@@ -508,7 +508,7 @@ export const productInfo = [
         type: "dokme-urun",
         text: "100 gram barbunya 350 kalori içerir",
         href: "barbunya-saglik",
-        items: [
+        details: [
             "  Vücuda güç ve enerji vererek, bedensel ve zihinsel yorgunluğu giderir.",
             " Vücudun gelişimini ve onarımını destekler.",
             "Kemikleri güçlendirir.",
@@ -525,7 +525,7 @@ export const productInfo = [
         type: "dokme-urun",
         text: "100 gram kuru fasülye 346 kalori içerir.",
         href: "fasulye-saglik",
-        items: [
+        details: [
             "  İçerdiği yüzde 20-30 protein ile iyi bir protein deposudur.",
             "  A,B ve D vitaminleri açısından oldukça zengindir.",
             "Kemikleri güçlendirir",
@@ -544,7 +544,7 @@ export const productInfo = [
         type: "dokme-urun",
         text: "100 gram nohut 360 kalori içerir",
         href: "nohut-saglik",
-        items: [
+        details: [
             "Yüksek protein içeriği kas gelişimine yardımcı olur.",
             "Lif içeriği sindirim sağlığını destekler.",
             "Düşük glisemik indeksi kan şekerini düzenler.",
@@ -563,7 +563,7 @@ export const productInfo = [
         type: "dokme-urun",
         text: "100 gram kırmızı mercimek 341 kalori içerir. ",
         href: "kirmiziMercimek-saglik",
-        items: [
+        details: [
             "Yüksek protein içeriği kas gelişimini destekler.",
             "Bol miktarda lif içerir, sindirimi düzenler.",
             "Demir açısından zengindir, kansızlığı önler.",
@@ -582,7 +582,7 @@ export const productInfo = [
         type: "dokme-urun",
         text: "Sarı Mercimek, 100 gram sarı mercimek 336 kalori içerir. ",
         href: "sariMercimek-saglik",
-        items: [
+        details: [
             "Yüksek lif içeriği sindirim sağlığını destekler.",
             "Protein açısından zengindir, kas gelişimini destekler.",
             "Düşük glisemik indeksi ile kan şekerini düzenler.",
@@ -601,7 +601,7 @@ export const productInfo = [
         type: "dokme-urun",
         text: "100 gram yeşil mercimek 338 kalori içerir. ",
         href: "yesilMercimek-saglik",
-        items: [
+        details: [
             "Yüksek lif içeriği sindirimi düzenler.",
             "Protein açısından zengindir, kas gelişimini destekler.",
             "Düşük glisemik indeksi ile kan şekerini düzenler.",

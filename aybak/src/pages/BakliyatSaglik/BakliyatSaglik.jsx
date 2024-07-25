@@ -1,6 +1,8 @@
 import "./BakliyatSaglik.css";
 import { productInfo } from "../../utils/Products";
 import { FaChevronCircleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { transformString } from "../../utils/transformString";
 
 const BakliyatSaglik = () => {
   return (
@@ -41,9 +43,9 @@ const BakliyatSaglik = () => {
             </div>
             <figcaption>
               <h3>{product.title}</h3>
-              <i>
+              <Link to={transformString(product.title)} className="bakliyat-icon">
                 <FaChevronCircleRight />
-              </i>
+              </Link>
             </figcaption>
           </figure>
         ))}

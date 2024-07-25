@@ -101,7 +101,7 @@
     font-weight: 600;
 }
 
-.bakliyat-container figcaption i {
+.bakliyat-container figcaption .bakliyat-icon {
     position: absolute;
     right: 0;
     font-size: 24px;
