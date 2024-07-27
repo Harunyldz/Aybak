@@ -1,5 +1,6 @@
 import "./Contact.css"
 import { Link } from "react-router-dom";
+import WhatsAppLink from "../../components/Footer/WhatsAppLink";
 import EmailForm from "../../components/EmailForm/EmailForm";
 import {
   FaFacebook,
@@ -15,8 +16,11 @@ import { MdEmail } from "react-icons/md";
 
 
 const Contact = () => {
-  const phoneNumber = "905322505784"; // Ülke kodu ile birlikte telefon numarası
-  const message = "Tuna iş güvenliği!";
+
+
+  const phoneNumber = "902125459252"; // Ülke kodu ile birlikte telefon numarası
+  const message = "AYBAK Gıda!";
+
   return (
     <div className="contact">
       <EmailForm />
@@ -46,6 +50,11 @@ const Contact = () => {
                   <FaFax />
                 </i>
                 <span><a href="tel:+902125642098"> +90 (212) 564 20 98 </a></span>
+              </div>
+              <div style={{ marginTop: '10px', marginBottom: '-20px' }}>
+                <i>
+                  <WhatsAppLink phoneNumber={phoneNumber} message={message} />
+                </i>
               </div>
             </li>
             <li>
