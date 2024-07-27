@@ -24,6 +24,7 @@ function App() {
         <Route path="/yemektarifleri/:yemekAdi" element={<Tarif />} />
         <Route path="/yemektarifleri" element={<YemekTarifleri />} />
         <Route path="/kurumsal" element={<About />} />
+        <Route path="/kurumsal/:misyonumuz" element={<About />} />
         <Route path="/kurumsal/belgelerimiz" element={<Belgeler />} />
         <Route path="/urunlerimiz" element={<Urunler />} />
         <Route path="/urunlerimiz/:urunAdi" element={<Urunler />} />

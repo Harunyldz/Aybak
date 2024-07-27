@@ -1,6 +1,9 @@
 import "./Footer.css";
 import logo from "../../assets/logo.png";
 import { navList } from "../../utils/Data";
+import WhatsAppLink from "../../components/Footer/WhatsAppLink";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import {
   FaFacebook,
@@ -9,6 +12,7 @@ import {
   FaYoutube,
   FaPhone,
   FaFax,
+  FaWhatsapp
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -16,6 +20,9 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
 
   const currentYear = new Date().getFullYear();
+
+  const phoneNumber = "902125459252"; // Ülke kodu ile birlikte telefon numarası
+  const message = "AYBAK Gıda!";
 
   const yemekler = navList
     .find((item) => item.name === "Yemek Tarifleri")
@@ -47,10 +54,10 @@ const Footer = () => {
           <div>
             <h3>Kurumsal</h3>
             <ul>
-              <li>Hakkımızda</li>
-              <li>Misyonumuz</li>
-              <li>Vizyonumuz</li>
-              <li>Sertifikalarımız</li>
+              <li><Link to="/kurumsal">  Hakkımızda</Link ></li>
+              <li><Link to="/kurumsal/:misyonumuz">Misyonumuz </Link ></li>
+              <li><Link to="/kurumsal/:vizyonumuz">Vizyonumuz </Link ></li>
+              <li><Link to="/kurumsal/belgelerimiz">  Sertifikalarımız</Link ></li>
             </ul>
           </div>
           <div>
@@ -122,11 +129,16 @@ const Footer = () => {
               </i>
               <span>info@aybakgida.com</span>
             </li>
+            <li>
+
+              <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly' }}>
+                <WhatsAppLink phoneNumber={phoneNumber} message={message} /></div>
+            </li>
           </ul>
         </section>
-      </div>
+      </div >
       <div className="copyright">© 1984-{currentYear} | Aybak Gıda San. Tic. Ltd. Şti. | Her Hakkı Saklıdır.</div>
-    </footer>
+    </footer >
   );
 };
 

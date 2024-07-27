@@ -66,6 +66,7 @@ footer {
     display: flex;
     gap: 10px;
     justify-content: space-evenly;
+
 }
 
 .icons li a {
@@ -126,4 +127,22 @@ footer {
     text-align: center;
     color: darkblue;
     font-size: 18px;
+}
+
+.whatsapp {
+    color: green;
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.whatsapp p {
+    font-size: 40px;
+}
+
+.whatsapp:hover {
+    color: rgb(179, 255, 0);
 }
