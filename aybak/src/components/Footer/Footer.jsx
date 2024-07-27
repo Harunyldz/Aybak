@@ -89,7 +89,7 @@ const Footer = () => {
             <h3>Ürünlerimiz</h3>
             <ul>
               {products.map((product) => (
-                <li>
+                <li key={product.id}>
                   <Link to={`/urunlerimiz/${transformString(product.name)}`}>
                     {product.name}
                   </Link>
@@ -107,14 +107,13 @@ const Footer = () => {
                   <Link to={`/yemektarifleri`}>{yemek.name}</Link>
                 </li>
               ))}
-              <li>Tüm Yemek Tarifleri</li>
             </ul>
           </div>
           <div>
             <h3>Bakliyat ve Sağlık</h3>
             <ul>
               {productInfo.map((urun) => (
-                <li>
+                <li key={urun.id}>
                   <Link to={`/bakliyat-saglik/${transformString(urun.title)}`}>{urun.title}</Link>
                 </li>
               ))}
