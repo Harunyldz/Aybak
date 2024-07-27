@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import './LoginForm.css';
+import './Loginform.css';
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
@@ -12,27 +12,27 @@ const LoginForm = () => {
     };
     return (
 
-        <div style={{ maxWidth: '300px', margin: '80px auto', padding: '1rem', border: '1px solid #ccc', borderRadius: '4px' }}>
+        <div className='adminMain'>
             <h2>Giriş Yap</h2>
-            <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', marginBottom: '0.5rem' }}>Kullanıcı Adı:</label>
-                <input
+            <div className='adminForm'>
+                <label className='adminLabel' >Kullanıcı Adı:</label>
+                <input className='adminInput'
                     type="text"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    style={{ width: '100%', padding: '0.5rem', boxSizing: 'border-box' }}
+
                 />
             </div>
-            <div style={{ marginBottom: '1rem' }}>
-                <label style={{ display: 'block', marginBottom: '0.5rem' }}>Şifre:</label>
-                <input
+            <div className='adminForm'>
+                <label className='adminLabel' >Şifre:</label>
+                <input className='adminInput'
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    style={{ width: '100%', padding: '0.5rem', boxSizing: 'border-box' }}
+
                 />
             </div>
-            <button onClick={handleLogin} style={{ width: '100%', padding: '0.5rem', backgroundColor: '#007BFF', color: 'white', border: 'none', borderRadius: '4px' }}>
+            <button className='adminBtn' onClick={handleLogin}>
                 Giriş Yap
             </button>
         </div>

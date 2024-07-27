@@ -3,13 +3,44 @@
     margin: 20px auto;
     padding: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
+    width: 300px;
 
 }
 
-style= {
-        {
-        ,
-        margin: 'auto', padding: '1rem', border: '1px solid #ccc', borderRadius: '4px'
-    }
+.adminMain h2 {
+    text-align: center;
+}
+
+.adminForm {
+    margin-bottom: 1em;
+}
+
+.adminInput {
+    width: 100%;
+    padding: '0.5rem';
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.adminLabel {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.adminBtn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+.adminBtn:hover {
+    background-color: red;
+    font-weight: bold;
 }
