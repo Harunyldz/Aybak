@@ -68,7 +68,7 @@
     justify-content: center;
 }
 
-.nav-item .nav-sublist{
+.nav-item .nav-sublist {
     display: none;
     position: absolute;
     top: 100%;
@@ -84,8 +84,7 @@
 }
 
 .nav-item .nav-sublist li,
-.nav-sublist .nav-right-list li
-{
+.nav-sublist .nav-right-list li {
     border: none;
     border-bottom: 1px solid #ff6f61;
     width: 100%;
@@ -105,7 +104,7 @@
     background-color: #b60511;
 }
 
-.nav-sublist .nav-right-list{
+.nav-sublist .nav-right-list {
     display: none;
     position: absolute;
     top: 0;
@@ -121,8 +120,7 @@
 }
 
 .nav-item .nav-sublist .nav-sublink,
-.nav-sublist .nav-right-list .right-link
-{
+.nav-sublist .nav-right-list .right-link {
     color: #fff;
     text-decoration: none;
     display: block;
@@ -160,6 +158,46 @@
     width: 200px;
     outline: none;
     border-color: #E20A17;
+}
+
+.login-button {
+    background-color: #02255D;
+    /* Yeşil */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.login-button:hover {
+    background-color: #E20A17;
+    /* box-shadow: 1px 1px 1px 5px #02255D;
+     */
+    box-shadow:
+        0 0 5px #ff6600,
+        0 0 10px #ff6600,
+        0 0 20px #0acccc,
+        0 0 30px #d1c4c1,
+        0 0 30px #02255D,
+        0 0 30px #02255D;
+    animation: flicker 1.5s infinite alternate;
+}
+
+.nav-itemBtn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    transition: all 0.2s ease;
+    position: relative;
+    margin-left: 50px;
 }
 
 /*#02255D*/
