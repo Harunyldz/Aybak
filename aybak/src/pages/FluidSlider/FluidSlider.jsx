@@ -52,26 +52,39 @@ const FluidSlider = () => {
 
       <div className="slider2">
         <div className="altdiv">
-          <div><img src={paket2} width={400} height={400} alt="25 kiloluk" /></div>
-          <div> <img src={vpaket} width={700} alt="v paket 1kg" /></div>
-          <div> <img src={paket1} width={400} height={400} alt="25 kiloluk" /></div>
-
+          <div>
+            <img src={paket2} width={400} height={400} alt="25 kiloluk" />
+          </div>
+          <div>
+            {" "}
+            <img src={vpaket} width={700} alt="v paket 1kg" />
+          </div>
+          <div>
+            {" "}
+            <img src={paket1} width={400} height={400} alt="25 kiloluk" />
+          </div>
         </div>
       </div>
       <div className="slider2">
         <div className="altdiv2">
-<<<<<<< HEAD
-          <div><img src={paket2} width={400} height={400} alt="v paket 1kg" /></div>
-          <div> <img src={vpaket} width={700} alt="v paket 1kg" /></div>
-          <div> <img src={paket1} width={400} height={400} alt="v paket 1kg" /></div>
-=======
+          <div>
+            <img src={paket2} width={400} height={400} alt="v paket 1kg" />
+          </div>
+          <div>
+            {" "}
+            <img src={vpaket} width={700} alt="v paket 1kg" />
+          </div>
+          <div>
+            {" "}
+            <img src={paket1} width={400} height={400} alt="v paket 1kg" />
+          </div>
+
           <div className="slider2-one">
             <div className="slider2-one1">
               <img src={baldo1} width={150} height={200} alt="25 kiloluk" />
             </div>
             <div className="slider2-one2">
               <img src={baldo2} width={150} height={200} alt="25 kiloluk" />
-
             </div>
           </div>
           <div className="slider2-two">
@@ -84,12 +97,8 @@ const FluidSlider = () => {
             </div>
             <div className="slider2-one1">
               <img src={bulgur2} width={150} height={200} alt="25 kiloluk" />
-
             </div>
           </div>
-
-
->>>>>>> a151c054466769b4236c24ca3f36a806d6888c59
         </div>
       </div>
     </Slider>

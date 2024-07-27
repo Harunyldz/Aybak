@@ -86,7 +86,6 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 50px;
-<<<<<<< HEAD
     background: url(../../assets/tarim/tarla-anim.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,7 +105,6 @@
 
 .slider2 .altdiv2 div{
     z-index: 999;
-=======
     background-color: rgb(119, 80, 65);
 
 }
@@ -135,9 +133,9 @@
     align-items: center;
 }
 
-.slider2-one1,
-.slider2-one2,
-img {
+.slider2-one1 img,
+.slider2-one2 img
+{
     border-radius: 20px;
 }
 
@@ -151,5 +149,4 @@ img {
     padding: 10px;
     border-radius: 10px;
     text-shadow: 3px 3px 5px rgb(82, 14, 14);
->>>>>>> a151c054466769b4236c24ca3f36a806d6888c59
 }
