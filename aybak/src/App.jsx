@@ -13,6 +13,7 @@ import BakliyatSaglik from "./pages/BakliyatSaglik/BakliyatSaglik";
 import Urunler from "./pages/Urunler/Urunler";
 import Contact from "../src/pages/Contact/Contact";
 import Bakliyat from "./pages/Bakliyat/Bakliyat";
+import LoginForm from "./pages/Admin/LoginForm";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/bakliyat-saglik" element={<BakliyatSaglik />} />
         <Route path="/bakliyat-saglik/:bakliyatAdi" element={<Bakliyat />} />
         <Route path="/iletisim" element={<Contact />} />
+        <Route path="/admin" element={<LoginForm />} />
       </Routes>
       <Footer />
     </div>

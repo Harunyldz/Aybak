@@ -104,6 +104,10 @@ const Navbar = () => {
                 )}
               </li>
             ))}
+            <li className="nav-itemBtn">
+              <Link to='/admin'>
+                <button className="login-button">Giriş Yap</button></Link>
+            </li>
           </ul>
         </nav>
       </div>

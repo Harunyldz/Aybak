@@ -1,0 +1,15 @@
+.adminMain {
+    max-width: '300px';
+    margin: 20px auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+style= {
+        {
+        ,
+        margin: 'auto', padding: '1rem', border: '1px solid #ccc', borderRadius: '4px'
+    }
+}
