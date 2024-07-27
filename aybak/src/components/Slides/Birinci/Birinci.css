@@ -1,0 +1,82 @@
+.birinci {
+    width: 100%;
+    height: 100%;
+    background: url(../../../assets/tarim/tarim.jpg);
+    background: url(../../../assets/isyeri/foto4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.birinci::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 37, 93, 0.8);
+}
+
+.birinci-box {
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    z-index: 999;
+}
+
+.birinci-box .birinci-sol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.birinci-sol .birinci-sol-ust {
+    display: flex;
+    gap: 10px;
+}
+
+.birinci-img-box {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    background-color: #fff;
+    width: 360px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.birinci-img-box img {
+    width: 60%;
+    height: 120px;
+}
+
+.birinci-sol .birinci-sol-alt {
+    display: flex;
+    gap: 10px;
+}
+
+.birinci-box .birinci-sag {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.birinci-box .birinci-sag img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

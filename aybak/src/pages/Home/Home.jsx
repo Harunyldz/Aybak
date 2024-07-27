@@ -6,45 +6,17 @@ import UrunSlider from "../../components/UrunSlider/UrunSlider";
 import { products } from "../../utils/Products";
 import FluidSlider from "../FluidSlider/FluidSlider";
 import News from "../../components/News/News";
+import MainSlider from "../../components/MainSlider/MainSlider";
 
 const Home = () => {
   return (
     <div className="home-wrapper">
       <div className="home-slider">
-        {/* <img src={background3} alt="" />
-        <div className="slider-text">
-          <span>Her Tanede Kalite, Her Sofrada Lezzet</span>
-        </div> */}
-        <FluidSlider />
+        {/* <FluidSlider /> */}
+        <MainSlider/>
       </div>
       <section className="header">
-        {/* <motion.div
-          className="header-ust"
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <div className="slider-main-header">
-            <div className="slider-header-sol">
-              <div className="header-img">
-                <img src={aybak} alt="Aybak uzun tane pirinç" />
-              </div>
-              <div className="header-img">
-                <img src={aybak2} alt="Aybak baldo pirinç" />
-              </div>
-              <div className="header-img">
-                <img src={akbak} alt="AKbak Uzun Taneli pirinç" />
-              </div>
-              <div className="header-img">
-                <img src={odenay} alt="Ödenay ayçiçek yağı" />
-              </div>
-            </div>
-            <div className="slider-header-sag">
-              <img src={aybakMega} alt="Aybak uzun tane pirinç" />
-            </div>
-          </div>
-        </motion.div> */}
-        <motion.div
+          <motion.div
           className="header-alt"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}

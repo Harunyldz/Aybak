@@ -1,0 +1,23 @@
+.ucuncu {
+    width: 100%;
+    height: 100%;
+}
+
+.ucuncu .ucuncu-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.ucuncu .ucuncu-img-box {
+    height: 100%;
+    width: 100%;
+
+}
+
+.ucuncu-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+}

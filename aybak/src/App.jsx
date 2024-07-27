@@ -16,7 +16,7 @@ import Bakliyat from "./pages/Bakliyat/Bakliyat";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <ScrollToTop />
       <Navbar />
       <Routes>
@@ -32,7 +32,7 @@ function App() {
         <Route path="/iletisim" element={<Contact />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
