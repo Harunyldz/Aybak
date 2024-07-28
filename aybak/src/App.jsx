@@ -13,31 +13,35 @@ import BakliyatSaglik from "./pages/BakliyatSaglik/BakliyatSaglik";
 import Urunler from "./pages/Urunler/Urunler";
 import Contact from "../src/pages/Contact/Contact";
 import Bakliyat from "./pages/Bakliyat/Bakliyat";
-import Admin from "../src/pages/Admin/Admin"
+import Admin from "../src/pages/Admin/Admin";
 import Login from "./pages/Login/Login";
+import PrivateRoute from "./utils/PrivateRoute";  // PrivateRoute bileşenini import edin
+import { AuthProvider } from "./utils/auth";  // AuthProvider bileşenini import edin
 
 function App() {
   return (
-    <div className="App">
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/yemektarifleri/:yemekAdi" element={<Tarif />} />
-        <Route path="/yemektarifleri" element={<YemekTarifleri />} />
-        <Route path="/kurumsal" element={<About />} />
-        <Route path="/kurumsal/:misyonumuz" element={<About />} />
-        <Route path="/kurumsal/belgelerimiz" element={<Belgeler />} />
-        <Route path="/urunlerimiz" element={<Urunler />} />
-        <Route path="/urunlerimiz/:urunAdi" element={<Urunler />} />
-        <Route path="/bakliyat-saglik" element={<BakliyatSaglik />} />
-        <Route path="/bakliyat-saglik/:bakliyatAdi" element={<Bakliyat />} />
-        <Route path="/iletisim" element={<Contact />} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/admin" element={<Admin/>} />
-      </Routes>
-      <Footer />
-    </div>
+    <AuthProvider>
+      <div className="App">
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/yemektarifleri/:yemekAdi" element={<Tarif />} />
+          <Route path="/yemektarifleri" element={<YemekTarifleri />} />
+          <Route path="/kurumsal" element={<About />} />
+          <Route path="/kurumsal/:misyonumuz" element={<About />} />
+          <Route path="/kurumsal/belgelerimiz" element={<Belgeler />} />
+          <Route path="/urunlerimiz" element={<Urunler />} />
+          <Route path="/urunlerimiz/:urunAdi" element={<Urunler />} />
+          <Route path="/bakliyat-saglik" element={<BakliyatSaglik />} />
+          <Route path="/bakliyat-saglik/:bakliyatAdi" element={<Bakliyat />} />
+          <Route path="/iletisim" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<PrivateRoute element={Admin} />} />  {/* Admin rotasını PrivateRoute ile koruyun */}
+        </Routes>
+        <Footer />
+      </div>
+    </AuthProvider>
   );
 }
 

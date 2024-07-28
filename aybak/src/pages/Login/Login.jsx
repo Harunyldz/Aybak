@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./Login.css";
 import { adminInfo } from "../../utils/Admin";
 import { useNavigate } from "react-router-dom";
-
 import { FaEyeSlash, FaEye } from "react-icons/fa6";
+import { useAuth } from "../../utils/auth";  // Auth context'i import edin
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -11,10 +11,12 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState(false);
   const navigate = useNavigate();
+  const { login } = useAuth();  // Login işlevini context'ten alın
 
   const handleLogin = (e) => {
     e.preventDefault();
     if (adminInfo.username === username && adminInfo.password === password) {
+      login();  // Kullanıcıyı kimlik doğrulama durumuna ekleyin
       navigate("/admin");
       setPassword("");
       setUsername("");
@@ -22,6 +24,7 @@ const Login = () => {
       setError(true);
     }
   };
+
   return (
     <div className="login-wrapper">
       <div className="login-container">
@@ -50,7 +53,7 @@ const Login = () => {
             </i>
           </div>
           {error && (
-            <span className="form-error">Lütfen kullanıcı adınızı yada parolanızı kontrol ediniz!</span>
+            <span className="form-error">Lütfen kullanıcı adınızı ya da parolanızı kontrol ediniz!</span>
           )}
           <button type="submit" className="login-btn">
             Giriş Yap
