@@ -1,7 +1,11 @@
 import "./Admin.css";
 import logo from "../../assets/logo.png";
+import AdminNews from "../../components/AdminNews/AdminNews";
+import { useState } from "react";
 
 const Admin = () => {
+  const [duyuru, setDuyuru] = useState(false);
+
   return (
     <div className="admin-wrapper">
       <div className="admin-container">
@@ -15,11 +19,11 @@ const Admin = () => {
           <aside>
             <ul>
               <li>Admin Bilgileri</li>
-              <li>Duyurular</li>
+              <li onClick={(e) => setDuyuru(true)}>Duyurular</li>
               <li>Ürünler</li>
             </ul>
           </aside>
-          <section className="admin-area">buraya detaylar gelecek</section>
+          <section className="admin-area">{duyuru && <AdminNews />}</section>
         </main>
       </div>
     </div>

@@ -161,32 +161,22 @@
 }
 
 .login-button {
-    background-color: #02255D;
-    /* Yeşil */
+    background-color: transparent;
     border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
+    outline: none;
+    color: #02255D;
+    padding: 12px 20px;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
 .login-button:hover {
-    background-color: #E20A17;
-    /* box-shadow: 1px 1px 1px 5px #02255D;
-     */
-    box-shadow:
-        0 0 5px #ff6600,
-        0 0 10px #ff6600,
-        0 0 20px #0acccc,
-        0 0 30px #d1c4c1,
-        0 0 30px #02255D,
-        0 0 30px #02255D;
-    animation: flicker 1.5s infinite alternate;
+    background-color: #02255D;
+    color: #f9f9f9;
 }
 
 .nav-itemBtn {
@@ -194,9 +184,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 25px;
-    transition: all 0.2s ease;
-    position: relative;
     margin-left: 50px;
 }
 

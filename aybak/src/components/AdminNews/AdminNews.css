@@ -1,0 +1,278 @@
+.adminNews {
+    width: 100%;
+    padding: 20px;
+}
+
+.adminNews .adminNews-header {
+    width: 100%;
+    padding: 20px;
+    background-color: #02255D;
+    border-radius: 10px;
+}
+
+.adminNews-header span {
+    display: inline-flex;
+    gap: 10px;
+    font-weight: 500;
+    color: #f9f9f9;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #E20A17;
+    transition: all 0.3s ease;
+}
+
+.adminNews-header span:hover {
+    border: 1px solid #f9f9f9;
+}
+
+.adminNews-header span i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/************************Yeni duyuru stilleri*****************/
+.adminNews .addNews {
+    width: 100%;
+    background-color: #02255D;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.addNews .addNews-form {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+.addNews-form .form-sag{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.addNews-form .form-sol{
+    flex:1;
+}
+
+.addNews .addNews-form .form-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.addNews .addNews-form .form-item .form-image {
+    width: 240px;
+}
+
+.addNews .addNews-form .form-item label img {
+    width: 240px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.addNews .addNews-form .form-item input,
+.addNews .addNews-form .form-item textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+
+.addNews .addNews-form .form-item p {
+    color: #f44336;
+    border-bottom: 1px solid #E20A17;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.addNews .addNews-btns{
+    display: flex;
+    gap: 20px;
+}
+.addNews .addNews-btns button{
+    padding: 8px 25px;
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #f9f9f9;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.addNews .addNews-btns .add-btn{
+    background-color: #4caf50;
+}
+.addNews .addNews-btns .add-btn:hover{
+    border: 1px solid #f9f9f9;
+}
+.addNews .addNews-btns .cancel-btn{
+    background-color: #E20A17;
+}
+
+.addNews .addNews-btns .cancel-btn:hover{
+    border: 1px solid #f9f9f9;
+}
+
+
+/*********details stilleri***********************************/
+
+.adminNews main {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.details-table th,
+.details-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    height: 100%;
+}
+
+.details-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.details-table td img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.details-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.details-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.details-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-icons i {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.details-icons i span {
+    font-size: 14px;
+    font-style: normal;
+}
+
+.details-icons .edit {
+    color: #4caf50;
+    transition: all 0.3s ease;
+}
+
+.details-icons .edit:hover {
+    color: #f9f9f9;
+    background-color: #4caf50;
+}
+
+.details-icons .delete {
+    color: #f44336;
+    transition: all 0.3s ease;
+}
+
+.details-icons .delete:hover {
+    color: #f9f9f9;
+    background-color: #f44336;
+}
+
+/***********************modal stilleri***********/
+
+.adminModal {
+    background-color: #02255D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adminModal .modal-content {
+    width: 500px;
+    color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-content hr {
+    margin-bottom: 20px;
+    height: 1px;
+    border: none;
+    background-color: #f9f9f9;
+}
+
+
+.editNews-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.editNews-form .form-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.editNews-form .form-image {
+    width: 120px;
+}
+
+.editNews-form .form-item label img {
+    width: 120px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.editNews-form .form-item input,
+.editNews-form .form-item textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.editNews-form .form-item p {
+    color: #f44336;
+}
