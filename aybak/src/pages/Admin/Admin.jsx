@@ -17,7 +17,7 @@ const Admin = () => {
         </header>
         <main>
           <aside>
-            <ul>
+            <ul className="admin-list">
               <li>Admin Bilgileri</li>
               <li onClick={(e) => setDuyuru(true)}>Duyurular</li>
               <li>Ürünler</li>

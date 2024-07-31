@@ -29,6 +29,12 @@
 
 }
 
+.admin-list li {
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
 @media screen and (max-width:480px) {
     .contact {
         width: 90%;
