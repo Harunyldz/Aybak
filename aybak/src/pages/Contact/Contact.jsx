@@ -24,9 +24,9 @@ const Contact = () => {
   return (
     <div className="contact">
       <EmailForm />
-      <div>
+      <div className="contact-adress">
         <section className="footer-contact">
-          <h3>İletişim</h3>
+          <h2 style={{ padding: '15px', fontWeight: 'bold', }}>Merkez İletişim</h2>
           <ul className="footer-contacts">
             <li>
               <i>
@@ -57,11 +57,45 @@ const Contact = () => {
                 </i>
               </div>
             </li>
-            <li>
+            <li><a href="mailto:info@aybakgida.com">
               <i>
                 <MdEmail />
               </i>
-              <span>info@aybakgida.com</span>
+              <span>info@aybakgida.com</span></a>
+            </li>
+            <li><a href="mailto:uguryilmaz@aybakgida.com">
+              <i>
+                <MdEmail />
+              </i>
+              <span>uguryilmaz@aybakgida.com</span></a>
+            </li>
+            <li><h2 style={{ padding: '15px', fontWeight: 'bold', }}>Fabrika İletişim</h2></li>
+            <li>
+              <i>
+                <FaLocationDot />
+              </i>
+              <span >
+                Aybak Gıda San. Tic. Ltd. Şti.
+                B.Doğanca Mah. Artezyen Cad. No:132
+                MERİÇ / EDİRNE <br />
+
+              </span>
+            </li>
+            <li>
+              <div>
+                <i>
+                  <FaPhone />
+                </i>
+                <span>
+                  +90 (284) 415 11 74 pbx</span>
+              </div>
+              <div>
+                <i>
+                  <FaFax />
+                </i>
+                <span> +90 (284) 415 11 69 </span>
+              </div>
+
             </li>
           </ul>
         </section>
