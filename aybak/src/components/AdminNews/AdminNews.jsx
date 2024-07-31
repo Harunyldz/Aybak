@@ -1,21 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./AdminNews.css";
 import { FaPlus } from "react-icons/fa";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import { GrEdit } from "react-icons/gr";
-import { news as initialNews } from "../../utils/News";
+// import { news as initialNews } from "../../utils/News";
 import defaultImage from "../../assets/image.png";
 import { motion } from "framer-motion";
 import Modal from "react-modal";
 
+import { supabase } from "../../utils/createClient";
+
 const AdminNews = () => {
   const [addNews, setAddNews] = useState(false);
-  const [news, setNews] = useState(initialNews);
+  const [news, setNews] = useState([]);
   const [image, setImage] = useState(null);
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
   const [modalIsOpen, setIsOpen] = useState(false);
   const [editNews, setEditNews] = useState(null);
+
+  const fetchNews = async () => {
+    const { data } = await supabase.from("news").select("*");
+    setNews(data);
+  };
+
+  useEffect(() => {
+    fetchNews();
+  }, []);
 
   const openModal = (newsItem) => {
     setEditNews(newsItem);
@@ -121,10 +132,7 @@ const AdminNews = () => {
               </div>
               <div className="addNews-btns">
                 <button className="add-btn">Ekle</button>
-                <button
-                  className="cancel-btn"
-                  onClick={handleCloseAddNews}
-                >
+                <button className="cancel-btn" onClick={handleCloseAddNews}>
                   İptal
                 </button>
               </div>
