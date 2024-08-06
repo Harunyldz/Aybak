@@ -1,5 +1,4 @@
 import "./News.css";
-// import { news } from "../../utils/News";
 import defaultImage from "../../assets/isyeri/foto3.jpg";
 import aybakIcon from "../../assets/icon.png";
 
