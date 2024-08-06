@@ -4,6 +4,7 @@ import { FaPlus } from "react-icons/fa";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import { GrEdit } from "react-icons/gr";
 import defaultImage from "../../assets/image.png";
+
 import { motion } from "framer-motion";
 import Modal from "react-modal";
 import { supabase } from "../../utils/createClient";
