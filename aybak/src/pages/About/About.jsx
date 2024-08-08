@@ -100,9 +100,7 @@ const About = () => {
             </div>
             <figcaption>
               <p>
-                Firmamız ürünlerinde bütün sezon boyunca değişmeyen kalite
-                anlayışıyla yerli ve ithal ürünlerle, ISO ve HACCP kalite
-                sertifikalarıyla daha da güvenli bir hizmet sunmaktadır.
+                Firmamız ürünlerinde bütün sezon boyunca değişmeyen kalite anlayışıyla yerli ve ithal ürünlerle,   ISO ve HACCP kalite sertifikalarıyla daha da güvenli bir hizmet sunmaktadır.
                 <br /> <br />
                 Sertifikalarımızı görmek için{" "}
                 <Link to="/kurumsal/belgelerimiz" className="figure-link">
