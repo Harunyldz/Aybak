@@ -4,9 +4,11 @@ import { FaPlus } from "react-icons/fa";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import { GrEdit } from "react-icons/gr";
 import defaultImage from "../../assets/image.png";
+
 import { motion } from "framer-motion";
 import Modal from "react-modal";
 import { supabase } from "../../utils/createClient";
+import { toast } from "react-toastify";
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 
@@ -76,6 +78,9 @@ const AdminNews = () => {
 
       setNews([...news, { ...newNews, image: imageUrl }]);
       handleCloseAddNews();
+      toast.info("Duyuru listeye eklendi", {
+        theme: "colored",
+      });
     } catch (error) {
       console.error("Error adding news:", error);
     }
@@ -142,6 +147,9 @@ const AdminNews = () => {
         .single();
 
       fetchNews();
+      toast.success(`Duyuru başarıyla güncellendi`, {
+        theme: "colored",
+      });
       if (error) throw error;
 
       // State'i güncelleme
@@ -169,7 +177,9 @@ const AdminNews = () => {
 
         if (deleteImageError) throw deleteImageError;
       }
-
+      toast.error("Duyuru başarıyla silindi", {
+        theme: "colored",
+      });
       setNews(news.filter((item) => item.id !== id));
     } catch (error) {
       console.error("Error deleting news:", error);
@@ -187,7 +197,10 @@ const AdminNews = () => {
     <div className="adminNews">
       <header className="adminNews-header">
         <span onClick={() => setAddNews(!addNews)}>
-          Yeni Duyuru Ekle <FaPlus />
+          Yeni Duyuru Ekle{" "}
+          <i>
+            <FaPlus />
+          </i>
         </span>
       </header>
       {addNews && (

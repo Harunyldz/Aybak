@@ -31,7 +31,6 @@
     font-weight: 500;
 }
 
-
 .admin-container main{
     width: 100%;
     height: 100%;
@@ -41,8 +40,20 @@
 .admin-container main aside{
     flex:1;
     border-right: 1px solid #E20A17;
+    margin-top: 5px;
 }
 .admin-container main section{
     flex:4;
-    /* background-color: antiquewhite; */
 }
+
+.admin-list li{
+    padding:10px ;
+    margin: 0;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.admin-list li.active {
+    background: #02255D;
+    color: white;
+  }

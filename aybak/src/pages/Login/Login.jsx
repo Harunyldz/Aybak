@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Login.css";
-import { adminInfo } from "../../utils/Admin";
 import { useNavigate } from "react-router-dom";
 import { FaEyeSlash, FaEye } from "react-icons/fa6";
-import { useAuth } from "../../utils/auth";  // Auth context'i import edin
+import { useAuth } from "../../utils/auth";
+import { supabase } from "../../utils/createClient";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -11,15 +11,38 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState(false);
   const navigate = useNavigate();
-  const { login } = useAuth();  // Login işlevini context'ten alın
+  const { login } = useAuth();
+  const [adminData, setAdminData] = useState({});
+
+  // Admin bilgilerini Supabase'den çek
+  const fetchAdminData = async () => {
+    try {
+      const { data, error } = await supabase
+        .from("admin")
+        .select("*")
+        .single(); // Tek bir admin kaydını alır
+      if (error) throw error;
+      setAdminData(data);
+    } catch (error) {
+      console.error("Admin bilgileri çekilirken bir hata oluştu:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchAdminData();
+  }, []);
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (adminInfo.username === username && adminInfo.password === password) {
-      login();  // Kullanıcıyı kimlik doğrulama durumuna ekleyin
+    
+    if (
+      username === adminData.username &&
+      password === adminData.password
+    ) {
+      login(); // Kullanıcıyı kimlik doğrulama durumuna ekler
       navigate("/admin");
-      setPassword("");
       setUsername("");
+      setPassword("");
     } else {
       setError(true);
     }
@@ -53,7 +76,9 @@ const Login = () => {
             </i>
           </div>
           {error && (
-            <span className="form-error">Lütfen kullanıcı adınızı ya da parolanızı kontrol ediniz!</span>
+            <span className="form-error">
+              Lütfen kullanıcı adınızı ya da parolanızı kontrol ediniz!
+            </span>
           )}
           <button type="submit" className="login-btn">
             Giriş Yap
