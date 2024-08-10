@@ -187,4 +187,14 @@
     margin-left: 50px;
 }
 
+@media screen and (max-width:480px) {
+    .navbar-wrapper{
+        /* display: none; */
+    }
+
+    .navbar-container .navbar{
+        display: none;
+    }
+}
+
 /*#02255D*/

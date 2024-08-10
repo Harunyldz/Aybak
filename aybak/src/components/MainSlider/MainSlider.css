@@ -13,10 +13,16 @@
     align-items: center;
 }
 
-/* .mainSlider .swiper-slide img {
-    display: block;
+@media screen and (max-width:480px) {
+    .mainSlider{
+        height: 70vw;
+    }
+}
+
+.mainSlider .swiper-slide img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-} */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
