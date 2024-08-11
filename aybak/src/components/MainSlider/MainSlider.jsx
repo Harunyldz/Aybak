@@ -9,32 +9,22 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay } from "swiper/modules";
 
-import Birinci from "../Slides/Birinci/Birinci";
-import Ikinci from "../Slides/Ikinci/Ikinci";
-import Ucuncu from "../Slides/Ucuncu/Ucuncu";
-
-import ekran from "../../assets/ekran.png"
-
+import slide1 from "../../assets/slider_images/slide1.png"
+import slide2 from "../../assets/slider_images/slide2.png"
+import slide3 from "../../assets/slider_images/slide3.png"
 const MainSlider = () => {
   return (
     <Swiper
       className="mainSlider"
       modules={[Autoplay]}
-      // speed={2500}
-      // autoplay={{
-      //   delay: 4000,
-      // }}
+      speed={2500}
+      autoplay={{
+        delay: 4000,
+      }}
     >
-      <SwiperSlide>
-        <Birinci />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Ikinci />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Ucuncu />
-      </SwiperSlide>
-      {/* <SwiperSlide><img src={ekran} alt="" /></SwiperSlide> */}
+      <SwiperSlide><img src={slide1} alt="" /></SwiperSlide>
+      <SwiperSlide><img src={slide2} alt="" /></SwiperSlide>
+      <SwiperSlide><img src={slide3} alt="" /></SwiperSlide>
     </Swiper>
   );
 };
