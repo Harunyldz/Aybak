@@ -39,7 +39,7 @@ const BakliyatSaglik = () => {
         {productInfo.map((product) => (
           <figure key={product.id}>
             <div className="bakliyat-img">
-              <img src={product.image} alt="" />
+              <img src={product.image} alt={product.title} />
             </div>
             <figcaption>
               <h3>{product.title}</h3>

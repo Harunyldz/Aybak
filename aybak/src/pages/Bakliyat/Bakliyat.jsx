@@ -26,7 +26,7 @@ const Bakliyat = () => {
             transition={{ duration: 2 }}
             className="bakliyat-bilgi-img"
           >
-            <img src={bakliyat.image} alt="" />
+            <img src={bakliyat.image} alt={bakliyat.title} />
           </motion.div>
           <motion.section
             key={bakliyat.id}

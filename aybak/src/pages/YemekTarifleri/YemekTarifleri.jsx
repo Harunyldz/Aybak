@@ -47,7 +47,7 @@ const YemekTarifleri = () => {
               key={cate.id}
               onClick={() => handleCategoryClick(cate.name)}
             >
-              <img src={cate.image} alt="" />
+              <img src={cate.image} alt={cate.name} />
               <figcaption>{cate.name}</figcaption>
             </figure>
           ))}

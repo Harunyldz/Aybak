@@ -43,7 +43,7 @@ const About = () => {
               </p>
             </figcaption>
             <div className="figure-box">
-              <img src={aybakKurumsal} alt="" />
+              <img src={aybakKurumsal} alt="aybak kurumsal foto" />
             </div>
           </figure>
         </motion.section>
@@ -55,8 +55,8 @@ const About = () => {
         >
           <figure>
             <div className="figure-box">
-              <img src={isyeri1} alt="" />
-              <img src={yag2} alt="" />
+              <img src={isyeri1} alt="aybak işyeri" />
+              <img src={yag2} alt="ödenay yağ" />
             </div>
             <figcaption>
               <p>
@@ -84,7 +84,7 @@ const About = () => {
               </p>
             </figcaption>
             <div className="figure-box">
-              <img src={odenay} alt="" />
+              <img src={odenay} alt="aybak bakliyat" />
             </div>
           </figure>
         </motion.section>
@@ -96,7 +96,7 @@ const About = () => {
         >
           <figure>
             <div className="figure-box">
-              <img src={aybakDis} alt="" />
+              <img src={aybakDis} alt="aybak dış görünüm" />
             </div>
             <figcaption>
               <p>
@@ -125,7 +125,7 @@ const About = () => {
               </p>
             </figcaption>
             <div className="figure-box">
-              <img src={aybakUrun} alt="" />
+              <img src={aybakUrun} alt="aybak ürünleri" />
             </div>
           </figure>
         </motion.section>
@@ -137,8 +137,8 @@ const About = () => {
         >
           <figure>
             <div className="figure-box">
-              <img src={yag1} alt="" />
-              <img src={yag2} alt="" />
+              <img src={yag1} alt="ödenay yağları" />
+              <img src={yag2} alt="ödenay yağları" />
             </div>
             <figcaption>
               <p>

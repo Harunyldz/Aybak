@@ -1,7 +1,6 @@
 import "./MainSlider.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { motion } from "framer-motion";
 
 // Import Swiper styles
 import "swiper/css";
@@ -22,9 +21,9 @@ const MainSlider = () => {
         delay: 4000,
       }}
     >
-      <SwiperSlide><img src={slide1} alt="" /></SwiperSlide>
-      <SwiperSlide><img src={slide2} alt="" /></SwiperSlide>
-      <SwiperSlide><img src={slide3} alt="" /></SwiperSlide>
+      <SwiperSlide><img src={slide1} alt="slider image" /></SwiperSlide>
+      <SwiperSlide><img src={slide2} alt="slider image" /></SwiperSlide>
+      <SwiperSlide><img src={slide3} alt="slider image" /></SwiperSlide>
     </Swiper>
   );
 };

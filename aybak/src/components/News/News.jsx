@@ -72,7 +72,7 @@ const News = () => {
             <SwiperSlide key={newitem.id}>
               <figure>
                 <div className="figure-img">
-                  <img src={newitem.image || defaultImage} alt="" />
+                  <img src={newitem.image || defaultImage} alt={newitem.image.name} />
                 </div>
                 <motion.figcaption
                   initial={{ opacity: 0, y: 100 }}
@@ -82,7 +82,7 @@ const News = () => {
                   <h3>{newitem.title}</h3>
                   <p>{newitem.text}</p>
                   <div className="news-logo">
-                    <img src={aybakIcon} alt="" />
+                    <img src={aybakIcon} alt="aybak logo" />
                   </div>
                 </motion.figcaption>
               </figure>
