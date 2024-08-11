@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
 
-import { products } from "../../utils/Products";
-import FluidSlider from "../FluidSlider/FluidSlider";
 import News from "../../components/News/News";
 import MainSlider from "../../components/MainSlider/MainSlider";
 
@@ -12,7 +10,6 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <div className="home-slider">
-        {/* <FluidSlider /> */}
         <MainSlider/>
       </div>
       <section className="header">
