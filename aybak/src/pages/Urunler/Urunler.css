@@ -2,7 +2,6 @@
     width: 100%;
 }
 
-
 .urunler-wrapper header {
     width: 100%;
     padding: 50px 0 20px 0;
@@ -35,7 +34,9 @@
     justify-content: space-between;
 }
 
+
 .urunler-wrapper header menu ul li {
+    text-align: center;
     cursor: pointer;
     padding: 12px 20px;
     background-color: #E20A17;
@@ -52,19 +53,6 @@
     background-color: #02255dd7;
 }
 
-@media screen and (max-width:1400px) {
-    
-    .urunler-wrapper header menu ul {
-        width: 100%;
-    }
-
-    .urunler-wrapper header menu ul li {
-        padding: 10px 5px;
-        font-size: 16px;
-        font-weight: 500;
-    }
-}
-
 .urunler-wrapper header menu ul li:hover {
     background-color: #02255dd7;
 }
@@ -73,7 +61,6 @@
     width: 80%;
     margin: 0 auto;
 }
-
 
 .urunler-container main {
     width: 100%;
@@ -109,6 +96,7 @@
     border-radius: 10px;
     overflow: hidden;
 }
+
 .urunler-container section figure img {
     height: 240px;
     max-width: 250px;
@@ -127,4 +115,65 @@
     width: 100%;
     text-align: center;
     font-weight: 600;
+}
+
+@media screen and (max-width:1400px) {
+
+    .urunler-wrapper header menu ul {
+        width: 100%;
+    }
+
+    .urunler-wrapper header menu ul li {
+        padding: 10px 5px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .urunler-wrapper header menu ul {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .urunler-wrapper header menu ul li {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+
+    .urunler-wrapper header h1 {
+        margin: 10px auto;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .urunler-wrapper header .header-container {
+        width: 90%;
+        padding: 10px 0 20px 0;
+    }
+
+    .urunler-wrapper header menu ul {
+        width: 100%;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .urunler-wrapper header menu ul li {
+        padding: 10px 20px;
+    }
+
+    .urunler-container main {
+        margin-top: 40px;
+    }
+
+    .urunler-container section figure {
+        width: 100%;
+        gap: 20px;
+    }
+    .urunler-container section figure figcaption {
+        padding: 12px 5px;
+    }
 }
