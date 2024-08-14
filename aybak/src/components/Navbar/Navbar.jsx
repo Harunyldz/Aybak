@@ -6,10 +6,13 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { transformString } from "../../utils/transformString";
+import { FaBars } from "react-icons/fa6";
+import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(null);
   const [subDropdown, setSubDropdown] = useState(null);
+  const [opened, setOpened] = useState(false);
 
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
@@ -55,14 +58,14 @@ const Navbar = () => {
                               navListItem.name === "Kurumsal"
                                 ? subMenu.name === "Belgelerimiz"
                                   ? `${navListItem.href}/${transformString(
-                                    subMenu.name
-                                  )}`
+                                      subMenu.name
+                                    )}`
                                   : `${navListItem.href}#${transformString(
+                                      subMenu.name
+                                    )}`
+                                : `${navListItem.href}/${transformString(
                                     subMenu.name
                                   )}`
-                                : `${navListItem.href}/${transformString(
-                                  subMenu.name
-                                )}`
                             }
                             scroll={scrollWithOffset}
                             className="nav-sublink"
@@ -105,11 +108,17 @@ const Navbar = () => {
               </li>
             ))}
             <li className="nav-itemBtn">
-              <Link to='/login'>
-                <button className="login-button">Giriş Yap</button></Link>
+              <Link to="/login">
+                <button className="login-button">Giriş Yap</button>
+              </Link>
             </li>
           </ul>
         </nav>
+        <div className="navbar-icon">
+          <i onClick={() => setOpened(!opened)}>
+            {opened ? <FaTimes /> : <FaBars />}
+          </i>
+        </div>
       </div>
     </div>
   );
