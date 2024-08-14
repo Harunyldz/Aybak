@@ -12,7 +12,10 @@ const TarifSagMenu = ({ type, title }) => {
       {recipeType.map((recipe) => (
         <li>
           <img src={recipe.image} alt={recipe.title} />
-          <Link to={`/yemektarifleri/${transformString(recipe.title)}`} className="tarif-menu-link">
+          <Link
+            to={`/yemektarifleri/${transformString(recipe.title)}`}
+            className="tarif-menu-link"
+          >
             <span>{recipe.title}</span>
             <i>
               <FaChevronCircleRight />
@@ -20,6 +23,9 @@ const TarifSagMenu = ({ type, title }) => {
           </Link>
         </li>
       ))}
+      <Link to="/yemektarifleri" className="tarif-menu-btn">
+        Tüm Tarifler
+      </Link>
     </ul>
   );
 };
