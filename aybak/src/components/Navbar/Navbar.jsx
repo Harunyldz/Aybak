@@ -10,9 +10,21 @@ import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
-  const [dropdown, setDropdown] = useState(null);
+  const [dropdown, setDropdown] = useState(false);
   const [subDropdown, setSubDropdown] = useState(null);
   const [opened, setOpened] = useState(false);
+
+  const handleMouseEnter = () => {
+    if (window.innerWidth >= 1024) {
+      setDropdown(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (window.innerWidth >= 1024) {
+      setDropdown(false);
+    }
+  };
 
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
@@ -27,18 +39,19 @@ const Navbar = () => {
           <img src={logo} alt="Aybak Gıda logo" />
         </div>
         <nav className="navbar">
-          <ul className="nav-list">
+          <ul className={`nav-list  ${opened ? "nav-list-opened" : ""}`}>
             {navList.map((navListItem) => (
               <li
                 key={navListItem.id}
                 className="nav-item"
-                onMouseEnter={() => setDropdown(navListItem.id)}
-                onMouseLeave={() => setDropdown(null)}
+                onMouseEnter={navListItem.subMenu ? handleMouseEnter : null}
+                onMouseLeave={navListItem.subMenu ? handleMouseLeave : null}
+                onClick={()=>setOpened(!opened)}
               >
                 <Link to={navListItem.href} className="nav-link">
                   {navListItem.name}
                 </Link>
-                {navListItem.subMenu && (
+                {navListItem.subMenu && dropdown && (
                   <ul
                     className={
                       dropdown === navListItem.id
@@ -109,7 +122,7 @@ const Navbar = () => {
             ))}
             <li className="nav-itemBtn">
               <Link to="/login">
-                <button className="login-button">Giriş Yap</button>
+                <button className="login-button" onClick={()=>setOpened(!opened)}>Giriş Yap</button>
               </Link>
             </li>
           </ul>
