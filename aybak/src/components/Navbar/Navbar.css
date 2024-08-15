@@ -287,6 +287,9 @@
 }
 
 @media screen and (max-width:480px) {
+    .navbar-wrapper {
+        height: 80px;
+    }
     .navbar-container {
         height: 80px;
     }
