@@ -195,6 +195,12 @@
     margin-right: 30px;
 }
 
+.navbar-container .navbar-icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width:1200px) {
     .navbar-container {
         gap: 20px;
@@ -290,6 +296,7 @@
     .navbar-wrapper {
         height: 80px;
     }
+
     .navbar-container {
         height: 80px;
     }
