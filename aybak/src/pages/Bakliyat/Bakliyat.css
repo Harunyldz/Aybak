@@ -158,6 +158,9 @@
 }
 
 @media screen and (max-width:768px) {
+    .bakliyat-bilgi-container .bakliyat-bilgi {
+        gap: 30px;
+    }
     .bakliyat-bilgi .bakliyat-bilgi-img {
         height: 250px;
     }
@@ -201,26 +204,9 @@
         height: 200px;
     }
 
-    .bakliyat-bilgi .bakliyat-detay ul h3 {
-        font-size: 15px;
-    }
-
-    .bakliyat-bilgi .bakliyat-detay ul li {
-        font-size: 12px;
-    }
-
-    .bakliyat-bilgi .bakliyat-detay ul h4 {
-        font-size: 14px;
-    }
-
     .bakliyat .bakliyat-links {
         margin-top: 40px;
         gap: 10px;
         width: 90%;
-    }
-
-    .bakliyat .bakliyat-links .bakliyat-link {
-        padding: 4px 12px;
-        font-size: 14px;
     }
 }
