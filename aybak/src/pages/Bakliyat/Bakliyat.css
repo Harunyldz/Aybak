@@ -87,7 +87,7 @@
     cursor: pointer;
 }
 
-.bakliyat .bakliyat-links{
+.bakliyat .bakliyat-links {
     width: 70%;
     margin: 0 auto;
     margin-top: 80px;
@@ -97,8 +97,7 @@
     gap: 20px;
 }
 
-.bakliyat .bakliyat-links .bakliyat-link{
-    background-color: aqua;
+.bakliyat .bakliyat-links .bakliyat-link {
     padding: 5px 20px;
     border-radius: 10px;
     font-size: 20px;
@@ -108,11 +107,120 @@
     transition: all 0.3s ease;
     min-width: max-content;
 }
-.bakliyat .bakliyat-links .bakliyat-link:hover{
+
+.bakliyat .bakliyat-links .bakliyat-link:hover {
     background-color: rgba(2, 37, 93, 1);
 }
 
-.bakliyat .bakliyat-links .bakliyat-link.active{
+.bakliyat .bakliyat-links .bakliyat-link.active {
     background-color: rgba(2, 37, 93, 1);
     color: #f9f9f9;
+}
+
+@media screen and (max-width:1024px) {
+    .bakliyat-ust {
+        height: 200px;
+        margin-bottom: 60px;
+    }
+
+    .bakliyat-ust h1 {
+        height: 120px;
+        line-height: 120px;
+        font-size: 40px;
+    }
+
+    .bakliyat-bilgi .bakliyat-bilgi-img {
+        height: 360px;
+        min-width: 320px;
+    }
+
+    .bakliyat-bilgi .bakliyat-detay {
+        min-width: 320px;
+    }
+
+    .bakliyat-bilgi .bakliyat-detay ul li {
+        font-size: 16px;
+    }
+
+    .bakliyat-bilgi .bakliyat-detay ul h4 {
+        font-size: 18px;
+    }
+
+    .bakliyat .bakliyat-links {
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .bakliyat .bakliyat-links .bakliyat-link {
+        padding: 5px 16px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bakliyat-bilgi .bakliyat-bilgi-img {
+        height: 250px;
+    }
+
+    .bakliyat-bilgi .bakliyat-detay ul h3 {
+        font-size: 18px;
+    }
+
+    .bakliyat-bilgi .bakliyat-detay ul li {
+        font-size: 15px;
+    }
+
+    .bakliyat-bilgi .bakliyat-detay ul h4 {
+        font-size: 16px;
+    }
+
+    .bakliyat .bakliyat-links {
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .bakliyat .bakliyat-links .bakliyat-link {
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .bakliyat-ust {
+        height: 150px;
+        margin-bottom: 50px;
+    }
+
+    .bakliyat-ust h1 {
+        height: 90px;
+        line-height: 90px;
+        font-size: 32px;
+    }
+
+    .bakliyat-bilgi .bakliyat-bilgi-img {
+        height: 200px;
+    }
+
+    .bakliyat-bilgi .bakliyat-detay ul h3 {
+        font-size: 15px;
+    }
+
+    .bakliyat-bilgi .bakliyat-detay ul li {
+        font-size: 12px;
+    }
+
+    .bakliyat-bilgi .bakliyat-detay ul h4 {
+        font-size: 14px;
+    }
+
+    .bakliyat .bakliyat-links {
+        margin-top: 40px;
+        gap: 10px;
+        width: 90%;
+    }
+
+    .bakliyat .bakliyat-links .bakliyat-link {
+        padding: 4px 12px;
+        font-size: 14px;
+    }
 }

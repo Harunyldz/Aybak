@@ -51,7 +51,7 @@
 }
 
 .bakliyat-container figure {
-    width: 400px;
+    width: 360px;
     position: relative;
     height: 240px;
     border-radius: 10px;
@@ -112,4 +112,73 @@
     justify-content: center;
     background-color: rgba(226, 10, 23, 0.5);
     cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .bakliyat-container figure figcaption {
+        opacity: 1;
+        bottom: 0;
+    }
+    .bakliyat-container {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .bakliyat-container figure {
+        width: 300px;
+        height: 200px;
+    }
+    .bakliyat-container figure figcaption {
+        height: 50px;
+    }
+    .bakliyat-container figcaption h3 {
+        font-size: 20px;
+    }
+    
+    .bakliyat-container figcaption .bakliyat-icon {
+        font-size: 20px;
+    }
+    .bakliyat-wrapper .bakliyat-header {
+        height: 150px;
+        margin-bottom: 60px;
+    }
+    
+    .bakliyat-header h1 {
+        font-size: 40px;
+    }
+    .bakliyat-text {
+        width: 90%;
+    }
+    
+    .bakliyat-text h2 {
+        font-size:24px;
+    }
+    
+    .bakliyat-text p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:480px) {
+    .bakliyat-container figure {
+        width: 90%;
+        height: 180px;
+    }
+    .bakliyat-container figure figcaption {
+        height: 40px;
+    }
+    .bakliyat-header h1 {
+        font-size: 32px;
+    }
+    .bakliyat-text {
+        width: 90%;
+        text-align: left;
+    }
+    .bakliyat-text h2 {
+        font-size:18px;
+    }
+    
+    .bakliyat-text p {
+        font-size: 12px;
+    }
 }
