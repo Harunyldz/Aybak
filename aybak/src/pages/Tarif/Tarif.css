@@ -1,8 +1,6 @@
-@import "../../styles/variables.css";
-
 .tarif-wrapper {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .tarif-container {
@@ -10,7 +8,6 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 50px;
     align-items: center;
 }
 
@@ -51,7 +48,7 @@
 .tarif h3 {
     font-weight: 500;
     font-size: 20px;
-    color: var(--primary-color);
+    color: rgba(226, 10, 23, 1);
 }
 
 .tarif .tarif-alt {
@@ -65,4 +62,53 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+@media screen and (max-width:480px) {
+    .tarif-wrapper {
+        padding-top: 20px;
+    }
+
+    .tarif-container {
+        width: 90%;
+    }
+
+    .tarif .tarif-ust {
+        gap: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .tarif-ust figure {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .tarif-ust figure img {
+        width: 100%;
+        height: 200px;
+        min-width: 300px;
+    }
+
+    .tarif-ust figure figcaption h2 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .tarif-ust div {
+        width: 100%;
+    }
+
+    .tarif .tarif-alt {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .tarif-alt ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 }

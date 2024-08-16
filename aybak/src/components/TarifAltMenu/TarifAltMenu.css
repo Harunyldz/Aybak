@@ -3,14 +3,14 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px 10px;
+    margin-top: 40px;
 }
 
 .tarif-menu li {
     width: 240px;
     min-width: 200px;
     height: 150px;
-    margin-bottom: 10px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

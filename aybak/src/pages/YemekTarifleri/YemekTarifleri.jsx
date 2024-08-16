@@ -13,15 +13,17 @@ const YemekTarifleri = () => {
   const mainRef = useRef(null);
 
   const handleCategoryClick = (cateName) => {
-    if (category === cateName) {
+    const isSameCategory = category === cateName;
+    
+    if (isSameCategory) {
       setCategory("All");
     } else {
       setCategory(cateName);
     }
 
-    if (mainRef.current) {
+    if (!isSameCategory && mainRef.current) {
       window.scrollTo({
-        top: mainRef.current.offsetTop-120,
+        top: mainRef.current.offsetTop - 120,
         behavior: "smooth",
       });
     }
