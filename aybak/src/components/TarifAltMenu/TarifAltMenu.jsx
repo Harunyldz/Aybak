@@ -10,7 +10,7 @@ const TarifAltMenu = ({ type, title }) => {
   return (
     <ul className="tarif-menu">
       {recipeType.map((recipe) => (
-        <li>
+        <li key={recipe.id}>
           <img src={recipe.image} alt={recipe.title} />
           <Link
             to={`/yemektarifleri/${transformString(recipe.title)}`}

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import logo5 from "../../assets/logo.png";
 import aybakKurumsal from "../../assets/aybak-kurumsal.jpg";
 import isyeri1 from "../../assets/isyeri/yeni2.jpg";
-import isyeri2 from "../../assets/isyeri/yeni4.jpg";
 import odenay from "../../assets/isyeri/odenay_fon.jpg";
 import aybakDis from "../../assets/slider/slider-mega.jpg";
 import aybakUrun from "../../assets/slider/foto2.jpg";
