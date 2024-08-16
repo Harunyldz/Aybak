@@ -1,6 +1,6 @@
 import "./YemekTarifleri.css";
 import { recipes, categories } from "../../utils/Recipes";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import img1 from "../../assets/tarim5.jpg";
 
 import { transformString } from "../../utils/transformString";
@@ -10,12 +10,20 @@ import { Link } from "react-router-dom";
 
 const YemekTarifleri = () => {
   const [category, setCategory] = useState("All");
+  const mainRef = useRef(null);
 
   const handleCategoryClick = (cateName) => {
     if (category === cateName) {
       setCategory("All");
     } else {
       setCategory(cateName);
+    }
+
+    if (mainRef.current) {
+      window.scrollTo({
+        top: mainRef.current.offsetTop-120,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -52,7 +60,7 @@ const YemekTarifleri = () => {
             </figure>
           ))}
         </menu>
-        <main>
+        <main ref={mainRef}>
           {yemekler.map((yemek) => (
             <motion.figure
               key={yemek.id}
