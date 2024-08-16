@@ -1,10 +1,10 @@
-import "./TarifSagMenu.css";
+import "./TarifAltMenu.css";
 import { recipes } from "../../utils/Recipes";
 import { FaChevronCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { transformString } from "../../utils/transformString";
 
-const TarifSagMenu = ({ type, title }) => {
+const TarifAltMenu = ({ type, title }) => {
   const getRecipeType = recipes.filter((item) => item.type === type);
   const recipeType = getRecipeType.filter((item) => item.title !== title);
   return (
@@ -30,4 +30,4 @@ const TarifSagMenu = ({ type, title }) => {
   );
 };
 
-export default TarifSagMenu;
+export default TarifAltMenu;

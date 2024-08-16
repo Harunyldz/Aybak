@@ -115,6 +115,14 @@
 }
 
 @media screen and (max-width:1024px) {
+    .bakliyat-wrapper .bakliyat-header {
+        height: 200px;
+    }
+
+    .bakliyat-header h1 {
+        font-size: 48px;
+    }
+
     .bakliyat-container figure figcaption {
         opacity: 1;
         bottom: 0;
@@ -123,7 +131,6 @@
     .bakliyat-container {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width:768px) {

@@ -1,11 +1,14 @@
 .tarif-menu {
-    width: 80%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .tarif-menu li {
-    width: 100%;
+    width: 240px;
+    min-width: 200px;
     height: 150px;
     margin-bottom: 10px;
     position: relative;
@@ -48,14 +51,17 @@
 }
 
 .tarif-menu-btn {
+    height: 50px;
+    width: 240px;
+    align-self: self-end;
     color: #e20a18;
     padding: 10px 20px;
     text-align: center;
     border-radius: 10px;
     font-weight: 500;
     border: 1px solid #e20a18;
-    margin-top: 10px;
     transition: all 0.3s ease;
+    margin-bottom: 10px;
 }
 
 .tarif-menu-btn:hover {

@@ -6,19 +6,17 @@
 }
 
 .tarif-container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.tarif-container .tarif {
-    flex: 3;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
 }
 
 .tarif .tarif-ust {
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 50px;
 }
@@ -44,7 +42,6 @@
 }
 
 .tarif-ust div {
-    width: 100%;
     min-width: 250px;
     display: flex;
     flex-direction: column;
@@ -68,8 +65,4 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.tarif-container aside {
-    flex: 1;
 }

@@ -120,13 +120,12 @@
 @media screen and (max-width:1024px) {
     .bakliyat-ust {
         height: 200px;
-        margin-bottom: 60px;
     }
 
     .bakliyat-ust h1 {
-        height: 120px;
-        line-height: 120px;
-        font-size: 40px;
+        height: 150px;
+        line-height: 150px;
+        font-size: 48px;
     }
 
     .bakliyat-bilgi .bakliyat-bilgi-img {
@@ -161,6 +160,7 @@
     .bakliyat-bilgi-container .bakliyat-bilgi {
         gap: 30px;
     }
+
     .bakliyat-bilgi .bakliyat-bilgi-img {
         height: 250px;
     }
@@ -195,6 +195,7 @@
     }
 
     .bakliyat-ust h1 {
+        width: 90%;
         height: 90px;
         line-height: 90px;
         font-size: 32px;

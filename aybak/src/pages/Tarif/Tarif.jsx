@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { recipes } from "../../utils/Recipes";
 
 import { transformString } from "../../utils/transformString";
-import TarifSagMenu from "../../components/TarifSagMenu/TarifSagMenu";
+import TarifAltMenu from "../../components/TarifAltMenu/TarifAltMenu";
 
 const Tarif = () => {
   const { yemekAdi } = useParams();
@@ -45,9 +45,9 @@ const Tarif = () => {
             </ul>
           </section>
         </div>
-        <aside>
-          <TarifSagMenu type={yemek.type} title={yemek.title}/>
-        </aside>
+        <menu>
+          <TarifAltMenu type={yemek.type} title={yemek.title}/>
+        </menu>
       </div>
     </div>
   );
