@@ -41,7 +41,7 @@ footer {
     padding: 0 10px;
     gap: 10px;
     font-weight: 300;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .footer-container section h3 {
@@ -101,7 +101,8 @@ footer {
 .footer-container .footer-contact {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
+
 }
 
 .footer-contact .footer-contacts {

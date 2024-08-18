@@ -32,6 +32,7 @@ export const recipes = [
         id: 1,
         title: "Sarı Mercimek Çorbası",
         type: "Çorbalar",
+        href: "",
         ingredients: [
             "1 su bardağı sarı mercimek",
             "1 adet büyük soğan, doğranmış",
@@ -813,40 +814,40 @@ export const recipes = [
     }
 ]
 
-export const categories=[
+export const categories = [
     {
-        id:1,
-        name:"Çorbalar",
-        image:sariMercimekCorbasiImage
+        id: 1,
+        name: "Çorbalar",
+        image: sariMercimekCorbasiImage
     },
     {
-        id:2,
-        name:"Pilavlar",
-        image:domatesliPilavImage
+        id: 2,
+        name: "Pilavlar",
+        image: domatesliPilavImage
     },
     {
-        id:3,
-        name:"Fasulye Yemekleri",
-        image:kuruFasulyeImage
+        id: 3,
+        name: "Fasulye Yemekleri",
+        image: kuruFasulyeImage
     },
     {
-        id:4,
-        name:"Nohut Yemekleri",
-        image:nohutGuvecImage
+        id: 4,
+        name: "Nohut Yemekleri",
+        image: nohutGuvecImage
     },
     {
-        id:5,
-        name:"Yeşil Mercimek Yemekleri",
-        image:yesilMercimekImage
+        id: 5,
+        name: "Yeşil Mercimek Yemekleri",
+        image: yesilMercimekImage
     },
     {
-        id:6,
-        name:"Barbunya Yemekleri",
-        image:barbunyaPilakiImage
+        id: 6,
+        name: "Barbunya Yemekleri",
+        image: barbunyaPilakiImage
     },
     {
-        id:7,
-        name:"Diğer Yemekler",
-        image:asureImage
+        id: 7,
+        name: "Diğer Yemekler",
+        image: asureImage
     }
 ]
