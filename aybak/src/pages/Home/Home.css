@@ -1,5 +1,3 @@
-@import "../../styles/variables.css";
-
 .home-wrapper {
     width: 100%;
 }
@@ -7,9 +5,8 @@
 .home-slider {
     width: 100%;
     margin-bottom: 200px;
-
-
 }
+
 .header .header-alt {
     width: 70%;
     margin: 0 auto;
@@ -22,8 +19,12 @@
     font-weight: 600;
 }
 
+.header-alt h2 br {
+    display: none;
+}
+
 .header-alt h2 span {
-    color: var(--primary-color);
+    color: #E20A17;
 }
 
 .header-alt p {
@@ -31,6 +32,57 @@
     font-weight: 300;
     margin-top: 50px;
     line-height: 1.5;
+}
+
+@media screen and (max-width:1024px) {
+    .home-slider {
+        margin-bottom: 0;
+    }
+
+    .header .header-alt {
+        width: 90%;
+        margin-top: 80px;
+    }
+
+    .header-alt h2 {
+        font-size: 36px;
+    }
+
+    .header-alt p {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header .header-alt {
+        margin-top: 70px;
+    }
+    .header-alt h2 {
+        font-size: 28px;
+    }
+
+    .header-alt p {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .header .header-alt {
+        margin-top: 50px;
+    }
+    .header-alt h2 {
+        font-size: 24px;
+    }
+
+    .header-alt h2 br {
+        display: block;
+    }
+
+    .header-alt p {
+        font-size: 16px;
+        margin-top: 15px;
+    }
 }
 
 .urunslider-wrapper {

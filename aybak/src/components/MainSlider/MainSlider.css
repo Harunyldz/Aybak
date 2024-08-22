@@ -1,6 +1,6 @@
 .mainSlider {
     width: 100%;
-    height: 80vh;
+    height: 700px;
 }
 
 .mainSlider .swiper-slide {
@@ -13,16 +13,22 @@
     align-items: center;
 }
 
+.mainSlider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1024px) {
+    .mainSlider {
+        height: 60vw;
+    }
+}
+
 @media screen and (max-width:480px) {
     .mainSlider {
         height: 70vw;
     }
-}
-
-.mainSlider .swiper-slide img {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

@@ -34,6 +34,7 @@ const UrunSlider = () => {
       </header>
       <main>
         <Swiper
+        key={selected}
           slidesPerView={1}
           spaceBetween={50}
           centeredSlides={true}
@@ -44,13 +45,19 @@ const UrunSlider = () => {
           loop={true}
           autoplay={{
             delay: 3000,
+              disableOnInteraction: false, 
           }}
           navigation={true}
+          loopAdditionalSlides={1} 
           modules={[Autoplay, Pagination, Navigation]}
           breakpoints={{
+            480: {
+              slidesPerView: 1,
+              spaceBetween:50
+            },
             768: {
               slidesPerView: 2,
-              spaceBetween:30
+              spaceBetween:20
             },
             960: {
               slidesPerView: 3,
@@ -61,7 +68,7 @@ const UrunSlider = () => {
               spaceBetween:30
             },
             1400: {
-              slidesPerView: 5,
+              slidesPerView:5,
               spaceBetween:50
             },
           }}

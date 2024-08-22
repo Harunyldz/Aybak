@@ -20,7 +20,7 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h2>
-            Her Tanede <span>Kalite</span>, Her Sofrada <span>Lezzet</span>
+            Her Tanede <span>Kalite</span>, <br /> Her Sofrada <span>Lezzet</span>
           </h2>
           <p>
             1984 yılından beri tarım sektöründe öncü olan Öden Gıda San. Tic.
