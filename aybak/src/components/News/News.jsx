@@ -55,8 +55,26 @@ const News = () => {
       </header>
       <main className="news-main">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={50}
+          breakpoints={{
+            768: {
+              slidesPerView: 1,
+              spaceBetween:20
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween:30
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween:10
+            },
+            1400: {
+              slidesPerView:3,
+              spaceBetween:50
+            },
+          }}
           speed={2500}
           autoplay={{
             delay: 6000,

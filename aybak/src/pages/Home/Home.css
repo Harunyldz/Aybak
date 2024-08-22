@@ -34,6 +34,16 @@
     line-height: 1.5;
 }
 
+.urunslider-wrapper {
+    width: 100%;
+    margin: 100px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 @media screen and (max-width:1024px) {
     .home-slider {
         margin-bottom: 0;
@@ -55,9 +65,14 @@
 }
 
 @media screen and (max-width:768px) {
+    .urunslider-wrapper {
+        margin: 80px auto;
+    }
+
     .header .header-alt {
         margin-top: 70px;
     }
+
     .header-alt h2 {
         font-size: 28px;
     }
@@ -67,10 +82,16 @@
         margin-top: 20px;
     }
 }
+
 @media screen and (max-width:480px) {
+    .urunslider-wrapper {
+        margin: 50px auto;
+    }
+
     .header .header-alt {
         margin-top: 50px;
     }
+
     .header-alt h2 {
         font-size: 24px;
     }
@@ -85,14 +106,6 @@
     }
 }
 
-.urunslider-wrapper {
-    width: 100%;
-    margin: 100px auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 /******************* News stiller ******************************************************/
@@ -103,6 +116,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width:480px) {
+    
+.news-wrapper {
+    margin: 50px 0;
+}
 }
 
 /*****************Misyon vizton section Stilleri**************************************/
@@ -167,4 +187,8 @@
 .misyon-wrapper .misyon:hover,
 .misyon-wrapper .vizyon:hover {
     background-color: transparent;
+}
+
+@media screen and (max-width:1024px) {
+    
 }
