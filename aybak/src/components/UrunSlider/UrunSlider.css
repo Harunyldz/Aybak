@@ -29,8 +29,10 @@
 }
 
 .urun-slider header menu ul li {
+    width: 250px;
+    text-align: center;
     margin: 0 auto;
-    padding: 12px 20px;
+    padding: 12px 0;
     border-radius: 10px;
     font-size: 20px;
     color: #f9f9f9;

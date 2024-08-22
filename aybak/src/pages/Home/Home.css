@@ -119,10 +119,10 @@
 }
 
 @media screen and (max-width:480px) {
-    
-.news-wrapper {
-    margin: 50px 0;
-}
+
+    .news-wrapper {
+        margin: 50px 0;
+    }
 }
 
 /*****************Misyon vizton section Stilleri**************************************/
@@ -190,5 +190,61 @@
 }
 
 @media screen and (max-width:1024px) {
-    
+    .misyon-wrapper {
+        padding: 50px 100px;
+    }
+
+    .misyon-wrapper .misyon,
+    .misyon-wrapper .vizyon {
+        padding: 30px 40px;
+    }
+
+    .misyon-wrapper h3 {
+        font-size: 36px;
+    }
+
+    .misyon-wrapper .vizyon h3 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .misyon-wrapper {
+        padding: 30px 20px;
+    }
+
+    .misyon-wrapper .misyon,
+    .misyon-wrapper .vizyon {
+        padding: 20px 30px;
+    }
+
+    .misyon-wrapper h3 {
+        font-size: 32px;
+    }
+
+    .misyon-wrapper p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .misyon-wrapper {
+        padding: 0;
+    }
+
+    .misyon-wrapper .misyon,
+    .misyon-wrapper .vizyon {
+        padding: 15px 30px;
+    }
+
+    .misyon-wrapper h3 {
+        font-size: 28px;
+    }
+
+    .misyon-wrapper p {
+        margin-top: 5px;
+        font-size: 16px;
+        text-wrap: pretty;
+    }
 }
