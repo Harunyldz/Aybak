@@ -2,13 +2,13 @@
     width: 100%;
 }
 
-.admin-container{
+.admin-container {
     width: 80%;
     height: 100%;
     margin: 0 auto;
 }
 
-.admin-container .admin-header{
+.admin-container .admin-header {
     width: 100%;
     padding-top: 10px;
     display: flex;
@@ -17,37 +17,38 @@
     border-bottom: 1px solid #E20A17;
 }
 
-.admin-header div{
+.admin-header div {
     width: 200px;
 }
 
-.admin-header div img{
+.admin-header div img {
     width: 100%;
 }
 
-.admin-header h3{
+.admin-header h3 {
     font-size: 20px;
     color: #E20A17;
     font-weight: 500;
 }
 
-.admin-container main{
+.admin-container main {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-.admin-container main aside{
-    flex:1;
+.admin-container main aside {
+    flex: 1;
     border-right: 1px solid #E20A17;
     margin-top: 5px;
 }
-.admin-container main section{
-    flex:4;
+
+.admin-container main section {
+    flex: 4;
 }
 
-.admin-list li{
-    padding:10px ;
+.admin-list li {
+    padding: 10px;
     margin: 0;
     margin-right: 10px;
     border-radius: 5px;
@@ -56,4 +57,68 @@
 .admin-list li.active {
     background: #02255D;
     color: white;
-  }
+}
+
+@media screen and (max-width:1024px) {
+    .admin-wrapper {
+        width: 100%;
+    }
+
+    .admin-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .admin-header div {
+        width: 180px;
+    }
+
+    .admin-container main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .admin-container main aside {
+        width: 300px;
+        border-right: none;
+        margin-bottom: 10px;
+    }
+
+    .admin-container main section {
+        border-top: 1px solid #E20A17;
+    }
+
+    .admin-list li {
+        padding: 10px;
+        margin: 0;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .admin-wrapper {
+        width: 100%;
+    }
+
+    .admin-container {
+        padding: 0 10px;
+    }
+
+    .admin-header h3 {
+        font-size: 16px;
+    }
+
+    .admin-header div {
+        width: 150px;
+    }
+
+    .admin-container main aside {
+        width: 240px;
+    }
+
+    .admin-list li {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

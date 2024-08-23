@@ -33,6 +33,38 @@
     justify-content: center;
 }
 
+@media screen and (max-width:1024px) {
+    .adminNews {
+        padding: 20px 0;
+    }
+
+    .adminNews .adminNews-header {
+        padding: 15px;
+    }
+
+    .adminNews-header span {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .adminNews .adminNews-header {
+        padding: 12px;
+    }
+
+    .adminNews-header span {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .adminNews-header span {
+        font-size: 12px;
+    }
+}
+
 /************************Yeni duyuru stilleri*****************/
 .adminNews .addNews {
     width: 100%;
@@ -84,6 +116,7 @@
     font-family: inherit;
     font-size: 14px;
     background-color: #f9f9f9;
+    font-weight: 500;
 }
 
 
@@ -125,6 +158,68 @@
     border: 1px solid #f9f9f9;
 }
 
+@media screen and (max-width:768px) {
+    .addNews .addNews-form {
+        gap: 10px;
+    }
+
+    .addNews-form .form-sag {
+        flex: 3;
+        gap: 10px;
+    }
+
+    .addNews .addNews-form .form-item label img {
+        width: 180px;
+    }
+
+    .addNews .addNews-form .form-item input,
+    .addNews .addNews-form .form-item textarea {
+        font-size: 13px;
+    }
+
+
+    .addNews .addNews-form .form-item p {
+        font-size: 15px;
+    }
+
+    .addNews .addNews-btns {
+        gap: 10px;
+    }
+
+    .addNews .addNews-btns button {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:480px) {
+    .adminNews .addNews {
+        padding: 10px 20px;
+    }
+    .addNews .addNews-form {
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .addNews .addNews-form .form-item label img {
+        width: 150px;
+    }
+
+    .addNews .addNews-form .form-item input,
+    .addNews .addNews-form .form-item textarea {
+        font-size: 12px;
+    }
+
+    .addNews .addNews-form .form-item p {
+        font-size: 14px;
+    }
+
+    .addNews .addNews-btns {
+        gap: 10px;
+    }
+
+    .addNews .addNews-btns button {
+        font-size: 14px;
+    }
+}
 
 /*********details stilleri***********************************/
 
@@ -144,6 +239,7 @@
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
+    font-size: 14px;
     height: 100%;
 }
 
@@ -214,6 +310,81 @@
     background-color: #f44336;
 }
 
+@media screen and (max-width:1024px) {
+    .adminNews main {
+        margin-top: 30px;
+    }
+
+    .details-table th,
+    .details-table td {
+        padding: 6px;
+        font-size: 15px;
+    }
+
+    .details-table td img {
+        width: 150px;
+    }
+
+    .details-icons {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .adminNews main {
+        margin-top: 20px;
+    }
+
+    .details-table th,
+    .details-table td {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .details-table td img {
+        width: 120px;
+    }
+
+    .details-icons {
+        gap: 10px;
+    }
+
+    .details-icons i {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .details-icons i span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .details-table th,
+    .details-table td {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .details-table td img {
+        width: 80px;
+    }
+
+    .details-icons {
+        gap: 10px;
+    }
+
+    .details-icons i {
+        font-size: 12px;
+        padding: 5px 2px;
+    }
+
+    .details-icons i span {
+        font-size: 10px;
+    }
+}
+
 /***********************modal stilleri***********/
 
 .adminModal {
@@ -221,6 +392,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .adminModal .modal-content {
@@ -313,4 +485,66 @@
 
 .editNews-form .modal-btns .modal-close-btn:hover {
     border: 1px solid #f9f9f9;
+}
+
+@media screen and (max-width:768px) {
+    
+    .adminModal .modal-content {
+        width: 90%;
+    }
+    
+    .modal-content h2 {
+        font-size: 20px;
+    }
+    
+    .modal-content hr {
+        margin-bottom: 15px;
+    }
+    
+    .editNews-form {
+        gap: 15px;
+    }
+        
+    .editNews-form .form-item input,
+    .editNews-form .form-item textarea {
+        font-size: 13px;
+    }
+    
+    .editNews-form .form-item p {
+        color: #f44336;
+        font-size: 15px;
+    }
+    
+    .editNews-form .modal-btns button {
+        font-size: 15px;
+        font-weight: 500;
+        width: 90px;
+    } 
+}
+@media screen and (max-width:480px) {
+    
+    .adminModal .modal-content {
+        width: 100%;
+    }
+    
+    .modal-content h2 {
+        font-size: 18px;
+    }
+    
+    .editNews-form .form-item input,
+    .editNews-form .form-item textarea {
+        font-size: 12px;
+    }
+    
+    .editNews-form .form-item p {
+        color: #f44336;
+        font-size: 14px;
+    }
+    
+    .editNews-form .modal-btns button {
+        font-size: 14px;
+        font-weight: 500;
+        width: 80px;
+        padding: 6px 0;
+    } 
 }
