@@ -149,3 +149,32 @@
     font-weight: 500;
     color: rgba(226, 10, 23, 1);
 }
+
+@media screen and (max-width:480px) {
+    .ReactModal__Content {
+        background-color: #fff;
+        padding: 40px 15px;
+        width:95%;
+    }
+
+    .ReactModal__Content i {
+        font-size: 16px;
+    }
+    
+    .ReactModal__Content i:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+    
+    .ReactModal__Content .close-icon {
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+        padding: 8px;
+        color: rgba(2, 37, 93, 1);
+    }
+        
+    .ReactModal__Content span {
+        bottom: 20px;
+        font-size: 14px;
+    }
+}
