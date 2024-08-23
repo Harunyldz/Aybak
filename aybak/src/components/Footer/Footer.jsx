@@ -161,9 +161,7 @@ const Footer = () => {
               <div
                 style={{
                   display: "flex",
-                  flexDirection: "row",
                   alignItems: "center",
-                  justifyContent: "space-evenly",
                 }}
               >
                 <WhatsAppLink phoneNumber={phoneNumber} message={message} />
@@ -177,7 +175,7 @@ const Footer = () => {
         Saklıdır.
       </div>
     </footer>
-  );
+  )
 };
 
 export default Footer;
