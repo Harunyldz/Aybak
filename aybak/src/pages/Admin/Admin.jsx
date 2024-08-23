@@ -35,18 +35,11 @@ const Admin = () => {
               >
                 Duyurular
               </li>
-              <li
-                className={adminPanel === "products" ? "active" : ""}
-                onClick={() => handlePanelChange("products")}
-              >
-                Ürünler
-              </li>
             </ul>
           </aside>
           <section className="admin-area">
             {adminPanel === "news" && <AdminNews />}
             {adminPanel === "admin" && <AdminInfo />}
-            {adminPanel === "products" && <div>Ürünler Yükleniyor...</div>} 
           </section>
         </main>
       </div>

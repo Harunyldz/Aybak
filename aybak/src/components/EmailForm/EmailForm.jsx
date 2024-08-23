@@ -11,14 +11,14 @@ const EmailForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceId = process.env.REACT_APP_SERVICE_ID;
-    const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
-    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: "Tuna",
+      to_name: "Aybak",
       message: message,
     };
 
