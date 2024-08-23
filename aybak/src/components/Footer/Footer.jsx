@@ -56,7 +56,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/aybakbakliyat?igsh=MW91bno5amJ1dzNmZw==" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </a>
               </li>
