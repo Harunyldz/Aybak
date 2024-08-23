@@ -26,6 +26,11 @@ const Navbar = () => {
     }
   };
 
+  const handleSideMenu = () => {
+    if (window.innerWidth < 1024) {
+      setOpened(!opened);
+    }
+  };
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
     const yOffset = -window.innerHeight / 3;
@@ -36,8 +41,9 @@ const Navbar = () => {
     <div className="navbar-wrapper">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <Link to='/'>
-            <img src={logo} alt="Aybak Gıda logo" /></Link>
+          <Link to="/">
+            <img src={logo} alt="Aybak Gıda logo" />
+          </Link>
         </div>
         <nav className="navbar">
           <ul className={`nav-list  ${opened ? "nav-list-opened" : ""}`}>
@@ -47,7 +53,7 @@ const Navbar = () => {
                 className="nav-item"
                 onMouseEnter={navListItem.subMenu ? handleMouseEnter : null}
                 onMouseLeave={navListItem.subMenu ? handleMouseLeave : null}
-                onClick={() => setOpened(!opened)}
+                onClick={handleSideMenu}
               >
                 <Link to={navListItem.href} className="nav-link">
                   {navListItem.name}
@@ -72,14 +78,14 @@ const Navbar = () => {
                               navListItem.name === "Kurumsal"
                                 ? subMenu.name === "Belgelerimiz"
                                   ? `${navListItem.href}/${transformString(
-                                    subMenu.name
-                                  )}`
+                                      subMenu.name
+                                    )}`
                                   : `${navListItem.href}#${transformString(
+                                      subMenu.name
+                                    )}`
+                                : `${navListItem.href}/${transformString(
                                     subMenu.name
                                   )}`
-                                : `${navListItem.href}/${transformString(
-                                  subMenu.name
-                                )}`
                             }
                             scroll={scrollWithOffset}
                             className="nav-sublink"
@@ -123,7 +129,12 @@ const Navbar = () => {
             ))}
             <li className="nav-itemBtn">
               <Link to="/login">
-                <button className="login-button" onClick={() => setOpened(!opened)}>Giriş Yap</button>
+                <button
+                  className="login-button"
+                  onClick={() => setOpened(!opened)}
+                >
+                  Giriş Yap
+                </button>
               </Link>
             </li>
           </ul>
