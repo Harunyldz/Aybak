@@ -36,7 +36,8 @@ const Navbar = () => {
     <div className="navbar-wrapper">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <img src={logo} alt="Aybak Gıda logo" />
+          <Link to='/'>
+            <img src={logo} alt="Aybak Gıda logo" /></Link>
         </div>
         <nav className="navbar">
           <ul className={`nav-list  ${opened ? "nav-list-opened" : ""}`}>
@@ -46,7 +47,7 @@ const Navbar = () => {
                 className="nav-item"
                 onMouseEnter={navListItem.subMenu ? handleMouseEnter : null}
                 onMouseLeave={navListItem.subMenu ? handleMouseLeave : null}
-                onClick={()=>setOpened(!opened)}
+                onClick={() => setOpened(!opened)}
               >
                 <Link to={navListItem.href} className="nav-link">
                   {navListItem.name}
@@ -71,14 +72,14 @@ const Navbar = () => {
                               navListItem.name === "Kurumsal"
                                 ? subMenu.name === "Belgelerimiz"
                                   ? `${navListItem.href}/${transformString(
-                                      subMenu.name
-                                    )}`
-                                  : `${navListItem.href}#${transformString(
-                                      subMenu.name
-                                    )}`
-                                : `${navListItem.href}/${transformString(
                                     subMenu.name
                                   )}`
+                                  : `${navListItem.href}#${transformString(
+                                    subMenu.name
+                                  )}`
+                                : `${navListItem.href}/${transformString(
+                                  subMenu.name
+                                )}`
                             }
                             scroll={scrollWithOffset}
                             className="nav-sublink"
@@ -122,7 +123,7 @@ const Navbar = () => {
             ))}
             <li className="nav-itemBtn">
               <Link to="/login">
-                <button className="login-button" onClick={()=>setOpened(!opened)}>Giriş Yap</button>
+                <button className="login-button" onClick={() => setOpened(!opened)}>Giriş Yap</button>
               </Link>
             </li>
           </ul>

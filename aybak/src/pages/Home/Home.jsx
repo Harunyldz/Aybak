@@ -6,14 +6,15 @@ import UrunSlider from "../../components/UrunSlider/UrunSlider";
 import News from "../../components/News/News";
 import MainSlider from "../../components/MainSlider/MainSlider";
 
+
 const Home = () => {
   return (
     <div className="home-wrapper">
       <div className="home-slider">
-        <MainSlider/>
+        <MainSlider />
       </div>
       <section className="header">
-          <motion.div
+        <motion.div
           className="header-alt"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
