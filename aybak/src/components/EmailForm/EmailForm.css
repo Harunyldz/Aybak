@@ -1,7 +1,7 @@
 .contact-container {
   width: 100%;
-  max-width: 600px;
-  margin: 5vw auto;
+  min-width: 320px;
+  margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -55,12 +55,13 @@
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 1em;
+  font-size: 16px;
   flex: 1;
+  font-family: "Poppins", sans-serif;
 }
 
 .form-group textarea {
-  width: calc(100% - 20px);
+  width: 100%;
 }
 
 .form-group input:focus,
@@ -75,6 +76,7 @@
   background-color: #f89715;
   color: white;
   border: none;
+  width: 150px;
   padding: 10px 25px;
   font-size: 1em;
   border-radius: 4px;
@@ -86,18 +88,13 @@
   background-color: #e08510;
 }
 
-@media screen and (max-width: 768px) {
-  .contact-container {
-    width: 90%;
-    margin: 5vw auto;
-  }
-
+@media screen and (max-width:768px) {
   .contact-header h2 {
-    font-size: 2em;
+    font-size: 20px;
   }
 
   .contact-header p {
-    font-size: 1.2em;
+    font-size: 16px;
   }
 
   .contact-form form {
@@ -105,30 +102,44 @@
   }
 
   .form-group label {
-    font-size: 1.2em;
+    font-size: 16px;
   }
 
   .submit-button {
+    width: 120px;
     padding: 12px 30px;
-    font-size: 1.2em;
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px) {
+  .contact-container {
+    width: 100%;
+  }
+
   .contact-header h2 {
-    font-size: 1.5em;
+    font-size: 20px;
   }
 
   .contact-header p {
-    font-size: 0.9em;
+    font-size: 13px;
   }
 
   .form-group label {
-    font-size: 0.9em;
+    font-size: 14px;
+  }
+
+  .contact-container.form-group input {
+    font-size: 14px;
+  }
+
+  .form-group textarea {
+    font-size: 14px;
+    padding: 5px 10px;
   }
 
   .submit-button {
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 14px;
   }
 }
