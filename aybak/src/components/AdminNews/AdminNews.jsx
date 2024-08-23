@@ -106,61 +106,62 @@ const AdminNews = () => {
     setImage(null);
     setImageUrl("");
   };
-
   const handleEditSubmit = async (e) => {
     e.preventDefault();
     try {
-      let imageUrl = editNews.image;
-      let newImagePath = editNews.image;
-
+      // Eski resmin yolunu al
+      const oldImagePath = editNews.image.split("/").pop();
+      let newImagePath = oldImagePath; // Başlangıçta eski resim yolunu kullan
+      let updatedImageUrl = getPublicUrl(oldImagePath); // Başlangıçta eski resim URL'sini kullan
+  
       if (image) {
         // Yeni dosya adı oluşturma
         const imageExt = image.name.split(".").pop();
         const imageName = `${Math.random()}.${imageExt}`;
         newImagePath = imageName;
-
+  
         // Eski resmi silme
-        if (editNews.image) {
-          const oldImagePath = editNews.image.split("/").pop();
-          const { error: deleteError } = await supabase.storage
-            .from("news-images")
-            .remove([oldImagePath]);
-          if (deleteError) throw deleteError;
-        }
-
+        const { error: deleteError } = await supabase.storage
+          .from("news-images")
+          .remove([oldImagePath]);
+        if (deleteError) throw deleteError;
+  
         // Yeni resmi yükleme
         const { error: uploadError } = await supabase.storage
           .from("news-images")
           .upload(newImagePath, image);
         if (uploadError) throw uploadError;
-
+  
         // Yeni resim URL'sini oluşturma
-        imageUrl = getPublicUrl(newImagePath);
+        updatedImageUrl = getPublicUrl(newImagePath);
       }
-
+  
       // Veritabanında güncelleme
       const { data: updatedNews, error } = await supabase
         .from("news")
-        .update({ title, text, image: newImagePath })
+        .update({ title, text, image: newImagePath }) // imageUrl değil, newImagePath'i güncelleyebilirsiniz.
         .eq("id", editNews.id)
         .select("*")
         .single();
-
-      fetchNews();
-      toast.success(`Duyuru başarıyla güncellendi`, {
+  
+      if (error) throw error;
+  
+      // State'i güncelleme (güncellenmiş image URL'si ile)
+      setNews(
+        news.map((item) => 
+          item.id === editNews.id ? { ...updatedNews, image: updatedImageUrl } : item
+        )
+      );
+  
+      closeModal();
+      toast.success("Duyuru başarıyla güncellendi", {
         theme: "colored",
       });
-      if (error) throw error;
-
-      // State'i güncelleme
-      setNews(
-        news.map((item) => (item.id === editNews.id ? updatedNews : item))
-      );
-      closeModal();
     } catch (error) {
       console.error("Error updating news:", error);
     }
   };
+  
 
   const handleDelete = async (id, imagePath) => {
     try {

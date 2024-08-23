@@ -1,8 +1,6 @@
 import "./YemekTarifleri.css";
 import { recipes, categories } from "../../utils/Recipes";
 import { useRef, useState } from "react";
-import img1 from "../../assets/tarim5.jpg";
-
 import { transformString } from "../../utils/transformString";
 
 import { motion } from "framer-motion";
