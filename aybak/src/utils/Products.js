@@ -27,12 +27,12 @@ import yesilMercimek5 from "../assets/5kg/yesilMercimek5.png"
 
 //?Ayçiçek yağları
 
-import aycicek1 from "../assets/odenay-yaglar/1l-plastik.png"
-import aycicek2 from "../assets/odenay-yaglar/2l-plastik.png"
-import aycicek4 from "../assets/odenay-yaglar/4l-plastik.png"
-import aycicek45 from "../assets/odenay-yaglar/4.5l-plastik.png"
-import aycicek5teneke from "../assets/odenay-yaglar/5lteneke.png"
-import aycicek5 from "../assets/odenay-yaglar/5lplastik.png"
+import aycicek1 from "../assets/odenay-yaglar/1l-plastik.jpg"
+import aycicek2 from "../assets/odenay-yaglar/2l-plastik.jpg"
+import aycicek4 from "../assets/odenay-yaglar/4l-plastik.jpg"
+import aycicek45 from "../assets/odenay-yaglar/4.5l-plastik.jpg"
+import aycicek5teneke from "../assets/odenay-yaglar/5lteneke.jpg"
+import aycicek5 from "../assets/odenay-yaglar/5lplastik.jpg"
 import aycicek18 from "../assets/odenay-yaglar/18ltteneke.jpg"
 
 //?Dökme Ürünler
