@@ -27,45 +27,45 @@ import yesilMercimek5 from "../assets/5kg/yesilMercimek5.png"
 
 //?Ayçiçek yağları
 
-import aycicek1 from "../assets/odenay-yaglar/1l-plastik.webp"
-import aycicek2 from "../assets/odenay-yaglar/2l-plastik.webp"
-import aycicek4 from "../assets/odenay-yaglar/4l-plastik.webp"
-import aycicek45 from "../assets/odenay-yaglar/4.5l-plastik.webp"
-import aycicek5teneke from "../assets/odenay-yaglar/5lteneke.webp"
-import aycicek5 from "../assets/odenay-yaglar/5lplastik.webp"
+import aycicek1 from "../assets/odenay-yaglar/1l-plastik.png"
+import aycicek2 from "../assets/odenay-yaglar/2l-plastik.png"
+import aycicek4 from "../assets/odenay-yaglar/4l-plastik.png"
+import aycicek45 from "../assets/odenay-yaglar/4.5l-plastik.png"
+import aycicek5teneke from "../assets/odenay-yaglar/5lteneke.png"
+import aycicek5 from "../assets/odenay-yaglar/5lplastik.png"
 import aycicek18 from "../assets/odenay-yaglar/18ltteneke.jpg"
 
 //?Dökme Ürünler
 import aybakUzunTanemRice25 from "../assets/dokme_urun/uzuntaneli.png"
-import aybakOsmancikRice25 from "../assets/dokme_urun/aybak-osmancikRice.webp"
+import aybakOsmancikRice25 from "../assets/dokme_urun/aybak-osmancikRice.png"
 import odenayBaldoPirinc25 from "../assets/dokme_urun/odenay_baldo_pirin25.jpg"
 import aybakKirikRice25 from "../assets/dokme_urun/aybak-kirik-pirinc-gonen-15278-1.jpg"
 import mutfakBaldoRice25 from "../assets/dokme_urun/mutfak-baldo-pirinc.jpg"
-import aybakBulgur25 from "../assets/dokme_urun/aybak-bulgur.webp"
-import ozsariBulgur25 from "../assets/dokme_urun/ozsari-bulgur.webp"
+import aybakBulgur25 from "../assets/dokme_urun/aybak-bulgur.png"
+import ozsariBulgur25 from "../assets/dokme_urun/ozsari-bulgur.png"
 import duruBulgur25 from "../assets/dokme_urun/duru-bulgur.jpg"
-import tatbulBulgur25 from "../assets/dokme_urun/bulgur.webp"
-import aybakKuruFasulye25 from "../assets/dokme_urun/aybak-fasulye.webp"
+import tatbulBulgur25 from "../assets/dokme_urun/bulgur.jpg"
+import aybakKuruFasulye25 from "../assets/dokme_urun/aybak-fasulye.png"
 import aybakBarbunya25 from "../assets/dokme_urun/barbunya.jpg"
 import aybakNohut25 from "../assets/dokme_urun/aybak-nohut.jpg"
 import aybakKirmiziMercimek25 from "../assets/dokme_urun/dokme-kirmizi-mercimek.jpg"
 // import aybakYesilMercimek25 from "../assets/dokme_urun/aybak-yesilMercimek.jpg"
-import aybakYesilMercimek25 from "../assets/dokme_urun/yesil-mercimek.webp"
+import aybakYesilMercimek25 from "../assets/dokme_urun/yesil-mercimek.jpg"
 
 //?Yöresel Ürünler
 
 import kepekliRice from "../assets/yoresel-urunler/kepekli-pirinc.jpg"
 import jasmineRice from "../assets/yoresel-urunler/jasmine-pirinc.jpg"
 import bombayFasulye from "../assets/yoresel-urunler/bombay-fasulye.jpg"
-import borulce from "../assets/yoresel-urunler/borulce.webp"
+import borulce from "../assets/yoresel-urunler/borulce.jpg"
 import koyBulguru from "../assets/yoresel-urunler/koy-bulguru.jpeg"
 import koyMercimegi from "../assets/yoresel-urunler/koy-mercimegi.jpg"
-import sariMercimek from "../assets/yoresel-urunler/sari-mercimek2.webp"
+import sariMercimek from "../assets/yoresel-urunler/sari-mercimek2.jpg"
 import kirikMisir from "../assets/yoresel-urunler/misirKirmalari.jpg"
 import kuskus from "../assets/yoresel-urunler/kuskus-10kg.jpg"
 import eriste from "../assets/yoresel-urunler/eriste-107kg.jpg"
 import tarhana from "../assets/yoresel-urunler/tarhana.jpg"
-import manti from "../assets/yoresel-urunler/manti.webp"
+import manti from "../assets/yoresel-urunler/manti.jpg"
 import galeteUnu from "../assets/yoresel-urunler/galete-unu.jpg"
 import misirUnu from "../assets/yoresel-urunler/misir-Unu.jpg"
 import misirNisastasi from "../assets/yoresel-urunler/misirNisastasi.jpg"
@@ -76,7 +76,7 @@ import pirincImage from "../assets/yeni/rice.jpg"
 import bulgurImage from "../assets/yeni/bulgur2.jpg"
 import barbunyaImage from "../assets/yeni/barbunya2.jpg"
 import fasulyeImage from "../assets/yeni/fasulye2.jpg"
-import nohutImage from "../assets/yeni/nohut3.webp"
+import nohutImage from "../assets/yeni/nohut3.jpg"
 import kirmiziMercimekImage from "../assets/yeni/kirmizi-mercimek.jpg"
 import sariMercimekImage from "../assets/yeni/sari-mercimek3.jpg"
 import yesilMercimekImage from "../assets/yeni/yesil-mercimek2.jpg"
@@ -171,7 +171,7 @@ export const products = [
                 image: barbunya5
             },
             {
-                id:4,
+                id: 4,
                 name: "Bulgur 5kg",
                 type: "5kg",
                 image: bulgur5
