@@ -244,72 +244,66 @@ export const products = [
             },
             {
                 id: 4,
-                name: "Ödenay Baldo Pirinç 25kg ",
-                type: "dokme-urun",
-                image: odenayBaldoPirinc25
-            },
-            {
-                id: 5,
                 name: "Aybak Kırık Pirinç 25kg ",
                 type: "dokme-urun",
                 image: aybakKirikRice25
             },
             {
-                id: 6,
+                id: 5,
                 name: "Mutfak Baldo Pirinç 25kg ",
                 type: "dokme-urun",
                 image: mutfakBaldoRice25
             },
             {
-                id: 7,
+                id: 6,
                 name: "Aybak Bulgur 25kg ",
                 type: "dokme-urun",
                 image: aybakBulgur25
             },
             {
-                id: 8,
+                id: 7,
                 name: "Özsari Bulgur 25kg ",
                 type: "dokme-urun",
                 image: ozsariBulgur25
             },
             {
-                id: 9,
+                id: 8,
                 name: "Duru Bulgur 25kg ",
                 type: "dokme-urun",
                 image: duruBulgur25
             },
             {
-                id: 10,
+                id: 9,
                 name: "Tatbul Bulgur 25kg ",
                 type: "dokme-urun",
                 image: tatbulBulgur25
             },
             {
-                id: 11,
+                id: 10,
                 name: "Aybak Kuru Fasulye 25kg ",
                 type: "dokme-urun",
                 image: aybakKuruFasulye25
             },
             {
-                id: 12,
+                id: 11,
                 name: "Aybak Barbunya 25kg ",
                 type: "dokme-urun",
                 image: aybakBarbunya25
             },
             {
-                id: 13,
+                id: 12,
                 name: "Aybak Nohut 25kg ",
                 type: "dokme-urun",
                 image: aybakNohut25
             },
             {
-                id: 14,
+                id: 13,
                 name: "Aybak Kırmızı Mercimek 25kg ",
                 type: "dokme-urun",
                 image: aybakKirmiziMercimek25
             },
             {
-                id: 15,
+                id: 14,
                 name: "Aybak Yeşil Mercimek 25kg ",
                 type: "dokme-urun",
                 image: aybakYesilMercimek25
