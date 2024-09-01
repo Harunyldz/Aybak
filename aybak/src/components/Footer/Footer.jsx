@@ -190,8 +190,7 @@ const Footer = () => {
         </section>
       </div>
       <div className="copyright">
-        © 1984-{currentYear} | Aybak Gıda San. Tic. Ltd. Şti. | Her Hakkı
-        Saklıdır.
+        © 1984-{currentYear} | Aybak Gıda San. Tic. Ltd. Şti. | {t("telif")}
       </div>
     </footer>
   )

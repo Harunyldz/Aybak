@@ -17,7 +17,7 @@
     "İletişim": "İletişim",
     "Hakkımızda": "Hakkımızda",
     "Misyonumuz": "Misyonumuz",
-   "yemekTariflerih2":"Aybak Ürünlerimizle Yapabileceğiniz Lezzetli Yemekler",
+    "yemekTariflerih2": "Aybak Ürünlerimizle Yapabileceğiniz Lezzetli Yemekler",
     "Vizyonumuz": "Vizyonumuz",
     "Belgelerimiz": "Belgelerimiz",
     "Paket Bakliyat 1kg": "Paket Bakliyat 1kg",
@@ -85,5 +85,6 @@
     "name-surname": "Ad Soyad",
     "Message": "Mesaj",
     "send": "Gönder",
-    "takip": "Bizi Takip Edin"
+    "takip": "Bizi Takip Edin",
+    "telif": "Her Hakkı Saklıdır.."
 }
