@@ -1,30 +1,24 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpApi from 'i18next-http-backend';
 
-// Çeviri dosyalarını içe aktar
-import translationEN from '../locales/en/translation.json';
-import translationTR from '../locales/tr/translation.json';
-
-// Çevirileri yapılandır
-const resources = {
-    en: {
-        translation: translationEN
-    },
-    tr: {
-        translation: translationTR
-    }
-};
 
 i18n
-    .use(initReactI18next) // i18next'i react ile entegre eder
+    .use(HttpApi)
+    .use(LanguageDetector)
+    .use(initReactI18next)
     .init({
-        resources,
-        lng: "tr", // varsayılan dili ayarla
-        fallbackLng: "en", // varsayılan dil çalışmazsa kullanılacak dil
-        keySeparator: false, // Anahtar ayrımını devre dışı bırak
-        interpolation: {
-            escapeValue: false // React zaten XSS koruması yapıyor
-        }
+        supportedLngs: ['en', 'tr'],
+        fallbackLng: 'tr',
+        detection: {
+            order: ['cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+            caches: ['cookie']
+        },
+        backend: {
+            loadPath: './locales/{{lng}}/translation.json',
+        },
+        react: { useSuspense: false }
     });
 
 export default i18n;

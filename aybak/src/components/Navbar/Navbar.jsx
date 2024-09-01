@@ -63,7 +63,7 @@ const Navbar = () => {
                 onClick={handleSideMenu}
               >
                 <Link to={navListItem.href} className="nav-link">
-                  {navListItem.name}
+                  {t(navListItem.name)} {/* Çeviriyi burada kullanın */}
                 </Link>
                 {navListItem.subMenu && dropdown && (
                   <ul
@@ -97,7 +97,7 @@ const Navbar = () => {
                             scroll={scrollWithOffset}
                             className="nav-sublink"
                           >
-                            {subMenu.name}
+                            {t(subMenu.name.toLowerCase())}
                           </HashLink>
                         )}
                         {subMenu.subMenu && ( // alt menü varsa alt menüyü göstersin
@@ -121,7 +121,7 @@ const Navbar = () => {
                                     )}`}
                                     className="right-link"
                                   >
-                                    {rightMenu.name}
+                                    {t(rightMenu.name.toLowerCase())}
                                   </Link>
                                 </li>
                               ))}
@@ -140,7 +140,7 @@ const Navbar = () => {
                   className="login-button"
                   onClick={() => setOpened(!opened)}
                 >
-                  Giriş Yap
+                  {t('login')} {/* Çeviriyi burada kullanın */}
                 </button>
               </Link>
             </li>
