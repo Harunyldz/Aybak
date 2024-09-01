@@ -23,8 +23,8 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h2>
-            {t("herTanede")} <span>{t("kalite")}</span>, {t("herSofrada")}
-            <span> {t("lezzet")}</span>
+            {t("Her Tanede")} <span>{t("Kalite")}</span>, {t("Her Sofrada")}
+            <span> {t("Lezzet")}</span>
           </h2>
           <p>{t("paragraf1")}</p>
         </motion.div>
