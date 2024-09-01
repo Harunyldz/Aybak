@@ -5,6 +5,7 @@ import { transformString } from "../../utils/transformString";
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const YemekTarifleri = () => {
   const [category, setCategory] = useState("All");
@@ -12,7 +13,7 @@ const YemekTarifleri = () => {
 
   const handleCategoryClick = (cateName) => {
     const isSameCategory = category === cateName;
-    
+
     if (isSameCategory) {
       setCategory("All");
     } else {
@@ -32,14 +33,17 @@ const YemekTarifleri = () => {
       ? recipes
       : recipes.filter((item) => item.type === category);
 
+  const { t } = useTranslation(); // Using the hook to access 't' and 'i18n'
+
+
   return (
     <div className="yemekler-wrapper">
       <div className="yemekler-img">
-        <h1>Yemek Tarifleri</h1>
+        <h1>{t("Yemek Tarifleri")}</h1>
       </div>
       <div className="yemekler-container">
         <header>
-          <h2>Aybak Ürünlerimizle Yapabileceğiniz Lezzetli Yemekler</h2>
+          <h2>{t("yemekTariflerih2")}</h2>
           <p>
             Aybak Gıda olarak, kaliteli ve besleyici ürünlerimizle sofralarınıza
             lezzet katıyoruz. Ürünlerimizle hazırlayabileceğiniz yemekler, hem
