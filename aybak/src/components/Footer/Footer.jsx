@@ -155,7 +155,8 @@ const Footer = () => {
               <i>
                 <MdEmail />
               </i>
-              <span>info@aybakgida.com</span>
+              <a href="mailto:info@aybakgida.com">
+                <span>info@aybakgida.com</span></a>
             </li>
             <li>
               <div

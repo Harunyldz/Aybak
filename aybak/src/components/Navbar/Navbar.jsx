@@ -8,6 +8,9 @@ import { HashLink } from "react-router-hash-link";
 import { transformString } from "../../utils/transformString";
 import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import trFlag from "../../assets/tr.jpg"
+import enFlag from "../../assets/eng.png"
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -35,6 +38,10 @@ const Navbar = () => {
     const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
     const yOffset = -window.innerHeight / 3;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+  const { t, i18n } = useTranslation(); // Using the hook to access 't' and 'i18n'
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   return (
@@ -78,14 +85,14 @@ const Navbar = () => {
                               navListItem.name === "Kurumsal"
                                 ? subMenu.name === "Belgelerimiz"
                                   ? `${navListItem.href}/${transformString(
-                                      subMenu.name
-                                    )}`
-                                  : `${navListItem.href}#${transformString(
-                                      subMenu.name
-                                    )}`
-                                : `${navListItem.href}/${transformString(
                                     subMenu.name
                                   )}`
+                                  : `${navListItem.href}#${transformString(
+                                    subMenu.name
+                                  )}`
+                                : `${navListItem.href}/${transformString(
+                                  subMenu.name
+                                )}`
                             }
                             scroll={scrollWithOffset}
                             className="nav-sublink"
@@ -136,6 +143,12 @@ const Navbar = () => {
                   Giriş Yap
                 </button>
               </Link>
+            </li>
+            <li>
+              <div>
+                <button onClick={() => changeLanguage('en')}> <img src={enFlag} alt="İngilizce" width={50} height={30} /></button>
+                <button onClick={() => changeLanguage('tr')}><img src={trFlag} alt="Türkçe" width={50} height={30} /></button>
+              </div>
             </li>
           </ul>
         </nav>

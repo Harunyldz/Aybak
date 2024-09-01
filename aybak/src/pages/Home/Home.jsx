@@ -1,13 +1,17 @@
+import React from "react";
 import "./Home.css";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import UrunSlider from "../../components/UrunSlider/UrunSlider";
-
 import News from "../../components/News/News";
 import MainSlider from "../../components/MainSlider/MainSlider";
 
 
 const Home = () => {
+  const { t, i18n } = useTranslation(); // Using the hook to access 't' and 'i18n'
+
+
   return (
     <div className="home-wrapper">
       <div className="home-slider">
@@ -21,18 +25,9 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h2>
-            Her Tanede <span>Kalite</span>, <br /> Her Sofrada <span>Lezzet</span>
+            {t("herTaneKalite")} <span>{t("herSofradaLezzet")}</span>
           </h2>
-          <p>
-            1984 yılından beri tarım sektöründe öncü olan Öden Gıda San. Tic.
-            Ltd. Şti., kaliteyi her zaman en ön planda tutarak sofralarınıza
-            lezzet katıyor. İlk günden bu yana doğallık ve güvenilirlik
-            ilkesinden ödün vermeden üretim yapan firmamız, 1994 yılında Aybak
-            Gıda San. Tic. Ltd. Şti. olarak genişleyen ürün yelpazesiyle
-            pirincin yanı sıra çeşitli bakliyat ürünlerini de sunmaya başladı.
-            Tarladan sofranıza kadar uzanan bu yolculukta, her bir ürünümüzde
-            aynı özen ve kaliteyi bulacaksınız.
-          </p>
+          <p>{t("paragraf1")}</p>
         </motion.div>
       </section>
 
@@ -49,19 +44,13 @@ const Home = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: "spring", stiffness: 100 }}
         >
-          <h3>Misyonumuz</h3>
+          <h3>{t("misyonBaslik")}</h3>
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            Yörelerin en seçkin bölgelerinden seçilen ürünlerimiz,
-            müşterilerimizin hizmetine sunulmakta ve bütün bir yıl boyunca aynı
-            kalitede ürün satışı yapılmakta ve hizmet verilmektedir. AYBAK,
-            sofranıza kaliteli tatlar sumak için faaliyetlerini yürütürken aynı
-            zamanda Öden Gıda San. ve Tic. Ltd. Şti. bünyesi altında ISO
-            9001:2000 belgelerini alarak ticari faaliyetlerinde kaliteyi ön
-            plana çıkarmıştır.
+            {t("misyon")}
           </motion.p>
         </motion.div>
         <motion.div
@@ -70,22 +59,17 @@ const Home = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: "spring", stiffness: 100 }}
         >
-          <h3>Vizyonumuz</h3>
+          <h3>{t("vizyonBaslik")}</h3>
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            Vizyonumuz, tarım ürünleri toptancılığı sektöründe öncü ve güvenilir
-            bir marka haline gelmektir. Teknolojiyi ve yenilikçi yöntemleri
-            kullanarak lojistik ve tedarik zincirimizi sürekli geliştirmek,
-            global pazarda rekabetçi bir konum elde etmek ve müşterilerimize
-            üstün hizmet sunmak için kendimizi sürekli olarak yeniliyoruz.
-            Çevreye duyarlı ve sürdürülebilir iş modelleri ile geleceğe katkı
-            sağlamayı hedefliyoruz.
+            {t("vizyon")}
           </motion.p>
         </motion.div>
       </section>
+
     </div>
   );
 };
