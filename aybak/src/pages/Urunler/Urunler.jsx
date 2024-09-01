@@ -4,8 +4,12 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { transformString } from "../../utils/transformString";
+import { useTranslation } from "react-i18next";
 
 const Urunler = () => {
+
+  const { t } = useTranslation();
+
   const { urunAdi } = useParams(); //url deki ürün adını aldık
   const urlProduct = products.find(
     (item) => transformString(item.name) === urunAdi //url den gelen ada sahip product dizisindeki elemanı seçtik
@@ -27,7 +31,7 @@ const Urunler = () => {
     <div className="urunler-wrapper">
       <header>
         <div className="header-container">
-          <h1>Ürünlerimiz</h1>
+          <h1>{t("Ürünlerimiz")}</h1>
           <menu>
             <ul>
               {products.map((urun) => (
@@ -36,7 +40,9 @@ const Urunler = () => {
                   onClick={() => setSelected(urun.name)}
                   className={urun.name === selected ? "selected" : ""}
                 >
-                  {urun.name}
+                  {t(urun.name)}
+
+                  {/* {urun.name} */}
                 </li>
               ))}
             </ul>
@@ -51,7 +57,10 @@ const Urunler = () => {
                 <div className="figure-img">
                   <img src={selectedProduct.image} alt={selectedProduct.name} />
                 </div>
-                <figcaption>{selectedProduct.name}</figcaption>
+                <figcaption>
+                  {t(selectedProduct.name)}
+                  {/* {selectedProduct.name} */}
+                </figcaption>
               </figure>
             ))}
           </section>
