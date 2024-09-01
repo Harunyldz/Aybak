@@ -102,7 +102,7 @@ const Navbar = () => {
                         )}
                         {subMenu.subMenu && ( // alt menü varsa alt menüyü göstersin
                           <>
-                            <a className="nav-sublink">{subMenu.name}</a>
+                            <a className="nav-sublink">{t(subMenu.name)}</a>
                             <i>
                               <FaChevronCircleRight />
                             </i>
