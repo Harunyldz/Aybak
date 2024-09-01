@@ -5,6 +5,7 @@ import WhatsAppLink from "../../components/Footer/WhatsAppLink";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { transformString } from "../../utils/transformString";
+import { useTranslation } from "react-i18next";
 
 import {
   FaFacebook,
@@ -21,6 +22,9 @@ import { MdEmail } from "react-icons/md";
 import { products, productInfo } from "../../utils/Products";
 
 const Footer = () => {
+
+  const { t } = useTranslation();
+
   const currentYear = new Date().getFullYear();
 
   const phoneNumber = "902125459252"; // Ülke kodu ile birlikte telefon numarası
@@ -44,7 +48,9 @@ const Footer = () => {
             <img src={logo} alt="" />
           </div>
           <div className="footer-icons">
-            <h3>Bizi Takip Edin</h3>
+            <h3>
+              {t("takip")}
+            </h3>
             <ul className="icons">
               <li>
                 <a
@@ -65,33 +71,35 @@ const Footer = () => {
         </section>
         <section className="footer-orta">
           <div>
-            <h3>Kurumsal</h3>
+            <h3> {t("Kurumsal")}
+            </h3>
             <ul>
               <li>
-                <Link to="/kurumsal"> Hakkımızda</Link>
+                <Link to="/kurumsal"> {t("Hakkımızda")}</Link>
               </li>
               <li>
                 <HashLink to="/kurumsal#misyonumuz" scroll={scrollWithOffset}>
-                  Misyonumuz{" "}
+                  {t("Misyonumuz")}{" "}
                 </HashLink>
               </li>
               <li>
                 <HashLink to="/kurumsal#vizyonumuz" scroll={scrollWithOffset}>
-                  Vizyonumuz{" "}
+                  {t("Vizyonumuz")} {" "}
                 </HashLink>
               </li>
               <li>
-                <Link to="/kurumsal/belgelerimiz"> Sertifikalarımız</Link>
+                <Link to="/kurumsal/belgelerimiz">{t("Belgelerimiz")}</Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3>Ürünlerimiz</h3>
+            <h3>{t("Ürünlerimiz")}</h3>
             <ul>
               {products.map((product) => (
                 <li key={product.id}>
                   <Link to={`/urunlerimiz/${transformString(product.name)}`}>
-                    {product.name}
+                    {t(product.name)}
+                    {/* {product.name} */}
                   </Link>
                 </li>
               ))}
@@ -100,28 +108,38 @@ const Footer = () => {
         </section>
         <section className="footer-sag">
           <div>
-            <h3>Yemek Tarifleri</h3>
+            <h3>{t("Yemek Tarifleri")}</h3>
             <ul>
               {yemekler.map((yemek) => (
                 <li key={yemek.id}>
-                  <Link to={`/yemektarifleri`}>{yemek.name}</Link>
+                  <Link to={`/yemektarifleri`}>
+                    {t(yemek.name)}
+                    {/* {yemek.name} */}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3>Bakliyat ve Sağlık</h3>
+            <h3>
+              {t("header")}
+
+            </h3>
             <ul>
               {productInfo.map((urun) => (
                 <li key={urun.id}>
-                  <Link to={`/bakliyat-saglik/${transformString(urun.title)}`}>{urun.title}</Link>
+                  <Link to={`/bakliyat-saglik/${transformString(urun.title)}`}>
+                    {t(urun.title)}
+                    {/* {urun.title} */}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
         </section>
         <section className="footer-contact">
-          <h3>İletişim</h3>
+          <h3>{t("İletişim")}
+          </h3>
           <ul className="footer-contacts">
             <li>
               <i>

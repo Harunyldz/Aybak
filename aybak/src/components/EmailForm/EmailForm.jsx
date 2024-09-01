@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./EmailForm.css";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const EmailForm = () => {
+
+  const { t } = useTranslation();
+
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
@@ -43,16 +47,15 @@ const EmailForm = () => {
       transition={{ duration: 1 }}
     >
       <div className="contact-header">
-        <h2>Bizimle İletişime Geçin</h2>
+        <h2>{t("form-title")}</h2>
         <p>
-          Aşağıdaki formu doldurarak bize ulaşabilirsiniz. En kısa sürede size
-          geri dönüş yapacağız.
+          {t("form-text")}
         </p>
       </div>
       <div className="contact-form">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Ad Soyad</label>
+            <label htmlFor="name"> {t("name-surname")}</label>
             <input
               type="text"
               id="name"
@@ -74,7 +77,7 @@ const EmailForm = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Mesaj</label>
+            <label htmlFor="message">{t("Message")}</label>
             <textarea
               id="message"
               name="message"
@@ -85,7 +88,7 @@ const EmailForm = () => {
             ></textarea>
           </div>
           <button type="submit" className="submit-button">
-            Gönder
+            {t("send")}
           </button>
         </form>
       </div>

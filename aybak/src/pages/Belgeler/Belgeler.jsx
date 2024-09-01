@@ -11,8 +11,12 @@ import { CgClose } from "react-icons/cg";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Belgeler = () => {
+
+  const { t } = useTranslation();
+
   const [modalIsOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [position, setPosition] = useState(0);
@@ -44,19 +48,12 @@ const Belgeler = () => {
     <div className="belgeler-wrapper">
       <div className="belgeler-container">
         <header>
-          <h1>Belgelerimiz</h1>
+          <h1> {t("belge")}</h1>
         </header>
         <main>
           <p>
-            <span>Aybak Gıda San. Tic. Ltd. Şti.</span> olarak, kaliteye ve
-            güvenilirliğe verdiğimiz önemin bir göstergesi olarak sahip
-            olduğumuz belgelerimizi sizlerle paylaşmaktan gurur duyuyoruz.{" "}
-            <br />
-            Uzun yıllardır sektördeki konumumuzu koruyabilmek ve müşterilerimize
-            en iyi hizmeti sunabilmek adına belgelerimiz ve sertifikalarımızla
-            üretim ve dağıtım süreçlerimizi sürekli olarak iyileştiriyoruz.{" "}
-            <br /> Siz değerli müşterilerimize en kaliteli ve güvenilir ürünleri
-            sunmak için çalışmalarımıza aralıksız devam ediyoruz.
+            <span>{t("belge-title")}</span>
+            {t("belge-text")}
           </p>
           <section className="belgeler">
             {belgeler.map((belge, index) => (

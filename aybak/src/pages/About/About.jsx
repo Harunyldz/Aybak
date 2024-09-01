@@ -10,8 +10,10 @@ import aybakDis from "../../assets/slider/slider-mega.jpg";
 import aybakUrun from "../../assets/slider/foto2.jpg";
 import yag1 from "../../assets/isyeri/teneke.jpg";
 import yag2 from "../../assets/isyeri/yeni1.jpg";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="about">
       <header className="about-header">
@@ -30,15 +32,9 @@ const About = () => {
             <figcaption>
               <p>
                 {" "}
-                Şirketimiz 1984 yılında Öden Gıda San. Tic. Ltd. Şti. adı
-                altında faaliyetlerine başlamış olup pirinç ekim ve üretiminde
-                öncü bir firma olmuştur. 1994 yılında Aybak Gıda San. Tic. Ltd.
-                Şti. olarak pirincin yanında diğer bakliyat ürünlerini de
-                çeşitleri arasına katmıştır.
+                {t("company_info")}
                 <br /> <br />
-                Kalite, güven ve istikrarı yol haritası olarak belirleyen
-                firmamız istikrarlı çizgisini her geçen gün daha da ileriye
-                götürmeyi amaç edinmiştir.
+                {t("quality_policy")}
               </p>
             </figcaption>
             <div className="figure-box">
@@ -59,10 +55,7 @@ const About = () => {
             </div>
             <figcaption>
               <p>
-                Pirinç ve yağ entegre tesisleri, direkt olarak ekimini yaptığı
-                çeltik ve ayçiçek tarlaları ve son teknoloji makina ve
-                ekipmanları ile müşterilerine daha iyi ve daha kaliteli hizmet
-                sunmaktadır.
+                <p>{t("rice_facilities")}</p>
               </p>
             </figcaption>
           </figure>
@@ -76,10 +69,7 @@ const About = () => {
           <figure>
             <figcaption>
               <p>
-                Pirinç ve bakliyat çeşitleri, Ödenay ayçiçek yağları, Ödenay
-                mısır yağları ve yöresel ürünlerle faaliyetlerini sürdüren Aybak
-                güçlü lojistiğiyle müşterilerine en hızlı ve güvenilir bir
-                şekilde hizmet etmektedir.
+                {t("products_and_services")}
               </p>
             </figcaption>
             <div className="figure-box">
@@ -99,11 +89,12 @@ const About = () => {
             </div>
             <figcaption>
               <p>
-                Firmamız ürünlerinde bütün sezon boyunca değişmeyen kalite anlayışıyla yerli ve ithal ürünlerle,   ISO ve HACCP kalite sertifikalarıyla daha da güvenli bir hizmet sunmaktadır.
+                {t("unchanging_quality")}
                 <br /> <br />
-                Sertifikalarımızı görmek için{" "}
+                {t("view_certificates")}
+                {" "}
                 <Link to="/kurumsal/belgelerimiz" className="figure-link">
-                  Tıklayınız.
+                  {t("click_here")}
                 </Link>
               </p>
             </figcaption>
@@ -118,9 +109,7 @@ const About = () => {
           <figure>
             <figcaption>
               <p>
-                Ürünlerimizi Aybak ve Akbak tescilli markalarıyla pazarlayan ve
-                markalaşmaya doğru ilerleyen firmamız, hedeflerini yüksek
-                tutmuştur.
+                {t("aybak_brand")}
               </p>
             </figcaption>
             <div className="figure-box">
@@ -141,39 +130,25 @@ const About = () => {
             </div>
             <figcaption>
               <p>
-                Ödenay yağlarımızla müşterimize bir başkalığı hissettirmeyi
-                amaçlıyoruz. Adını öncelikli olarak kalite ve güvenle
-                özdeşleştiren firmamız Ar-Ge çalışmalarıyla geleceğe yönelik
-                daha güçlü, daha emin adımlarla yürümektedir.
+                {t("unique_flavor")}
               </p>
             </figcaption>
           </figure>
         </motion.section>
 
         <section className="vizyon-misyon" id="misyonumuz">
-          <h2>Misyonumuz</h2>
+          <h2>{t("mission")}</h2>
           <p>
-            Yörelerin en seçkin bölgelerinden seçilen ürünlerimiz,
-            müşterilerimizin hizmetine sunulmakta ve bütün bir yıl boyunca aynı
-            kalitede ürün satışı yapılmakta ve hizmet verilmektedir.
-          </p>
+            {t("mission_text")}
+          </p><br />
           <p>
-            AYBAK, sofranıza kaliteli tatlar sumak için faaliyetlerini
-            yürütürken aynı zamanda Öden Gıda San. ve Tic. Ltd. Şti. bünyesi
-            altında ISO 9001:2000 belgelerini alarak ticari faaliyetlerinde
-            kaliteyi ön plana çıkarmıştır.
+            {t("mission_text2")}
           </p>
         </section>
         <section className="vizyon-misyon" id="vizyonumuz">
-          <h2>Vizyonumuz</h2>
+          <h2>{t("vision")}</h2>
           <p>
-            Vizyonumuz, tarım ürünleri toptancılığı sektöründe öncü ve güvenilir
-            bir marka haline gelmektir. Teknolojiyi ve yenilikçi yöntemleri
-            kullanarak lojistik ve tedarik zincirimizi sürekli geliştirmek,
-            global pazarda rekabetçi bir konum elde etmek ve müşterilerimize
-            üstün hizmet sunmak için kendimizi sürekli olarak yeniliyoruz.
-            Çevreye duyarlı ve sürdürülebilir iş modelleri ile geleceğe katkı
-            sağlamayı hedefliyoruz.
+            {t("vision_text")}
           </p>
         </section>
       </main>

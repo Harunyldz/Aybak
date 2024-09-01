@@ -4,8 +4,12 @@ import EmailForm from "../../components/EmailForm/EmailForm";
 import { FaPhone, FaFax } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { useTranslation } from "react-i18next";
+
 
 const Contact = () => {
+
+  const { t } = useTranslation();
   const phoneNumber = "902125459252"; // Ülke kodu ile birlikte telefon numarası
   const message = "";
 
@@ -16,7 +20,7 @@ const Contact = () => {
           <EmailForm />
         </section>
         <section className="contact-address">
-          <h2>Merkez İletişim</h2>
+          <h2>{t("contact1")}</h2>
           <ul className="address-list">
             <li>
               <i>
@@ -66,7 +70,7 @@ const Contact = () => {
               </a>
             </li>
             <li>
-              <h2>Fabrika İletişim</h2>
+              <h2>{t("contact2")}</h2>
             </li>
             <li>
               <i>
