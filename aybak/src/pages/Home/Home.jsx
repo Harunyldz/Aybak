@@ -7,10 +7,8 @@ import UrunSlider from "../../components/UrunSlider/UrunSlider";
 import News from "../../components/News/News";
 import MainSlider from "../../components/MainSlider/MainSlider";
 
-
 const Home = () => {
   const { t, i18n } = useTranslation(); // Using the hook to access 't' and 'i18n'
-
 
   return (
     <div className="home-wrapper">
@@ -25,7 +23,8 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h2>
-            {t("herTaneKalite")} <span>{t("herSofradaLezzet")}</span>
+            {t("herTanede")} <span>{t("kalite")}</span>, {t("herSofrada")}
+            <span> {t("lezzet")}</span>
           </h2>
           <p>{t("paragraf1")}</p>
         </motion.div>
@@ -69,7 +68,6 @@ const Home = () => {
           </motion.p>
         </motion.div>
       </section>
-
     </div>
   );
 };
