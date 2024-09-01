@@ -42,7 +42,7 @@
     "Güveçte Şeker Fasulye": "Sweet Beans in Casserole",
     "Beyaz Nohut": "White Chickpeas",
     "Nohut Yemekleri": "Chickpea Dishes",
-    "Tavuklu Beyaz Nohut": "White chickpeas with chicken",
+    "Tavuklu Beyaz Nohut": "White Chickpeas with Chicken",
     "Nohut Güveç": "Chickpea Casserole",
     "Koçbaşı Nohut": "Ram Chickpeas",
     "Pirinç": "Rice",
@@ -57,5 +57,10 @@
     "Yaprak Sarma": "Leaf Wrapping",
     "Yalancı Çiğ Köfte": "Raw Meatball",
     "Yeşil Mercimek Yemekleri":"Green Lentils Dishes",
-    "Barbunya Yemekleri":"Kidney Bean Dishes"
+    "Yeşil Mercimekli Ispanak":"Green Lentil Spinach",
+    "Yeşil Mercimek Köftesi":"Green Lentil Meatballs",
+    "Barbunya Yemekleri":"Kidney Bean Dishes",
+    "Barbunya Pilaki":"Kidney Bean Stew",
+    "Kiraz Barbunya":"Cherry Kidney Beans",
+    "Diğer Yemekler":"Other Dishes"
 }
