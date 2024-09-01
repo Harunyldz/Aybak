@@ -97,7 +97,7 @@ const Navbar = () => {
                             scroll={scrollWithOffset}
                             className="nav-sublink"
                           >
-                            {t(subMenu.name.toLowerCase())}
+                            {t(subMenu.name)}
                           </HashLink>
                         )}
                         {subMenu.subMenu && ( // alt menü varsa alt menüyü göstersin
@@ -121,7 +121,7 @@ const Navbar = () => {
                                     )}`}
                                     className="right-link"
                                   >
-                                    {t(rightMenu.name.toLowerCase())}
+                                    {t(rightMenu.name)}
                                   </Link>
                                 </li>
                               ))}
