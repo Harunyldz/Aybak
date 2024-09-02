@@ -35,7 +35,6 @@ const YemekTarifleri = () => {
 
   const { t } = useTranslation(); // Using the hook to access 't' and 'i18n'
 
-
   return (
     <div className="yemekler-wrapper">
       <div className="yemekler-img">
@@ -44,13 +43,7 @@ const YemekTarifleri = () => {
       <div className="yemekler-container">
         <header>
           <h2>{t("yemekTariflerih2")}</h2>
-          <p>
-            Aybak Gıda olarak, kaliteli ve besleyici ürünlerimizle sofralarınıza
-            lezzet katıyoruz. Ürünlerimizle hazırlayabileceğiniz yemekler, hem
-            sağlıklı hem de pratik tarifler sunarak günlük beslenmenizi
-            zenginleştiriyor. İşte Aybak ürünleriyle yapabileceğiniz nefis yemek
-            önerileri
-          </p>
+          <p>{t("yemekTariflerip")}</p>
         </header>
         <menu>
           {categories.map((cate) => (
@@ -60,7 +53,7 @@ const YemekTarifleri = () => {
               onClick={() => handleCategoryClick(cate.name)}
             >
               <img src={cate.image} alt={cate.name} />
-              <figcaption>{cate.name}</figcaption>
+              <figcaption>{t(cate.name)}</figcaption>
             </figure>
           ))}
         </menu>
@@ -76,12 +69,12 @@ const YemekTarifleri = () => {
                 <img src={yemek.image} alt={yemek.title} />
               </div>
               <figcaption>
-                <h3>{yemek.title}</h3>
+                <h3>{t(yemek.title)}</h3>
                 <Link
                   to={transformString(yemek.title)}
                   className="yemekler-btn"
                 >
-                  Nasıl Yapılır?
+                  {t("nasilYapilir")}
                 </Link>
               </figcaption>
             </motion.figure>
