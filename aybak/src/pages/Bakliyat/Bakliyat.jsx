@@ -6,7 +6,12 @@ import { NavLink } from "react-router-dom";
 
 import { motion } from "framer-motion";
 
+import { useTranslation } from "react-i18next";
+
 const Bakliyat = () => {
+
+  const { t } = useTranslation();
+
   const { bakliyatAdi } = useParams();
   const bakliyat = productInfo.find(
     (item) => transformString(item.title) === bakliyatAdi
@@ -15,12 +20,15 @@ const Bakliyat = () => {
   return (
     <div className="bakliyat">
       <div className="bakliyat-ust">
-        <h1>{bakliyat.title}</h1>
+        <h1>
+          {t(bakliyat.title)}
+          {/* {bakliyat.title} */}
+        </h1>
       </div>
       <div className="bakliyat-bilgi-container">
         <main className="bakliyat-bilgi">
           <motion.div
-            key={bakliyat.id+"key"}
+            key={bakliyat.id + "key"}
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 2 }}
@@ -59,7 +67,9 @@ const Bakliyat = () => {
               isActive ? "bakliyat-link active" : "bakliyat-link"
             }
           >
-            {product.title}
+
+            {/* {product.title} */}
+            {t(product.title)}
           </NavLink>
         ))}
       </section>
