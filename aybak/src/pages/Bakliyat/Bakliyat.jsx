@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 const Bakliyat = () => {
 
   const { t } = useTranslation();
+  const {tBakliyat}=useTranslation("bakliyat")
 
   const { bakliyatAdi } = useParams();
   const bakliyat = productInfo.find(

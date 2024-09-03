@@ -20,7 +20,7 @@ i18n
         return `./locales/${lng}/${namespace}.json`;
       },
     },
-    ns: ['translation', 'recipes'], // Yüklemek istediğiniz namespace'leri belirtin
+    ns: ['translation', 'recipes',"bakliyat"], // Yüklemek istediğiniz namespace'leri belirtin
     defaultNS: 'translation', // Varsayılan namespace
     react: {
       useSuspense: false,
