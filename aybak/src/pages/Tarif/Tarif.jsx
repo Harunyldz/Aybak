@@ -4,6 +4,7 @@ import { recipes } from "../../utils/Recipes";
 
 import { transformString } from "../../utils/transformString";
 import TarifAltMenu from "../../components/TarifAltMenu/TarifAltMenu";
+import { useTranslation } from "react-i18next";
 
 const Tarif = () => {
   const { yemekAdi } = useParams();
@@ -15,38 +16,41 @@ const Tarif = () => {
     return <div className="tarif-wrapper">Tarif bulunamadı</div>;
   }
 
+  const { t } = useTranslation();
+  const { t: tRecipes } = useTranslation("recipes");
+
   return (
     <div className="tarif-wrapper">
       <div className="tarif-container">
         <div className="tarif">
           <section className="tarif-ust">
             <figure>
-              <img src={yemek.image} alt={yemek.title} />
+              <img src={yemek.image} alt={t(yemek.title)} />
               <figcaption>
-                <h2>{yemek.title}</h2>
-                <span>{yemek.type}</span>
+                <h2>{t(yemek.title)}</h2>
+                <span>{t(yemek.type)}</span>
               </figcaption>
             </figure>
             <div>
-              <h3>Malzemeler</h3>
+              <h3>{t("malzemeler")}</h3>
               <ul>
                 {yemek.ingredients.map((ingredient, index) => (
-                  <li key={index}>{ingredient}</li>
+                  <li key={index}>{tRecipes(ingredient)}</li>
                 ))}
               </ul>
             </div>
           </section>
           <section className="tarif-alt">
-            <h3>Yapılışı</h3>
+            <h3>{t("yapilisi")}</h3>
             <ul>
               {yemek.instructions.map((instruction, index) => (
-                <li key={index}>{`${index + 1}. ${instruction}`}</li>
+                <li key={index}>{`${index + 1}. ${tRecipes(instruction)}`}</li>
               ))}
             </ul>
           </section>
         </div>
         <menu>
-          <TarifAltMenu type={yemek.type} title={yemek.title}/>
+          <TarifAltMenu type={yemek.type} title={yemek.title} />
         </menu>
       </div>
     </div>
