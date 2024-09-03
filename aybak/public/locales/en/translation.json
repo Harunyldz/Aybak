@@ -93,17 +93,12 @@
     "send": "Send",
     "takip": "Follow Us",
     "telif": "All Rights Reserved.",
-<<<<<<< HEAD
     "malzemeler": "Ingredients",
     "yapilisi": "Preparation",
     "yemekTariflerih2": "Delicious Dishes You Can Make with Aybak Products",
     "yemekTariflerip": "As Aybak  Gıda, we add flavor to your tables with our high-quality and nutritious products. The dishes you can prepare with our products offer both healthy and practical recipes, enriching your daily diet. Here are some delicious meal suggestions you can make with Aybak products.",
     "nasilYapilir": "How It's Made ?",
-    "tumTarifler": "All Recipes"
-=======
-    "yemekTariflerih2": "Delicious Dishes You Can Make with Aybak Products",
-    "yemekTariflerip": "As Aybak  Gıda, we add flavor to your tables with our high-quality and nutritious products. The dishes you can prepare with our products offer both healthy and practical recipes, enriching your daily diet. Here are some delicious meal suggestions you can make with Aybak products.",
-    "nasilYapilir": "How It's Made ?",
+    "tumTarifler": "All Recipes",
     "Köftelik Bulgur": "Bulgur for Meatballs",
     "Bakla 5kg": "Broad Beans 5kg",
     "Baldo Pirinç 5kg": "Baldo Rice 5kg",
@@ -136,5 +131,4 @@
     "Jasmine Pirinç": "Jasmine Rice",
     "Bombay Fasulye": "Bombay Beans",
     "Köy Bulguru": "Village Bulghur"
->>>>>>> 70c08696961a2513a0b780dcd126fe8b1b251e84
 }

@@ -90,11 +90,8 @@
     "malzemeler":"Malzemeler",
     "yapilisi":"Yapılışı",
     "yemekTariflerip": " Aybak Gıda olarak, kaliteli ve besleyici ürünlerimizle sofralarınıza lezzet katıyoruz. Ürünlerimizle hazırlayabileceğiniz yemekler, hem sağlıklı hem de pratik tarifler sunarak günlük beslenmenizi zenginleştiriyor. İşte Aybak ürünleriyle yapabileceğiniz nefis yemek önerileri",
-<<<<<<< HEAD
     "nasilYapilir":"Nasıl Yapılır ?",
-    "tumTarifler":"Tüm Tarifler"
-=======
-    "nasilYapilir": "Nasıl Yapılır ?",
+    "tumTarifler":"Tüm Tarifler",
     "Köftelik Bulgur": "Köftelik Bulgur",
     "Bakla 5kg": "Bakla 5kg",
     "Baldo Pirinç 5kg": "Baldo Pirinç 5kg",
@@ -121,5 +118,4 @@
     "Aybak Kırmızı Mercimek 25kg": "Aybak Kırmızı Mercimek 25kg",
     "Aybak Yeşil Mercimek 25kg": "Aybak Yeşil Mercimek 25kg",
     "Kepekli Pirinç": "Kepekli Pirinç"
->>>>>>> 70c08696961a2513a0b780dcd126fe8b1b251e84
 }
