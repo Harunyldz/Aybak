@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 const Bakliyat = () => {
 
   const { t } = useTranslation();
-  const {tBakliyat}=useTranslation("bakliyat")
+  const {t:tBakliyat}=useTranslation("bakliyat")
 
   const { bakliyatAdi } = useParams();
   const bakliyat = productInfo.find(
@@ -45,14 +45,14 @@ const Bakliyat = () => {
             className="bakliyat-detay"
           >
             <ul>
-              <h3>{bakliyat.text}</h3>
+              <h3>{tBakliyat(bakliyat.text)}</h3>
               {bakliyat.details.map((bakliyatDetail, index) => (
-                <li key={index}>{bakliyatDetail}</li>
+                <li key={index}>{tBakliyat(bakliyatDetail)}</li>
               ))}
               <h4>
-                Aybak ürünlerini görmek için{" "}
+                {tBakliyat("aybakText")}
                 <Link to="/urunlerimiz" className="bakliyat-span">
-                  Tıklayınız.
+                  {tBakliyat("tiklayiniz")}
                 </Link>
               </h4>
             </ul>
