@@ -144,10 +144,10 @@ const Navbar = () => {
                 </button>
               </Link>
             </li>
-            <li>
-              <div>
-                <button onClick={() => changeLanguage('en')}> <img src={enFlag} alt="İngilizce" width={50} height={30} /></button>
-                <button onClick={() => changeLanguage('tr')}><img src={trFlag} alt="Türkçe" width={50} height={30} /></button>
+            <li className="login-button">
+              <div className="flag-translate">
+                <button onClick={() => changeLanguage('en')}> <img src={enFlag} alt="İngilizce" width={40} height={25} /></button>
+                <button onClick={() => changeLanguage('tr')}><img src={trFlag} alt="Türkçe" width={40} height={25} /></button>
               </div>
             </li>
           </ul>
