@@ -226,85 +226,85 @@ export const products = [
         subProducts: [
             {
                 id: 1,
-                name: "Aybak Uzuntaneli Pirinç 25kg ",
+                name: "Aybak Uzuntaneli Pirinç 25kg",
                 type: "dokme-urun",
                 image: aybakUzunTanemRice25
             },
             {
                 id: 2,
-                name: "Aybak Osmancık Pirinç 25kg ",
+                name: "Aybak Osmancık Pirinç 25kg",
                 type: "dokme-urun",
                 image: aybakOsmancikRice25
             },
             {
                 id: 3,
-                name: "Ödenay Baldo Pirinç 25kg ",
+                name: "Ödenay Baldo Pirinç 25kg",
                 type: "dokme-urun",
                 image: odenayBaldoPirinc25
             },
             {
                 id: 4,
-                name: "Aybak Kırık Pirinç 25kg ",
+                name: "Aybak Kırık Pirinç 25kg",
                 type: "dokme-urun",
                 image: aybakKirikRice25
             },
             {
                 id: 5,
-                name: "Mutfak Baldo Pirinç 25kg ",
+                name: "Mutfak Baldo Pirinç 25kg",
                 type: "dokme-urun",
                 image: mutfakBaldoRice25
             },
             {
                 id: 6,
-                name: "Aybak Bulgur 25kg ",
+                name: "Aybak Bulgur 25kg",
                 type: "dokme-urun",
                 image: aybakBulgur25
             },
             {
                 id: 7,
-                name: "Özsari Bulgur 25kg ",
+                name: "Özsari Bulgur 25kg",
                 type: "dokme-urun",
                 image: ozsariBulgur25
             },
             {
                 id: 8,
-                name: "Duru Bulgur 25kg ",
+                name: "Duru Bulgur 25kg",
                 type: "dokme-urun",
                 image: duruBulgur25
             },
             {
                 id: 9,
-                name: "Tatbul Bulgur 25kg ",
+                name: "Tatbul Bulgur 25kg",
                 type: "dokme-urun",
                 image: tatbulBulgur25
             },
             {
                 id: 10,
-                name: "Aybak Kuru Fasulye 25kg ",
+                name: "Aybak Kuru Fasulye 25kg",
                 type: "dokme-urun",
                 image: aybakKuruFasulye25
             },
             {
                 id: 11,
-                name: "Aybak Barbunya 25kg ",
+                name: "Aybak Barbunya 25kg",
                 type: "dokme-urun",
                 image: aybakBarbunya25
             },
             {
                 id: 12,
-                name: "Aybak Nohut 25kg ",
+                name: "Aybak Nohut 25kg",
                 type: "dokme-urun",
                 image: aybakNohut25
             },
             {
                 id: 13,
-                name: "Aybak Kırmızı Mercimek 25kg ",
+                name: "Aybak Kırmızı Mercimek 25kg",
                 type: "dokme-urun",
                 image: aybakKirmiziMercimek25
             },
             {
                 id: 14,
-                name: "Aybak Yeşil Mercimek 25kg ",
+                name: "Aybak Yeşil Mercimek 25kg",
                 type: "dokme-urun",
                 image: aybakYesilMercimek25
             }
@@ -316,25 +316,25 @@ export const products = [
         subProducts: [
             {
                 id: 1,
-                name: "Kepekli Pirinç ",
+                name: "Kepekli Pirinç",
                 type: "yoresel-urun",
                 image: kepekliRice
             },
             {
                 id: 2,
-                name: "Jasmine Pirinç ",
+                name: "Jasmine Pirinç",
                 type: "yoresel-urun",
                 image: jasmineRice
             },
             {
                 id: 3,
-                name: "Bombay Fasulye ",
+                name: "Bombay Fasulye",
                 type: "yoresel-urun",
                 image: bombayFasulye
             },
             {
                 id: 4,
-                name: "Börülce ",
+                name: "Börülce",
                 type: "yoresel-urun",
                 image: borulce
             },
@@ -382,7 +382,7 @@ export const products = [
             },
             {
                 id: 12,
-                name: "Galete Unu",
+                name: "Galeta Unu",
                 type: "yoresel-urun",
                 image: galeteUnu
             },
