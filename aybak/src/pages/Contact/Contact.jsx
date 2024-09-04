@@ -70,6 +70,29 @@ const Contact = () => {
               </a>
             </li>
             <li>
+              <h2>{t("contact3")}</h2>
+            </li>
+            <li>
+              <i>
+                <FaLocationDot />
+              </i>
+              <span>
+                Şahintepe Mah. Şehit Polis Fetih Sekin Cad. Kuru Gıda Çarşısı 3. Ada 11B Blok No:25-26-27 BAŞAKŞEHİR / İSTANBUL <br />
+              </span>
+            </li>
+            <li>
+              <i>
+                <FaPhone />
+              </i>
+              <span>+90 (212) 581 65 72 pbx</span>
+            </li>
+            <li>
+              <i>
+                <FaPhone />
+              </i>
+              <span> +90 (212) 564 20 98 </span>
+            </li>
+            <li>
               <h2>{t("contact2")}</h2>
             </li>
             <li>
@@ -77,7 +100,7 @@ const Contact = () => {
                 <FaLocationDot />
               </i>
               <span>
-                Aybak Gıda San. Tic. Ltd. Şti. B.Doğanca Mah. Artezyen Cad.
+                B.Doğanca Mah. Artezyen Cad.
                 No:132 MERİÇ / EDİRNE <br />
               </span>
             </li>

@@ -462,7 +462,7 @@ export const productInfo = [
         title: "Pirinç",
         image: pirincImage,
         type: "dokme-urun",
-       text: "rice_text",
+        text: "rice_text",
         href: "pirinc-saglik",
         details: [
             // "Kalsiyum, kemik sağlığını destekler.",
