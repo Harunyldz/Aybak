@@ -10,7 +10,6 @@ import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
-
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [subDropdown, setSubDropdown] = useState(null);
@@ -51,7 +50,7 @@ const Navbar = () => {
       i18n.changeLanguage("tr");
       setLang("tr");
     }
-    handleSideMenu()
+    handleSideMenu();
   };
   return (
     <div className="navbar-wrapper">
@@ -72,7 +71,7 @@ const Navbar = () => {
                 onClick={handleSideMenu}
               >
                 <Link to={navListItem.href} className="nav-link">
-                  {t(navListItem.name)} 
+                  {t(navListItem.name)}
                 </Link>
                 {navListItem.subMenu && dropdown && (
                   <ul
@@ -153,13 +152,14 @@ const Navbar = () => {
                 </button>
               </Link>
             </li>
-            <li className="lang-button">
-              <button onClick={handleLanguage}>
-                {lang === "tr" ? "EN" : "TR"}
-              </button>
-            </li>
+            {/* <li></li> */}
           </ul>
         </nav>
+        <div className="lang-button">
+          <button onClick={handleLanguage}>
+            {lang === "tr" ? "EN" : "TR"}
+          </button>
+        </div>
         <div className="navbar-icon">
           <i onClick={() => setOpened(!opened)}>
             {opened ? <FaTimes /> : <FaBars />}

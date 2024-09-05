@@ -204,7 +204,7 @@
 
 
 .lang-button{
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .lang-button button{
@@ -221,9 +221,13 @@
     font-weight: 700;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
+    .navbar-wrapper{
+        height: 90px;
+    }
     .navbar-container {
-        gap: 20px;
+        gap: 0px;
+        height: 90px;
     }
 
     .nav-list .nav-item {
@@ -251,10 +255,13 @@
 }
 
 @media screen and (max-width:1024px) {
+    .navbar-wrapper{
+        height: 90px;
+    }
     .navbar-container {
         position: fixed;
         top: 0;
-        height: 110px;
+        height: 90px;
         gap: 0;
         background-color: #fff;
     }
@@ -262,7 +269,7 @@
     .navbar-container .navbar .nav-list {
         position: absolute;
         right: -500px;
-        top: 110px;
+        top: 90px;
         flex-direction: column;
         width: 400px;
         height: 100vh;
@@ -303,6 +310,9 @@
     .navbar-container .navbar-icon {
         display: inline;
     }
+    .lang-button{
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -340,15 +350,18 @@
         height: 80px;
         margin-top: 20px;
     }
+    .lang-button{
+        margin-right: 15px;
+    }
 }
 
 @media screen and (max-width:480px) {
     .navbar-wrapper {
-        height: 80px;
+        height: 60px;
     }
 
     .navbar-container {
-        height: 80px;
+        height: 60px;
     }
 
     .nav-list .nav-item {
@@ -360,6 +373,9 @@
         margin-top: 10px;
     }
     .navbar-container .nav-list.nav-list-opened {
-        top: 80px;
+        top: 60px;
+    }
+    .lang-button{
+        margin-right: 10px;
     }
 }
