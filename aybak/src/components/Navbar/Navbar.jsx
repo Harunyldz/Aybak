@@ -50,7 +50,6 @@ const Navbar = () => {
       i18n.changeLanguage("tr");
       setLang("tr");
     }
-    handleSideMenu();
   };
   return (
     <div className="navbar-wrapper">
@@ -152,7 +151,6 @@ const Navbar = () => {
                 </button>
               </Link>
             </li>
-            {/* <li></li> */}
           </ul>
         </nav>
         <div className="lang-button">

@@ -203,11 +203,11 @@
 }
 
 
-.lang-button{
+.lang-button {
     margin-right: 10px;
 }
 
-.lang-button button{
+.lang-button button {
     border: none;
     outline: none;
     background-color: #E20A17;
@@ -222,9 +222,10 @@
 }
 
 @media screen and (max-width:1300px) {
-    .navbar-wrapper{
+    .navbar-wrapper {
         height: 90px;
     }
+
     .navbar-container {
         gap: 0px;
         height: 90px;
@@ -255,9 +256,10 @@
 }
 
 @media screen and (max-width:1024px) {
-    .navbar-wrapper{
+    .navbar-wrapper {
         height: 90px;
     }
+
     .navbar-container {
         position: fixed;
         top: 0;
@@ -310,7 +312,8 @@
     .navbar-container .navbar-icon {
         display: inline;
     }
-    .lang-button{
+
+    .lang-button {
         margin-right: 20px;
     }
 }
@@ -350,7 +353,8 @@
         height: 80px;
         margin-top: 20px;
     }
-    .lang-button{
+
+    .lang-button {
         margin-right: 15px;
     }
 }
@@ -368,21 +372,24 @@
         height: 70px;
         font-size: 14px;
     }
+
     .nav-itemBtn {
         height: 50px;
         margin-top: 10px;
     }
+
     .navbar-container .nav-list.nav-list-opened {
         top: 70px;
     }
-    .lang-button{
+
+    .lang-button {
         margin-right: 10px;
     }
-    
-.lang-button button{
-    font-size: 15px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-}
+
+    .lang-button button {
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
 }
