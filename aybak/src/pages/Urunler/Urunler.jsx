@@ -41,8 +41,6 @@ const Urunler = () => {
                   className={urun.name === selected ? "selected" : ""}
                 >
                   {t(urun.name)}
-
-                  {/* {urun.name} */}
                 </li>
               ))}
             </ul>
@@ -59,7 +57,6 @@ const Urunler = () => {
                 </div>
                 <figcaption>
                   {t(selectedProduct.name)}
-                  {/* {selectedProduct.name} */}
                 </figcaption>
               </figure>
             ))}

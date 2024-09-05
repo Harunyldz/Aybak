@@ -49,7 +49,6 @@ import aybakKuruFasulye25 from "../assets/dokme_urun/aybak-fasulye.png"
 import aybakBarbunya25 from "../assets/dokme_urun/barbunya.jpg"
 import aybakNohut25 from "../assets/dokme_urun/aybak-nohut.jpg"
 import aybakKirmiziMercimek25 from "../assets/dokme_urun/dokme-kirmizi-mercimek.jpg"
-// import aybakYesilMercimek25 from "../assets/dokme_urun/aybak-yesilMercimek.jpg"
 import aybakYesilMercimek25 from "../assets/dokme_urun/yesil-mercimek.jpg"
 
 //?Yöresel Ürünler
@@ -59,7 +58,6 @@ import jasmineRice from "../assets/yoresel-urunler/jasmine-pirinc.jpg"
 import bombayFasulye from "../assets/yoresel-urunler/bombay-fasulye.jpg"
 import borulce from "../assets/yoresel-urunler/borulce.jpg"
 import koyBulguru from "../assets/yoresel-urunler/koy-bulguru.jpeg"
-import koyMercimegi from "../assets/yoresel-urunler/koy-mercimegi.jpg"
 import sariMercimek from "../assets/yoresel-urunler/sari-mercimek2.jpg"
 import kirikMisir from "../assets/yoresel-urunler/misirKirmalari.jpg"
 import kuskus from "../assets/yoresel-urunler/kuskus-10kg.jpg"
@@ -465,15 +463,6 @@ export const productInfo = [
         text: "rice_text",
         href: "pirinc-saglik",
         details: [
-            // "Kalsiyum, kemik sağlığını destekler.",
-            // "Protein, kas gelişimine yardımcı olur.",
-            // "Fosfor, enerji üretiminde rol oynar.",
-            // "Demir, kan sağlığını iyileştirir.",
-            // "Pirinç, hazımsızlığa iyi gelir.",
-            // "Kanserle mücadelede yardımcı olabilir.",
-            // "Kan basıncını düzenlemeye yardımcı olur.",
-            // "Cilt sağlığını destekler.",
-            // "Vücut enerjisini artırır."
             "rice_detail1",
             "rice_detail2",
             "rice_detail3",
@@ -493,15 +482,6 @@ export const productInfo = [
         text: "bulgur_text",
         href: "bulgur-saglik",
         details: [
-            // " Bulgur kandaki yağları düşürücü yönü olduğu bilinen posa/lif bakımından oldukça zengin bir gıdadır",
-            // " Karbonhidrat değeri yüksek, protein değeri düşüktür.",
-            // "Bulgurda bulunan B1 vitaminleri, sinir ve sindirim sisteminde önemli rol oynamaktadır",
-            // " İçerdiği folik asitten dolayı, çocuk ve hamile kadınlar için çok önemli bir gıda maddesidir",
-            // "Doymamış yağa sahiptir ve toplam yağ oranı düşük olduğu için sağlıklı bir besin maddesidir.",
-            // "Kolesterol içermez.",
-            // "Yüksek mineral ve selülozdan dolayı besin emilimini hızlandırır, kabızlığı engeller ve bağırsak kanserini önler.",
-            // "Bakliyatlarla karıştırıldığında dünyadaki en önemli besin kaynağı durumuna gelmektedir.",
-            // "Radyasyonu emmez ve radyasyona karşı dayanıklıdır. Bu nedenle bazı ülkelerde nükleer savaşlara karşı, askeri ve sivil amaçlar için stokta tutulan ürünlerdendir."
             "bulgur_detail1",
             "bulgur_detail2",
             "bulgur_detail3",
@@ -521,13 +501,6 @@ export const productInfo = [
         text: "barbunya_text",
         href: "barbunya-saglik",
         details: [
-            // "  Vücuda güç ve enerji vererek, bedensel ve zihinsel yorgunluğu giderir.",
-            // " Vücudun gelişimini ve onarımını destekler.",
-            // "Kemikleri güçlendirir.",
-            // " Romatizma ve siyatik şikâyetlerini azaltır.",
-            // "Böbrek rahatsızlıklarında etkilidir. Böbrekleri kuvvetlendirir. Böbrek kumu ve taşlarını dökmeye yardımcı olur.",
-            // "Sinirleri kuvvetlendirir ve kalp çarpıntısını giderir.",
-            // "Kandaki şeker miktarını düşürerek şeker hastalığına karşı faydalı olur."
             "barbunya1",
             "barbunya2",
             "barbunya3",
@@ -545,16 +518,6 @@ export const productInfo = [
         text: "kuru_text",
         href: "fasulye-saglik",
         details: [
-            // "  İçerdiği yüzde 20-30 protein ile iyi bir protein deposudur.",
-            // "  A,B ve D vitaminleri açısından oldukça zengindir.",
-            // "Kemikleri güçlendirir",
-            // "  Lifli olmasında dolayı kandaki kötü kolesterolü düşürür.",
-            // "Kalp hastalıklarına karşı etkilidir.",
-            // " Diyabeti kontrol altında tutar.",
-            // "Barsakları çalıştırır.",
-            // "Diyet yapanlar için yüksek besin değeri ve kalorisi düşük olmasından dolayı vazgeçilmez bir yiyecektir.",
-            // "Karbonhidrat, demir, folik asit, selenyum ve potasyum açısından zengindir."
-            "kuru1",
             "kuru2",
             "kuru3",
             "kuru4",
@@ -573,15 +536,6 @@ export const productInfo = [
         text: "nohut_text",
         href: "nohut-saglik",
         details: [
-            // "Yüksek protein içeriği kas gelişimine yardımcı olur.",
-            // "Lif içeriği sindirim sağlığını destekler.",
-            // "Düşük glisemik indeksi kan şekerini düzenler.",
-            // "Demir içeriği anemi riskini azaltır.",
-            // "Folat içeriği hamilelik sırasında önemlidir.",
-            // "Kalsiyum içeriği kemik sağlığını destekler.",
-            // "Antioksidanlar içeriği bağışıklık sistemini güçlendirir.",
-            // "Magnezyum içeriği kalp sağlığını destekler.",
-            // "Bitkisel bazlı protein kaynağıdır."
             "nohut_detail1",
             "nohut_detail2",
             "nohut_detail3",
@@ -601,15 +555,6 @@ export const productInfo = [
         text: "kirmizi_text",
         href: "kirmiziMercimek-saglik",
         details: [
-            // "Yüksek protein içeriği kas gelişimini destekler.",
-            // "Bol miktarda lif içerir, sindirimi düzenler.",
-            // "Demir açısından zengindir, kansızlığı önler.",
-            // "Folik asit içeriği, hamilelik döneminde faydalıdır.",
-            // "Düşük yağ içeriği ile kalp dostudur.",
-            // "Antioksidanlar içerir, bağışıklık sistemini güçlendirir.",
-            // "B6 vitamini içerir, enerji üretimini destekler.",
-            // "Magnezyum içeriği ile kemik sağlığını korur.",
-            // "Bitkisel protein kaynağıdır."
             "kirmizi_details1",
             "kirmizi_details2",
             "kirmizi_details3",
@@ -629,15 +574,6 @@ export const productInfo = [
         text: "sari_text",
         href: "sariMercimek-saglik",
         details: [
-            // "Yüksek lif içeriği sindirim sağlığını destekler.",
-            // "Protein açısından zengindir, kas gelişimini destekler.",
-            // "Düşük glisemik indeksi ile kan şekerini düzenler.",
-            // "Folik asit içeriği hamilelik döneminde faydalıdır.",
-            // "Potasyum açısından zengindir, kan basıncını düzenler.",
-            // "Magnezyum içeriği kalp sağlığını destekler.",
-            // "Antioksidanlar içerir, bağışıklık sistemini güçlendirir.",
-            // "Düşük yağ içeriği ile kilo kontrolüne yardımcı olur.",
-            // "Bitkisel protein kaynağıdır."
             "sari_details1",
             "sari_details2",
             "sari_details3",
@@ -657,17 +593,6 @@ export const productInfo = [
         text: "yesil_text",
         href: "yesilMercimek-saglik",
         details: [
-            // "Yüksek lif içeriği sindirimi düzenler.",
-            // "Protein açısından zengindir, kas gelişimini destekler.",
-            // "Düşük glisemik indeksi ile kan şekerini düzenler.",
-            // "Folik asit içeriği hamilelik döneminde faydalıdır.",
-            // "Potasyum açısından zengindir, kan basıncını düzenler.",
-            // "Magnezyum içeriği kalp sağlığını destekler.",
-            // "Antioksidanlar içerir, bağışıklık sistemini güçlendirir.",
-            // "Düşük yağ içeriği ile kilo kontrolüne yardımcı olur.",
-            // "Bitkisel protein kaynağıdır.",
-            // "B6 vitamini içerir, sinir sistemi sağlığını destekler.",
-            // "Demir içeriği ile kansızlığı önler."
             "yesil_details1",
             "yesil_details2",
             "yesil_details3",
@@ -680,7 +605,5 @@ export const productInfo = [
             "yesil_details10",
             "yesil_details11",
         ]
-    },
-
-
+    }
 ]

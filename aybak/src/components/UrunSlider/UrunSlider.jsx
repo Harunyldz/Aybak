@@ -12,7 +12,6 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const UrunSlider = () => {
-
   const { t } = useTranslation();
 
   const [selected, setSelected] = useState(products[0].name);
@@ -21,9 +20,7 @@ const UrunSlider = () => {
   return (
     <div className="urun-slider">
       <header>
-        <h2>{t("Ürünlerimiz")}
-          {/* Ürünlerimiz */}
-        </h2>
+        <h2>{t("Ürünlerimiz")}</h2>
         <menu>
           <ul>
             {products.map((urun) => (
@@ -33,7 +30,6 @@ const UrunSlider = () => {
                 key={urun.id}
               >
                 {t(urun.name)}
-                {/* {urun.name} */}
               </li>
             ))}
           </ul>
@@ -60,23 +56,23 @@ const UrunSlider = () => {
           breakpoints={{
             480: {
               slidesPerView: 1,
-              spaceBetween: 50
+              spaceBetween: 50,
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 20
+              spaceBetween: 20,
             },
             960: {
               slidesPerView: 3,
-              spaceBetween: 30
+              spaceBetween: 30,
             },
             1200: {
               slidesPerView: 4,
-              spaceBetween: 30
+              spaceBetween: 30,
             },
             1400: {
               slidesPerView: 5,
-              spaceBetween: 50
+              spaceBetween: 50,
             },
           }}
           className="urunSwiper"
@@ -91,9 +87,7 @@ const UrunSlider = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}
               />
-              <h3>{t(selectedProduct.name)}
-                {/* {selectedProduct.name} */}
-              </h3>
+              <h3>{t(selectedProduct.name)}</h3>
             </SwiperSlide>
           ))}
         </Swiper>
