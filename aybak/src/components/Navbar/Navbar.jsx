@@ -9,13 +9,14 @@ import { transformString } from "../../utils/transformString";
 import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import trFlag from "../../assets/tr.jpg"
-import enFlag from "../../assets/eng.png"
+
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [subDropdown, setSubDropdown] = useState(null);
   const [opened, setOpened] = useState(false);
+  const [changeLang, setChangeLang] = useState(false);
+  const [lang, setLang] = useState("tr");
 
   const handleMouseEnter = () => {
     if (window.innerWidth >= 1024) {
@@ -40,10 +41,18 @@ const Navbar = () => {
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
   const { t, i18n } = useTranslation(); // Using the hook to access 't' and 'i18n'
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
 
+  const handleLanguage = () => {
+    setChangeLang(!changeLang);
+    if (lang === "tr") {
+      i18n.changeLanguage("en");
+      setLang("en");
+    } else {
+      i18n.changeLanguage("tr");
+      setLang("tr");
+    }
+    handleSideMenu()
+  };
   return (
     <div className="navbar-wrapper">
       <div className="navbar-container">
@@ -63,7 +72,7 @@ const Navbar = () => {
                 onClick={handleSideMenu}
               >
                 <Link to={navListItem.href} className="nav-link">
-                  {t(navListItem.name)} {/* Çeviriyi burada kullanın */}
+                  {t(navListItem.name)} 
                 </Link>
                 {navListItem.subMenu && dropdown && (
                   <ul
@@ -85,14 +94,14 @@ const Navbar = () => {
                               navListItem.name === "Kurumsal"
                                 ? subMenu.name === "Belgelerimiz"
                                   ? `${navListItem.href}/${transformString(
-                                    subMenu.name
-                                  )}`
+                                      subMenu.name
+                                    )}`
                                   : `${navListItem.href}#${transformString(
+                                      subMenu.name
+                                    )}`
+                                : `${navListItem.href}/${transformString(
                                     subMenu.name
                                   )}`
-                                : `${navListItem.href}/${transformString(
-                                  subMenu.name
-                                )}`
                             }
                             scroll={scrollWithOffset}
                             className="nav-sublink"
@@ -140,15 +149,14 @@ const Navbar = () => {
                   className="login-button"
                   onClick={() => setOpened(!opened)}
                 >
-                  {t('Giriş Yap')} {/* Çeviriyi burada kullanın */}
+                  {t("Giriş Yap")}
                 </button>
               </Link>
             </li>
-            <li className="login-button">
-              <div className="flag-translate">
-                <button onClick={() => changeLanguage('en')}> <img src={enFlag} alt="İngilizce" width={40} height={25} /></button>
-                <button onClick={() => changeLanguage('tr')}><img src={trFlag} alt="Türkçe" width={40} height={25} /></button>
-              </div>
+            <li className="lang-button">
+              <button onClick={handleLanguage}>
+                {lang === "tr" ? "EN" : "TR"}
+              </button>
             </li>
           </ul>
         </nav>
