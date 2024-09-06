@@ -14,6 +14,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { useEffect, useState } from "react";
 
 import { supabase } from "../../utils/createClient";
+import { useTranslation } from "react-i18next";
 
 const News = () => {
   const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -46,11 +47,13 @@ const News = () => {
     fetchNews();
   }, []);
 
+  const {t}=useTranslation()
+
   return (
     <section className="news-container">
       <header className="news-header">
         <h2>
-          <span>Aybak</span>'ta Son Gelişmeler
+          <span>{t("trAybak")}</span>{t("newsh2")} <span>{t("ingAybak")}</span>
         </h2>
       </header>
       <main className="news-main">
