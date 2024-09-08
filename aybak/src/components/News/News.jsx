@@ -36,7 +36,7 @@ const News = () => {
           return { ...newsItem, image: publicURL };
         })
       );
-
+      newsWithUrls.reverse();
       setNews(newsWithUrls);
     } catch (error) {
       console.error("Error fetching news:", error);
@@ -47,13 +47,14 @@ const News = () => {
     fetchNews();
   }, []);
 
-  const {t}=useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section className="news-container">
       <header className="news-header">
         <h2>
-          <span>{t("trAybak")}</span>{t("newsh2")} <span>{t("ingAybak")}</span>
+          <span>{t("trAybak")}</span>
+          {t("newsh2")} <span>{t("ingAybak")}</span>
         </h2>
       </header>
       <main className="news-main">
@@ -63,19 +64,19 @@ const News = () => {
           breakpoints={{
             768: {
               slidesPerView: 1,
-              spaceBetween:20
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 2,
-              spaceBetween:30
+              spaceBetween: 30,
             },
             1200: {
               slidesPerView: 3,
-              spaceBetween:10
+              spaceBetween: 10,
             },
             1400: {
-              slidesPerView:3,
-              spaceBetween:50
+              slidesPerView: 3,
+              spaceBetween: 50,
             },
           }}
           speed={2500}
@@ -93,7 +94,10 @@ const News = () => {
             <SwiperSlide key={newitem.id}>
               <figure>
                 <div className="figure-img">
-                  <img src={newitem.image || defaultImage} alt={newitem.image.name} />
+                  <img
+                    src={newitem.image || defaultImage}
+                    alt={newitem.image.name}
+                  />
                 </div>
                 <motion.figcaption
                   initial={{ opacity: 0, y: 100 }}
